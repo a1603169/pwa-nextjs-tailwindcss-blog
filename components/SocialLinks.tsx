@@ -2,7 +2,7 @@ import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 export default function SocialLinks() {
   return (
-    <footer className="border-t-2 border-solid border-indigo-300 pt-5">
+    <div className="border-t-2 border-solid border-indigo-300 pt-5">
       <div className="flex justify-center items-center flex-col ">
         <div className="flex justify-center items-center pb-5">
           <a
@@ -28,6 +28,6 @@ export default function SocialLinks() {
           </a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
