@@ -101,6 +101,7 @@ export default function AboutPage() {
                   2021.07.01 - 2021.10.31 / Beesh Oy / FRONTEND DEVELOPER INTERN
                 </p>
               </li>
+              <br />
               <li>
                 <p>
                   2021.11.01 - 2022.05.12 / Rens Original / FRONTEND DEVELOPER{" "}
