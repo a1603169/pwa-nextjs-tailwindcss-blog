@@ -104,7 +104,7 @@ export default function AboutPage() {
               <br />
               <li>
                 <p>
-                  2021.11.01 - 2022.05.12 / Rens Original / FRONTEND DEVELOPER{" "}
+                  2021.11.01 - 2022.05.21 / Rens Original / FRONTEND DEVELOPER{" "}
                 </p>
               </li>
             </ul>
