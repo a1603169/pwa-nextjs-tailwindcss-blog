@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-
+import Transition from "@/components/Transition";
 import { useRouter } from "next/router";
 import SocialLinks from "./SocialLinks";
 
@@ -113,7 +113,9 @@ export default function Layout({ children }: layoutProps) {
           </div>
         </nav>
       </div>
+
       <main className="py-10">{children}</main>
+
       <footer className="fixed bottom-0 right-0 left-0 max-lg:relative">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">

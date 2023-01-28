@@ -84,7 +84,9 @@ export default function Form() {
 
   return (
     <>
-      <div className="sticky">{isLoading ? <Loading /> : null}</div>
+      <div className="fixed max-lg:sticky">
+        {isLoading ? <Loading /> : null}
+      </div>
       <form
         className="flex flex-col text-indigo-400 py-10 max-sm:max-w-xs "
         ref={formRef}
