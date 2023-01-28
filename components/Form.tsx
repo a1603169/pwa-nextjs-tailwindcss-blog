@@ -54,24 +54,22 @@ export default function Form() {
       setIsLoading(true);
       emailjs
         .send(
-          "SERVICE_ID",
-          "TEMPLATE_ID",
+          "service_ud8pr9b",
+          "template_78qcix1",
           {
             from_name: nameRef.current?.value,
             from_email: emailRef.current?.value,
             message: messageRef.current?.value,
           },
-          "PUBLIC_KEY"
+          "wVT0-67UubSWxS-Xd"
         )
         .then(
           (response) => {
             console.log("SUCCESS!", response.status, response.text);
             setIsLoading(false);
-            setSuccess(true);
-            if (response.status === 200) {
-              router.push("/success");
-            }
+
             formRef.current?.reset();
+            setSuccess(true);
           },
           (err) => {
             console.log("FAILED...", err);
@@ -81,6 +79,10 @@ export default function Form() {
         );
     }
   };
+
+  if (success) {
+    router.push("/success");
+  }
 
   return (
     <>

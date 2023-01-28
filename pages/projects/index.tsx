@@ -6,78 +6,76 @@ import Transition from "@/components/Transition";
 export default function ProjectsPage() {
   return (
     <Transition>
-      <div className="grid gap-10 grid-cols-3 mx-10 max-lg:grid-cols-2 max-sm:grid-cols-1">
+      <div className="grid gap-10 grid-cols-3 mx-10 max-lg:grid-cols-2 max-sm:grid-cols-1 pb-28">
         <Card
-          title="FRINCOIN (ReactJS)"
-          description="SEMI SIMULATED BITCOIN INVESTMENT APP"
+          title="FRINCOIN / WIP"
+          description="Bitcoin Investment Simulation App with ReactJS"
           href="https://github.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app"
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
         />
         <Card
-          title="NEW YEAR FORUM (VanillaJS)"
-          description="BASIC CRUD SPA WITH VANILLA JS"
+          title="NEW YEAR FORUM"
+          description="Simple CRUD forums with VanillaJS"
           href="https://github.com/a1603169/SPA_new-year-message_vanillaJS"
-          image="https://raw.githubusercontent.com/a1603169/SPA_new-year-message_vanillaJS/master/public/posts_home_page.png"
         />
         <Card
-          title="DRAG & DROP (Typescript)"
-          description="SIMPLE DRAG & DROP APP WITH TYPESCRIPT"
+          title="DRAG & DROP"
+          description="Simple Drag & Drop with Typescript"
           href="https://github.com/a1603169/typescript-drag-and-drop"
-          image="https://raw.githubusercontent.com/a1603169/typescript-drag-and-drop/master/readme-images/Screenshot%202023-01-22%20at%203.23.45.png"
         />
         <Card
           title="STARBUCKS KOREA LAYOUT"
-          description="BASIC MARKUP WITH HTML & CSS & JAVASCRIPT"
+          description="Basic Markup with HTML & CSS & JS"
           href="https://tender-morse-9e7aaf.netlify.app/"
-          image="https://raw.githubusercontent.com/a1603169/Final_starbucks_layout/master/images/Screenshot%202023-01-28%20at%207.39.59.png"
         />
         <Card
-          title="CHURCH CALENDAR (ReactJS)"
-          description="React Calendar with Church Events API"
+          title="CHURCH CALENDAR / WIP"
+          description="React Calendar with Church Events API with ReactJS"
           href="https://github.com/a1603169/church_calendar"
-          image="https://raw.githubusercontent.com/a1603169/church_calendar/master/public/Screenshot%202023-01-28%20at%207.46.48.png"
         />
         <Card
-          title="dummy"
-          description="DES"
-          href=""
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
+          title="PORTFOLIO WEBSITE"
+          description="NextJS + TailwindCSS + TypeScript"
+          href="https://github.com/a1603169/Seunghun_bang-portfolio"
         />
         <Card
-          title="dummy"
-          description="DES"
-          href=""
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
+          title="E-Commerce Store / Rens Original"
+          description="LiquidJS + Shopify + APIs Integrations"
+          href="https://rensoriginal.eu"
         />
         <Card
-          title="dummy"
-          description="DES"
-          href=""
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
+          title="NFT LP / Rens Original"
+          description="Shopify + Webflow + (HTML + CSS + JS)"
+          href="https://rensoriginal.eu/pages/nft"
         />
         <Card
-          title="dummy"
-          description="DES"
-          href=""
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
+          title="HOODIE LP / Rens Original"
+          description="Shopify + Webflow + (HTML + CSS + JS)"
+          href="https://rensoriginal.eu/pages/elemental-hoodie"
         />
         <Card
-          title="dummy"
-          description="DES"
-          href=""
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
+          title="NOMAD LP / Rens Original"
+          description="Shopify + Webflow + (HTML + CSS + JS)"
+          href="https://rensoriginal.eu/pages/nomad"
         />
         <Card
-          title="dummy"
-          description="DES"
-          href=""
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
+          title="BEESH LP / Beesh"
+          description="React + Bootstrap"
+          href="https://beesh.fi"
         />
         <Card
-          title="dummy"
-          description="DES"
-          href=""
-          image="https://raw.githubusercontent.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app/master/src/assets/demo_image.png"
+          title="DEV.INTERVIEW QUIZ / WIP"
+          description="NextJS + TailwindCSS + TypeScript + APIs"
+          href="https://github.com/a1603169/frontend_quiz"
+        />
+        <Card
+          title="FACE ATTENDANCE / WIP"
+          description="Using Three JS + Face API"
+          href="https://github.com/a1603169/face-attendance-3js.git"
+        />
+        <Card
+          title="MOBILE MINI GAME"
+          description="React Native + Expo"
+          href="https://github.com/a1603169/mini-game-app-react-native"
         />
       </div>
     </Transition>

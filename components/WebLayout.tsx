@@ -9,9 +9,9 @@ interface layoutProps {
 }
 
 const logoStyle: string =
-  "border-solid border-2 border-indigo-300 p-3 ease-in duration-500 hover:text-indigo-500 hover:border-indigo-500 ";
+  "border-solid border-2 border-indigo-300 p-3 ease-in duration-500 hover:text-indigo-500 hover:border-indigo-500 hover:scale-90";
 const logoStyleActive: string =
-  "ease-in duration-500 border-solid border-2 border-indigo-300 p-3 text-indigo-50 bg-indigo-500 ";
+  "ease-in duration-500 border-solid border-2 border-indigo-300 p-3 text-indigo-50 bg-indigo-500 hover:scale-90";
 const linkStyle: string =
   "p-1 ease-in duration-500 mr-5 hover:text-indigo-500 ";
 const linkStyleActive: string = "p-1 text-indigo-500 mr-5 ";
@@ -81,7 +81,7 @@ export default function Layout({ children }: layoutProps) {
             </div>
           </ul>
           <div className={isOpen ? "" : "hidden"}>
-            <ul className="flex items-center flex-col text-2xl">
+            <ul className="hidden justify-center items-center flex-col text-2xl max-sm:flex">
               <li
                 className={
                   "my-5 transition duration-500 hover:text-indigo-500" +
@@ -114,9 +114,9 @@ export default function Layout({ children }: layoutProps) {
         </nav>
       </div>
 
-      <main className="py-10">{children}</main>
+      <main className="pb-10 pt-5">{children}</main>
 
-      <footer className="bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
+      <footer className="fixed bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang
