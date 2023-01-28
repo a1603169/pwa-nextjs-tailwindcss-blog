@@ -42,52 +42,52 @@ export default function AboutPage() {
           <div>
             <h1 className="text-4xl mb-3 max-lg:text-3xl">SKILLS</h1>
             <div className="grid grid-cols-3 gap-5 text-2xl">
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiReact />: ReactJS
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
-                <SiTypescript /> : Typescript
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
+                <SiTypescript />: Typescript
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <TbBrandNextjs /> : NextJS
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
-                <SiTailwindcss /> : Tailwind CSS
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
+                <SiTailwindcss /> : Tailwind
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiHtml5 /> : HTML
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiCss3 /> : CSS
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiJavascript /> : Javascript
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiPostman /> : Postman
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
-                <SiGithub /> : Github
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
+                <SiGithub />: Github
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
-                <FaNodeJs /> : NodeJS
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
+                <FaNodeJs />: NodeJS
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
-                <SiMongodb /> : MongoDB
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
+                <SiMongodb />: MongoDB
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiRedux /> : Redux
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiShopify />: LiquidJS
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiShopify />: Shopify
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
-                <SiReact /> : React Native
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
+                <SiReact /> : RNative
               </div>
-              <div className="flex items-center max-lg:text-lg max-md:text-sm">
+              <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiSass /> : Sass/Scss
               </div>
             </div>
