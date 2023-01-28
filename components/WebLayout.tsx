@@ -30,7 +30,7 @@ export default function Layout({ children }: layoutProps) {
   return (
     <>
       <div className="border-solid border-b-2 border-indigo-300 text-indigo-300 my-2">
-        <nav className="font-sans">
+        <nav className="font-sans backdrop-blur-lg">
           <ul className="flex p-5 text-2xl justify-between items-center font-sans ">
             <div>
               <li
@@ -116,7 +116,7 @@ export default function Layout({ children }: layoutProps) {
 
       <main className="py-10">{children}</main>
 
-      <footer className="fixed bottom-0 right-0 left-0 max-lg:relative">
+      <footer className="bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang
