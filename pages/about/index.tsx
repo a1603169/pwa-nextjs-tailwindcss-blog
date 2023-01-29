@@ -33,7 +33,7 @@ export default function AboutPage() {
           <br className="my-5" />
           <div>
             <h1 className="text-4xl mb-3 max-lg:text-3xl">NATIONALITY</h1>
-            <p className="text-2xl flex max-lg:text-lg">
+            <p className="text-2xl flex max-lg:text-lg flex items-center">
               REPUBLIC OF KOREA
               <GiSouthKorea />
             </p>
