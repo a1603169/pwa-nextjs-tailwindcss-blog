@@ -7,6 +7,11 @@ export default function Form() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
+  const [isNameValid, setIsNameValid] = useState<boolean>(false);
+  const [isEmailValid, setIsEmailValid] = useState<boolean>(false);
+  const [isMessageValid, setIsMessageValid] = useState<boolean>(false);
+  // const [errorMessage, setErrorMessage] = useState<string[]>([]);
+  // This is for update feature (Adding error Message in string[] and display it in the alert box & form box under the input box in the future)
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
@@ -18,31 +23,42 @@ export default function Form() {
     const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
     if (emailRegex.test(emailRef.current?.value as string)) {
       console.log("email is valid");
+      setIsEmailValid(true);
+      console.log(isEmailValid);
     } else {
       console.log("email is invalid");
-      setError(true);
     }
-
     if (nameRef.current?.value !== "") {
       console.log("name is valid");
+      setIsNameValid(true);
+      console.log(isNameValid);
     } else {
       console.log("name is invalid");
-      setError(true);
     }
-
-    if (messageRef.current?.value !== "") {
-      console.log("message is valid");
-    } else {
-      console.log("message is invalid");
-      setError(true);
-    }
+    return;
   };
 
-  const submitHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const validationCheckTextArea = (
+    e: React.FocusEvent<HTMLTextAreaElement>
+  ): void => {
+    if (messageRef.current?.value !== "") {
+      console.log("message is valid");
+      setIsMessageValid(true);
+    } else {
+      console.log("message is invalid");
+    }
+    console.log(isMessageValid);
+    return;
+  };
+
+  const submitHandler = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    await validationCheck(e as any);
+    await validationCheckTextArea(e as any);
     e.preventDefault();
-    if (error) {
+    console.log(isNameValid, isEmailValid, isMessageValid);
+    if (!isNameValid || !isEmailValid || !isMessageValid) {
       alert(
-        "Please fill in all fields correctly before submitting. It should not be empty."
+        "Please fill in all fields correctly before submitting. It should not be empty and correct form."
       );
       setError(false);
       return;
@@ -81,7 +97,10 @@ export default function Form() {
   };
 
   if (success) {
-    router.push("/success");
+    setTimeout(() => {
+      setSuccess(false);
+      router.push("/success");
+    }, 3000);
   }
 
   return (
@@ -97,6 +116,7 @@ export default function Form() {
           Name
         </label>
         <input
+          onBlur={validationCheck}
           ref={nameRef}
           type="text"
           id="name"
@@ -118,6 +138,7 @@ export default function Form() {
           Message
         </label>
         <textarea
+          onBlur={validationCheckTextArea}
           name="message"
           cols={55}
           rows={10}
