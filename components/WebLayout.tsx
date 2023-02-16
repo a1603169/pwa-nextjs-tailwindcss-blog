@@ -60,6 +60,7 @@ export default function Layout({ children }: layoutProps) {
               <li className={linkStyle}>
                 <a
                   target={"_blank"}
+                  rel="noreferrer"
                   href="https://drive.google.com/file/d/1rGlpw4vWapjUbNwfnm2q4PxNMbv7SySQ/view"
                 >
                   RESUME
