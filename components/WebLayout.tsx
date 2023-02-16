@@ -110,6 +110,18 @@ export default function Layout({ children }: layoutProps) {
                 <Link href="/about">ABOUT</Link>
               </li>
               <li
+                className={"mb-5 transition duration-500 hover:text-indigo-500"}
+                onClick={toggleMenu}
+              >
+                <a
+                  target={"_blank"}
+                  rel="noreferrer"
+                  href="https://drive.google.com/file/d/1rGlpw4vWapjUbNwfnm2q4PxNMbv7SySQ/view"
+                >
+                  RESUME
+                </a>
+              </li>
+              <li
                 className={
                   "mb-5 transition duration-500 hover:text-indigo-500" +
                   (router.pathname === "/contact" ? " text-indigo-500" : "")
