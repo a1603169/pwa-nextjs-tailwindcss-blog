@@ -57,6 +57,14 @@ export default function Layout({ children }: layoutProps) {
               >
                 <Link href="/about">ABOUT</Link>
               </li>
+              <li className={linkStyle}>
+                <a
+                  target={"_blank"}
+                  href="https://drive.google.com/file/d/1rGlpw4vWapjUbNwfnm2q4PxNMbv7SySQ/view"
+                >
+                  RESUME
+                </a>
+              </li>
               <li
                 className={
                   router.pathname === "/contact" ? linkStyleActive : linkStyle
