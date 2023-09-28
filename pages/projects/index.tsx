@@ -5,17 +5,17 @@ import Transition from "@/components/Transition";
 
 export default function ProjectsPage() {
 
-  const imagePathChurch = "./assets/church.jpg"
-  const imagePathDrag = "./assets/drag_drop.jpg"
-  const imagePathWeb = "./assets/web_screen.png"
-  const imagePathNewYear = "./assets/new_year.png" 
-  const imagePathStarbucks = "./assets/starbucks.png"
-  const imagePathFrincoin = "./assets/frincoin.png"
-  const imagePathBeesh = "./assets/beesh.png"
-  const imagePathRens = "./assets/rens_original.png"
-  const imagePathNomad = "./assets/rens_nomad.png"
-  const imagePathNFT = "./assets/rens_nft.png"
-  const imagePathHoodie = "./assets/rens_hoodie.png"
+  const imagePathChurch = "/assets/church.jpg"
+  const imagePathDrag = "/assets/drag_drop.jpg"
+  const imagePathWeb = "/assets/web_screen.png"
+  const imagePathNewYear = "/assets/new_year.png" 
+  const imagePathStarbucks = "/assets/starbucks.png"
+  const imagePathFrincoin = "/assets/frincoin.png"
+  const imagePathBeesh = "/assets/beesh.png"
+  const imagePathRens = "/assets/rens_original.png"
+  const imagePathNomad = "/assets/rens_nomad.png"
+  const imagePathNFT = "/assets/rens_nft.png"
+  const imagePathHoodie = "/assets/rens_hoodie.png"
 
   return (
     <Transition>
