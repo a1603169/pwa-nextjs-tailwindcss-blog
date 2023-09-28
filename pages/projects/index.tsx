@@ -15,7 +15,7 @@ export default function ProjectsPage() {
   const imagePathRens = "/assets/rens_original.png"
   const imagePathNomad = "/assets/rens_nomad.png"
   const imagePathNFT = "/assets/rens_nft.png"
-  const imagePathHoodie = "/assets/rens_hoodie.png"
+  const imagePathHoodie = "/assets/rens_hoodie.jpg"
 
   return (
     <Transition>
