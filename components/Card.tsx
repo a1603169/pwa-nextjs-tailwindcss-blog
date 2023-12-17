@@ -17,13 +17,13 @@ export default function Card({
   disabled,
 }: CardProps) {
   return disabled ? (
-    <Link href={"/disabled"}>
-      <div className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 border-2 border-indigo-400 border-solid max-h-24 hover:bg-indigo-50">
+    <Link href={"/disabled"} className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 border-2 border-indigo-400 border-solid max-h-24 hover:bg-red-50">
+      <div className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 hover:bg-red-50 hover:scale-125">
         {image && (
           <Image
             src={image}
             alt="test"
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
+            className="absolute inset-0 w-full h-full object-cover opacity-20 transition-all"
             width={500}
             height={300}
           />
@@ -38,13 +38,13 @@ export default function Card({
       </div>
     </Link>
   ) : (
-    <Link target={"_BLANK"} href={href}>
-      <div className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 border-2 border-indigo-400 border-solid max-h-24 hover:bg-indigo-50">
+    <Link target={"_blank"} href={href} className="py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 border-2 border-indigo-400 border-solid max-h-24 hover:bg-indigo-50">
+      <div className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 hover:bg--50 hover:scale-125">
         {image && (
           <Image
             src={image}
             alt="test"
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
+            className="absolute inset-0 w-full h-full object-cover opacity-20 transition-all"
             width={500}
             height={300}
           />
