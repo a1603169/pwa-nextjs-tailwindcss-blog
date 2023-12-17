@@ -25,6 +25,7 @@ export default function ProjectsPage() {
           description="Bitcoin Investment Simulation App with ReactJS"
           href="https://github.com/a1603169/FRINCOIN_simulated_bitcoin_investment_app"
           image={imagePathFrincoin}
+          disabled={true}
         />
         <Card
           title="NEW YEAR FORUM"
@@ -61,44 +62,52 @@ export default function ProjectsPage() {
           description="LiquidJS + Shopify + APIs Integrations"
           href="https://rensoriginal.eu"
           image={imagePathRens}
+          disabled={true}
         />
         <Card
           title="NFT LP / Rens Original"
           description="Shopify + Webflow + (HTML + CSS + JS)"
           href="https://rensoriginal.eu/pages/nft"
           image={imagePathNFT}
+          disabled={true}
         />
         <Card
           title="HOODIE LP / Rens Original"
           description="Shopify + Webflow + (HTML + CSS + JS)"
           href="https://rensoriginal.eu/pages/elemental-hoodie"
           image={imagePathHoodie}
+          disabled={true}
         />
         <Card
           title="NOMAD LP / Rens Original"
           description="Shopify + Webflow + (HTML + CSS + JS)"
           href="https://rensoriginal.eu/pages/nomad"
           image={imagePathNomad}
+          disabled={true}
         />
         <Card
           title="BEESH LP / Beesh"
           description="React + Bootstrap"
           href="https://beesh.fi"
+          disabled={true}
         />
         <Card
           title="DEV.INTERVIEW QUIZ / WIP"
           description="NextJS + TailwindCSS + TypeScript + APIs"
           href="https://github.com/a1603169/frontend_quiz"
+          disabled={true}
         />
         <Card
           title="FACE ATTENDANCE / WIP"
           description="Using Three JS + Face API"
           href="https://github.com/a1603169/face-attendance-3js.git"
+          disabled={true}
         />
         <Card
           title="MOBILE MINI GAME"
           description="React Native + Expo"
           href="https://github.com/a1603169/mini-game-app-react-native"
+          disabled={true}
         />
       </div>
       <style jsx>{`
