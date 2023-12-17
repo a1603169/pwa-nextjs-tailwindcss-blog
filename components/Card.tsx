@@ -18,14 +18,14 @@ export default function Card({
 }: CardProps) {
   return disabled ? (
     <Link href={"/disabled"} className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 border-2 border-indigo-400 border-solid max-h-24 hover:bg-red-50">
-      <div className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 hover:bg-red-50 hover:scale-125">
+      <div className="relative py-32 w-96 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 hover:bg-red-50 hover:scale-125">
         {image && (
           <Image
             src={image}
             alt="test"
             className="absolute inset-0 w-full h-full object-cover opacity-20 transition-all"
-            width={500}
-            height={300}
+            width={1000}
+            height={1000}
           />
         )}
         <div className="px-5 relative">
@@ -39,7 +39,7 @@ export default function Card({
     </Link>
   ) : (
     <Link target={"_blank"} href={href} className="py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 border-2 border-indigo-400 border-solid max-h-24 hover:bg-indigo-50">
-      <div className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 hover:bg--50 hover:scale-125">
+      <div className="relative py-32 w-96 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-500 hover:bg--50 hover:scale-125">
         {image && (
           <Image
             src={image}
