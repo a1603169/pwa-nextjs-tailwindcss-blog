@@ -127,6 +127,15 @@ export default function Layout({ children }: layoutProps) {
               <li
                 className={
                   "mb-5 transition duration-500 hover:text-indigo-500" +
+                  (router.pathname === "/blog" ? " text-indigo-500" : "")
+                }
+                onClick={toggleMenu}
+              >
+                <Link href="/blog">BLOG</Link>
+              </li>
+              <li
+                className={
+                  "mb-5 transition duration-500 hover:text-indigo-500" +
                   (router.pathname === "/contact" ? " text-indigo-500" : "")
                 }
                 onClick={toggleMenu}

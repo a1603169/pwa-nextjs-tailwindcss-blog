@@ -1,6 +1,7 @@
 import Transition from "@/components/Transition";
 import { GiSouthKorea } from "react-icons/gi";
 import { FaJava } from "react-icons/fa";
+import { EXPERIENCES } from "@/data/experiences";
 import {
   SiSass,
   SiReact,
@@ -20,43 +21,6 @@ import {
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 
-const EXPERIENCES = [
-  {
-    title: "Korea Army",
-    date: "2018.07.31 - 2020.03.19",
-    description: "Sergeant",
-  },
-  {
-    title: "Suomen Sulkapalloliitto",
-    date: "2020.08.31 - 2023.06.30",
-    description: "Freelance Interpreter",
-  },
-  {
-    title: "KISED",
-    date: "2020.08.31 - 2023.06.30",
-    description: "Freelance Interpreter",
-  },
-  {
-    title: "Beesh Oy",
-    date: "2021.07.01 - 2021.10.31",
-    description: "Software Developer",
-  },
-  {
-    title: "Rens Original Oy",
-    date: "2021.11.01 - 2022.05.30",
-    description: "Frontend Developer",
-  },
-  {
-    title: "Haaga-Helia",
-    date: "2016.08.31 - 2023.06.30",
-    description: "Bachelor IT Business",
-  },
-  {
-    title: "新明工業株式会社",
-    date: "2023.09.01 - CURRENT",
-    description: "Software Engineer",
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -83,7 +47,7 @@ export default function AboutPage() {
           <br className="my-14" />
           <div>
             <h1 className="text-4xl mb-3 max-lg:text-3xl">{`<SKILLS>`}</h1>
-            <div className="grid grid-cols-4 gap-5 text-2xl">
+            <div className="grid grid-cols-4 gap-5 text-2xl max-lg:grid-cols-3">
               <div className="flex items-center max-lg:text-lg max-md:text-xs">
                 <SiReact />: ReactJS
               </div>
@@ -146,7 +110,7 @@ export default function AboutPage() {
           <br className="my-14" />
           <div>
             <h1 className="text-4xl mb-3 max-lg:text-3xl">{`<EXPERIENCES>`}</h1>
-            <ul className="text-2xl max-lg:text-lg">
+            <ul className="text-2xl max-lg:text-lg max-md:text-xs">
               <div className="grid gap-6 grid-flow-row">
                 {EXPERIENCES.map((experience, idx) => (
                   <li key={idx} className="flex flex-col justify-between dire">
