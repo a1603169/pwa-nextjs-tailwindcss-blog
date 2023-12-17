@@ -135,7 +135,7 @@ export default function Layout({ children }: layoutProps) {
         </nav>
       </div>
 
-      <main className="pb-10 pt-5">{children}</main>
+      <main className="pb-10 pt-14">{children}</main>
 
       <footer className="fixed bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
         <SocialLinks />
