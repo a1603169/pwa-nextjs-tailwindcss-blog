@@ -133,7 +133,7 @@ export default function Layout({ children }: layoutProps) {
 
       <main className="pb-10 pt-14">{children}</main>
 
-      <footer className="fixed! bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
+      <footer className="fixed bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang
