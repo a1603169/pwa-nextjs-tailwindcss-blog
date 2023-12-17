@@ -4,14 +4,11 @@ import { useRouter } from "next/router";
 import Loading from "./Loading";
 
 export default function Form() {
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [success, setSuccess] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>(false);
-  const [isNameValid, setIsNameValid] = useState<boolean>(false);
-  const [isEmailValid, setIsEmailValid] = useState<boolean>(false);
-  const [isMessageValid, setIsMessageValid] = useState<boolean>(false);
-  // const [errorMessage, setErrorMessage] = useState<string[]>([]);
-  // This is for update feature (Adding error Message in string[] and display it in the alert box & form box under the input box in the future)
+  const [isLoading, setIsLoading] = useState<boolean | null>(false);
+  const [success, setSuccess] = useState<boolean | null>(false);
+  const [isNameValid, setIsNameValid] = useState<boolean | null>(false);
+  const [isEmailValid, setIsEmailValid] = useState<boolean | null>(false);
+  const [isMessageValid, setIsMessageValid] = useState<boolean | null>(false);
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
@@ -22,18 +19,10 @@ export default function Form() {
     e.preventDefault();
     const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
     if (emailRegex.test(emailRef.current?.value as string)) {
-      console.log("email is valid");
       setIsEmailValid(true);
-      console.log(isEmailValid);
-    } else {
-      console.log("email is invalid");
     }
     if (nameRef.current?.value !== "") {
-      console.log("name is valid");
       setIsNameValid(true);
-      console.log(isNameValid);
-    } else {
-      console.log("name is invalid");
     }
     return;
   };
@@ -42,12 +31,8 @@ export default function Form() {
     e: React.FocusEvent<HTMLTextAreaElement>
   ): void => {
     if (messageRef.current?.value !== "") {
-      console.log("message is valid");
       setIsMessageValid(true);
-    } else {
-      console.log("message is invalid");
     }
-    console.log(isMessageValid);
     return;
   };
 
@@ -58,9 +43,12 @@ export default function Form() {
     console.log(isNameValid, isEmailValid, isMessageValid);
     if (!isNameValid || !isEmailValid || !isMessageValid) {
       alert(
-        "Please fill in all fields correctly before submitting. It should not be empty and correct form."
+        `Please fill in folloiwing field(s) ${isNameValid ? "" : "[Name]"} ${
+          isEmailValid ? "" : "[Email]"
+        } ${
+          isMessageValid ? "" : "[Message]"
+        } correctly before submitting. It should not be empty and correct form.`
       );
-      setError(false);
       return;
     } else {
       console.log("submit");
@@ -97,10 +85,8 @@ export default function Form() {
   };
 
   if (success) {
-    setTimeout(() => {
-      setSuccess(false);
-      router.push("/success");
-    }, 3000);
+    setSuccess(false);
+    router.push("/success");
   }
 
   return (
