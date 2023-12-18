@@ -15,6 +15,10 @@ export default function Post({
     <>
     <Head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-coy-without-shadows.min.css" rel="stylesheet" />
+        <title>{postData.title}</title>
+        <meta name="description" content={postData.title} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
     <article className="flex flex-col items-center justify-center text-xl gap-5 pb-14">
       <div className="flex justify-between w-11/12 items-center">
