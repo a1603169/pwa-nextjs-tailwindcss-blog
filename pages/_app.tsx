@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <WebLayout>
-        <Component {...pageProps} />
+        <Component {...pageProps} className="relative h-[calc(100vh - 248px)]"/>
       </WebLayout>
     </>
   );

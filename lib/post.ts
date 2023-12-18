@@ -2,16 +2,12 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import {remark} from "remark"; // 수정된 부분
+import {remark} from "remark";
 import html from "remark-html";
-import prism from "remark-prism"; // 수정된 부분
-// import prism from 'remark-prism';
-import remarkRehype from "remark-rehype";
-import { unified } from "unified";
+import prism from "remark-prism"; 
 
-// const unified = require('unified');
 const postsDirectory = path.join(process.cwd(), "./pages/blog/contents");
-
+const prismPlugin: any = prism;
 export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -40,8 +36,7 @@ export async function getPostData(id: string) {
   const matterResult = matter(fileContents);
   const processedContent = await remark()
   .use(html, { sanitize: false })
-  .use(prism)
-  // .use(require('remark-prism'))
+  .use(prismPlugin)
   .process(matterResult.content);
 
   const contentHtml = processedContent.toString();

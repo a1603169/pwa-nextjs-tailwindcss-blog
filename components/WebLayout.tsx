@@ -146,9 +146,9 @@ export default function Layout({ children }: layoutProps) {
           </div>
         </nav>
       </div>
-
-      <main className="pb-20 pt-20">{children}</main>
-
+      {/* This has to be based on viewheights */}
+      <main className="pt-5 pb-40">{children}</main>
+      {/*  */}
       <footer className="fixed bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
