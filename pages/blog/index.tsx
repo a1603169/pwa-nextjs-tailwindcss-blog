@@ -19,7 +19,10 @@ export default function Blog({
           {allPostsData.map(({ id, date, title }) => {
             return (
               <li key={id}>
-                <Link className="flex items-center transition-all duration-300 border-indigo-300 border-b-2 border-solid justify-between hover:bg-indigo-300 hover:text-indigo-50 hover:rounded-t-lg hover:pt-5" href={`/blog/contents/${id}`}>
+                <Link
+                  className="flex items-center transition-all duration-300 border-indigo-300 border-b-2 border-solid justify-between hover:bg-indigo-300 hover:text-indigo-50 hover:rounded-t-lg hover:pt-5"
+                  href={`/blog/${id}`}
+                >
                   <h2 className="mx-2">{title}</h2>
                   <p className="text-xs mx-2">{date}</p>
                 </Link>
