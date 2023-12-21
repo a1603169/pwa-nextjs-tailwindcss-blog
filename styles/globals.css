@@ -1,3 +1,14 @@
+code {
+  font-size: 0.9em; /* 또는 원하는 크기 */
+  background-color: #f5f5f5; /* 배경색 */
+  padding: 2px 4px; /* 패딩 */
+  border-radius: 4px; /* 테두리 둥글게 */
+}
+
+h3 {
+  background-color: red
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;

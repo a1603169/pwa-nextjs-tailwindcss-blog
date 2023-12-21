@@ -1,7 +1,7 @@
 ---
 title: 'Angular의 디렉티브를 React개념으로 이해해보자'
 date: '2023-12-18'
-tags: []
+tags: ['JavaScript', 'Angular', 'React','FE']
 ---
 
 Angular에서 디렉티브(Directives)는 DOM 요소의 모양, 동작 또는 레이아웃을 조작하는데 사용되는 특수한 토큰입니다. 이들은 HTML 태그에 속성으로 추가되어, 해당 태그의 동작을 Angular의 로직으로 확장하거나 변경합니다.
@@ -101,9 +101,7 @@ export class HighlightDirective implements OnInit {
 ```
 
 이 예시에서 `*ngIf`와 `*ngFor`는 Angular에서 제공하는 내장 디렉티브이며, `appHighlight`는 사용자가 정의한 디렉티브입니다. 이러한 디렉티브들을 통해 동적인 UI와 상호작용을 구현할 수 있습니다.
-<br/>
----
-<br/>
+
 Angular CLI의 `ng generate directive` 명령어는 새로운 사용자 정의 디렉티브를 생성할 때 사용됩니다. 이 명령은 프로젝트에 새로운 디렉티브를 추가하고, 필요한 초기 설정을 자동으로 구성해줍니다. 
 
 매번 새로운 사용자 정의 디렉티브를 만들 때마다 `ng generate directive` 명령어를 사용해야 하는지 여부는, 당신이 개발하고자 하는 기능에 따라 달라집니다:
@@ -115,6 +113,4 @@ Angular CLI의 `ng generate directive` 명령어는 새로운 사용자 정의 �
 3. **Angular 내장 디렉티브 사용**: `*ngIf`, `*ngFor`, `ngClass`, `ngStyle`과 같은 Angular의 기본 제공 디렉티브는 이미 프레임워크에 포함되어 있으므로, 별도로 생성할 필요가 없습니다.
 
 즉, 각기 다른 기능이나 행동을 요소에 적용하고자 할 때마다 새로운 디렉티브를 생성해야 합니다. 그러나 한 번 생성된 디렉티브는 재사용이 가능하므로, 유사한 기능이 필요할 경우 기존의 디렉티브를 활용하는 것이 좋습니다.
-<br/>
 
-<br/>

@@ -15,7 +15,7 @@ export default function Blog({
     <Transition>
       <section className="flex flex-col items-center text-2xl text-indigo-300">
         <h1 className="text-3xl mb-5">THIS WILL BE FILTERING</h1>
-        <ul className="flex w-3/4 max-h-128 flex-col gap-5 border-2 border-indigo-300 border-solid p-5 rounded-xl overflow-scroll">
+        <ul className="flex w-3/4 max-h-128 flex-col gap-5 border-2 border-indigo-300 border-solid p-5 rounded-xl overflow-scroll max-md:text-sm">
           {allPostsData.map(({ id, date, title }) => {
             return (
               <li className="hover:shadow-xl shadow-indigo-500/50" key={id}>
@@ -24,7 +24,7 @@ export default function Blog({
                   href={`/blog/${id}`}
                 >
                   <h2 className="mx-2 truncate">{title}</h2>
-                  <p className="text-xs mx-2">{date}</p>
+                  <p className="text-xs mx-2 whitespace-nowrap">{date}</p>
                 </Link>
               </li>
             );

@@ -3,6 +3,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import {remark} from "remark";
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
 import html from "remark-html";
 import prism from "remark-prism"; 
 
@@ -36,6 +38,8 @@ export async function getPostData(id: string) {
   const matterResult = matter(fileContents);
   const processedContent = await remark()
   .use(html, { sanitize: false })
+  // .use(remarkParse)
+  // .use(remarkRehype)
   .use(prismPlugin)
   .process(matterResult.content);
 

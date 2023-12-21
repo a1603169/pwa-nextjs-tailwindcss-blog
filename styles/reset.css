@@ -132,6 +132,40 @@ table {
   border-spacing: 0;
 }
 
+/* Manually Fixed */
 footer {
   position: fixed !important;
+}
+
+code:not([class]) {
+  font-size: 0.9em;
+  color: rgba(219, 68, 85, 0.9);
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+h3:not([class]) {
+  font-size: 1.3em;
+  margin: .5em 0;
+}
+
+h2:not([class]){
+  font-size: 1.4em;
+  margin: .5em 0;
+}
+
+p:not([class]){
+  margin-top: .5em;
+}
+
+.blogLink {
+  color: rgba(99, 102, 241,  0.5);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all .3s ease-in;
+}
+
+.blogLink:hover {
+  color: red;
 }
