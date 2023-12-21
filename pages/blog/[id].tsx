@@ -25,12 +25,12 @@ export default function Post({
       </Head>
       <article className="flex flex-col items-center justify-center text-xl gap-5 pb-14 max-w-700 w-full my-0 mx-auto px-2">
         <div className="flex flex-col w-full items-start">
-          <p className="whitespace-nowrap">{postData.date}</p>
           <h1 className="text-3xl w-full">{postData.title}</h1>
+          <p className="whitespace-nowrap">{postData.date}</p>
           <ul className="flex gap-2">
             {postData.tags.map((tag, idx) => {
               return (
-                <li key={idx} className="whitespace-nowrap bg-slate-400  text-slate-50 py-0.5 px-2 rounded-lg">
+                <li key={idx} className="whitespace-nowrap bg-slate-400  text-slate-50 py-0.5 px-2 rounded-lg text-sm">
                   {tag}
                 </li>
               );
