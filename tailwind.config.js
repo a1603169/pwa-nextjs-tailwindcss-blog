@@ -26,7 +26,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {},
-    extend: {},
+    extend: {
+      maxHeight: {
+        '128': '32rem'
+      },
+      maxWidth: {
+        '700': '700px'
+      }
+    },
   },
   plugins: [flipping_card],
 };
