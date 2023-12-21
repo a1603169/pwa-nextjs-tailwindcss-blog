@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>NOT JUST A DEVELOPER</title>
-        <meta name="description" content="Never doubt yourself" />
+        <meta name="description" content="Welcome to my world. I am a Software Engineer who always find something funny!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
