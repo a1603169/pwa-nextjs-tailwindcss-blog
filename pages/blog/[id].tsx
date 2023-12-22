@@ -44,8 +44,8 @@ export default function Post({
 
   useLayoutEffect(() => {
     // Add id by its content on all h3 tags for anchor links 
-    const h3s = document.querySelectorAll("h3");
-    const newH3Ids: string[] = [];
+    let h3s = document.querySelectorAll("h3");
+    let newH3Ids: string[] = [];
     h3s.forEach((h3) => {
       const id = h3.textContent?.toLowerCase().replace(/\s/g, "-");
       h3.setAttribute("id", id!);
@@ -58,8 +58,7 @@ export default function Post({
     //   newH3Ids.push(strong.id);
     // });
     setH3Ids(newH3Ids);
-  }, []);
-
+  }, [postData.contentHtml]);
   return (
     <>
       <Head>
