@@ -38,7 +38,7 @@ export default function Layout({ children }: layoutProps) {
                   (router.pathname === "/" ? logoStyleActive : logoStyle)
                 }>DAVID.BANG</Link>
             </div>
-            <div className="flex justify-between max-sm:hidden">
+            <div className="flex justify-between max-md:hidden">
               <li
                 className={
                   router.pathname === "/projects" ? linkStyleActive : linkStyle
