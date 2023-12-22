@@ -13,7 +13,7 @@ export default function SocialLinks() {
             <AiFillGithub className="text-4xl mr-3 text-indigo-300 transition duration-500 hover:text-indigo-500  " />
           </a>
           <a
-            href="https://fi.linkedin.com/in/bang-seunghun-18a465204/"
+            href="https://www.linkedin.com/in/seunghun-bang-18a465204/"
             target="_blank"
             rel="noreferrer"
           >
