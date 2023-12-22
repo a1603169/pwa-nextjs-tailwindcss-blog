@@ -27,6 +27,10 @@ export default function Layout({ children }: layoutProps) {
     setIsOpen(!isOpen);
   }
 
+  useEffect(() => {
+    setIsOpen(false);
+  }, [router]);
+
   return (
     <>
       <div className="sticky top-0 left-0 right-0 border-solid border-b-2 border-indigo-300 text-indigo-300 backdrop-blur-lg z-50">
@@ -147,9 +151,9 @@ export default function Layout({ children }: layoutProps) {
         </nav>
       </div>
       {/* This has to be based on viewheights */}
-      <main className="py-10 mt-20">{children}</main>
+      <main className="py-10">{children}</main>
       {/*  */}
-      <footer className="relative backdrop-blur-lg">
+      <footer className="sticky bottom-0 right-0 left-0 backdrop-blur-lg">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang

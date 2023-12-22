@@ -6,6 +6,7 @@ tags: ['JavaScript', 'Angular','FE']
 
 RxJS (Reactive Extensions for JavaScript)는 비동기 및 이벤트 기반 프로그래밍을 위한 JavaScript 라이브러리입니다. RxJS는 데이터 스트림과 변화를 관리하는 강력한 방법을 제공하며, 특히 복잡한 비동기 코드를 쉽게 구성하고, 다룰 수 있도록 도와줍니다.
 
+
 ### RxJS의 핵심 개념
 
 1. **Observable**: 데이터의 스트림을 나타냅니다. Observable은 시간이 지남에 따라 여러 값을 방출할 수 있습니다.
