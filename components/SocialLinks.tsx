@@ -10,21 +10,21 @@ export default function SocialLinks() {
             target="_blank"
             rel="noreferrer"
           >
-            <AiFillGithub className="text-4xl mr-3 text-indigo-300 transition duration-500 hover:text-indigo-500  " />
+            <AiFillGithub className="text-4xl mr-3 text-indigo-300 transition duration-300 hover:text-indigo-500  " />
           </a>
           <a
             href="https://www.linkedin.com/in/seunghun-bang-18a465204/"
             target="_blank"
             rel="noreferrer"
           >
-            <AiFillLinkedin className="text-4xl mr-3 text-indigo-300 transition duration-500 hover:text-indigo-500  " />
+            <AiFillLinkedin className="text-4xl mr-3 text-indigo-300 transition duration-300 hover:text-indigo-500  " />
           </a>
           <a
             href="https://www.instagram.com/seunghun_bang/"
             target="_blank"
             rel="noreferrer"
           >
-            <AiFillInstagram className="text-4xl mr-3 text-indigo-300 transition duration-500 hover:text-indigo-500  " />
+            <AiFillInstagram className="text-4xl mr-3 text-indigo-300 transition duration-300 hover:text-indigo-500  " />
           </a>
         </div>
       </div>

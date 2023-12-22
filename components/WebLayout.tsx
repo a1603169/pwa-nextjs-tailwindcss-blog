@@ -9,16 +9,16 @@ interface layoutProps {
 }
 
 const logoStyle: string =
-  "border-solid border-2 border-indigo-300 p-2 ease-in duration-500 hover:text-indigo-500 hover:border-indigo-500 hover:scale-90";
+  "border-solid border-2 border-indigo-300 p-2 ease-in duration-300 hover:text-indigo-500 hover:border-indigo-500 hover:scale-90";
 const logoStyleActive: string =
-  "ease-in duration-500 border-solid border-2 border-indigo-300 p-2 text-indigo-50 bg-indigo-500 hover:scale-90";
+  "ease-in duration-300 border-solid border-2 border-indigo-300 p-2 text-indigo-50 bg-indigo-500 hover:scale-90";
 const linkStyle: string =
-  "p-1 ease-in duration-500 mr-5 hover:text-indigo-500 ";
+  "p-1 ease-in duration-300 mr-5 hover:text-indigo-500 ";
 const linkStyleActive: string = "p-1 text-indigo-500 mr-5 ";
 const hamburgerButton: string =
-  "ease-in duration-500 flex items-center px-4 py-4 border-2 rounded-xl text-indigo-300 border-indigo-300 hover:bg-indigo-500 hover:text-indigo-50 hover:border-indigo-400";
+  "ease-in duration-300 flex items-center p-1 rounded-xl text-indigo-300 border-indigo-300 hover:bg-indigo-500 hover:text-indigo-50 hover:border-indigo-400";
 const hamburgerButtonActive: string =
-  "ease-in duration-500 flex items-center px-4 py-4 border-2 rounded-xl bg-indigo-500 text-indigo-50 border-indigo-400";
+  "ease-in duration-300 flex items-center p-1 rounded-xl bg-indigo-500 text-indigo-50 border-indigo-400";
 export default function Layout({ children }: layoutProps) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -77,7 +77,7 @@ export default function Layout({ children }: layoutProps) {
                 <Link href="/contact">CONTACT</Link>
               </li>
             </div>
-            <div className="hidden max-sm:block">
+            <div className="hidden max-md:block">
               <button
                 className={isOpen ? hamburgerButtonActive : hamburgerButton}
                 onClick={toggleMenu}
@@ -93,10 +93,10 @@ export default function Layout({ children }: layoutProps) {
             </div>
           </ul>
           <div className={isOpen ? "" : "hidden"}>
-            <ul className="hidden justify-center items-center flex-col text-2xl max-sm:flex">
+            <ul className="hidden justify-center items-center flex-col text-2xl max-md:flex">
               <li
                 className={
-                  "my-5 transition duration-500 hover:text-indigo-500" +
+                  "my-5 transition duration-300 hover:text-indigo-500" +
                   (router.pathname === "/projects" ? " text-indigo-500" : "")
                 }
                 onClick={toggleMenu}
@@ -105,7 +105,7 @@ export default function Layout({ children }: layoutProps) {
               </li>
               <li
                 className={
-                  "mb-5 transition duration-500 hover:text-indigo-500" +
+                  "mb-5 transition duration-300 hover:text-indigo-500" +
                   (router.pathname === "/about" ? " text-indigo-500" : "")
                 }
                 onClick={toggleMenu}
@@ -113,7 +113,7 @@ export default function Layout({ children }: layoutProps) {
                 <Link href="/about">ABOUT</Link>
               </li>
               <li
-                className={"mb-5 transition duration-500 hover:text-indigo-500"}
+                className={"mb-5 transition duration-300 hover:text-indigo-500"}
                 onClick={toggleMenu}
               >
                 <a
@@ -126,7 +126,7 @@ export default function Layout({ children }: layoutProps) {
               </li>
               <li
                 className={
-                  "mb-5 transition duration-500 hover:text-indigo-500" +
+                  "mb-5 transition duration-300 hover:text-indigo-500" +
                   (router.pathname === "/blog" ? " text-indigo-500" : "")
                 }
                 onClick={toggleMenu}
@@ -135,7 +135,7 @@ export default function Layout({ children }: layoutProps) {
               </li>
               <li
                 className={
-                  "mb-5 transition duration-500 hover:text-indigo-500" +
+                  "mb-5 transition duration-300 hover:text-indigo-500" +
                   (router.pathname === "/contact" ? " text-indigo-500" : "")
                 }
                 onClick={toggleMenu}

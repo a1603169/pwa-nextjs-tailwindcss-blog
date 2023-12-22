@@ -51,11 +51,6 @@ export default function Post({
       h3.setAttribute("id", id!);
       newH3Ids.push(h3.id);
     });
-    // strongs.forEach((strong) => {
-    //   const id = strong.textContent?.toLowerCase().replace(/\s/g, "-");
-    //   strong.setAttribute("id", id!);
-    //   newH3Ids.push(strong.id);
-    // });
     setH3Ids(newH3Ids);
   }, [postData.contentHtml]);
   return (
