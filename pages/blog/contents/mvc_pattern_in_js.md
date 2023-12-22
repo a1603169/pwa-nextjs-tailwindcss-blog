@@ -6,7 +6,7 @@ tags: ['FE', 'BE', 'CS', 'General']
 
 MVC (Model-View-Controller) 패턴을 사용하여 간단한 투두 리스트를 구현한 JavaScript 코드를 보여드리겠습니다. 이 코드는 투두 리스트의 항목을 추가하고 삭제하는 간단한 기능을 구현합니다.
 
-**모델 (Model):**
+### **모델 (Model):**
 모델은 투두 리스트 항목을 저장하고 관리합니다.
 
 ```javascript
@@ -29,7 +29,7 @@ class TodoModel {
 }
 ```
 
-**뷰 (View):**
+### **뷰 (View):**
 뷰는 투두 리스트를 표시하고 사용자 인터페이스와 상호 작용합니다.
 
 ```javascript
@@ -66,7 +66,7 @@ class TodoView {
 }
 ```
 
-**컨트롤러 (Controller):**
+### **컨트롤러 (Controller):**
 컨트롤러는 사용자 입력을 처리하고 모델 및 뷰 간의 상호 작용을 조정합니다.
 
 ```javascript
@@ -90,7 +90,7 @@ class TodoController {
 }
 ```
 
-HTML에서 불러오기:
+### HTML에서 불러오기:
 
 ```html
 <div>

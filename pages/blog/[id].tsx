@@ -50,6 +50,7 @@ export default function Post({
       const id = h3.textContent?.toLowerCase().replace(/\s/g, "-");
       h3.setAttribute("id", id!);
       newH3Ids.push(h3.id);
+      console.log(h3.id)
     });
     // strongs.forEach((strong) => {
     //   const id = strong.textContent?.toLowerCase().replace(/\s/g, "-");
@@ -74,15 +75,15 @@ export default function Post({
       <article className="relative flex flex-col justify-center text-xl gap-5 pb-14 max-w-800 w-full my-0 mx-auto px-2">
       {h3Ids.length > 0 ?
           (
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-3">
               <h2 className="text-slate-500">INDEX</h2>
               {h3Ids.map((idtag, idx) => {
                 return (
                   <li
                     key={idx}
-                    className="truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-sm"
+                    className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-xl hover:shadow-lg"
                   >
-                    <a href={`#${idtag}`}>{idtag}</a>
+                    <a className="block" href={`#${idtag}`}>{idtag}</a>
                   </li>
                 );
               })}

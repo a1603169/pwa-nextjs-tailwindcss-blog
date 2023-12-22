@@ -132,6 +132,12 @@ table {
   border-spacing: 0;
 }
 
+/* From here, all of it is manual */
+
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
   max-height: 110px;
 }
