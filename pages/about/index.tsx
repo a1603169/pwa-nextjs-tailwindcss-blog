@@ -25,7 +25,7 @@ import { FaNodeJs } from "react-icons/fa";
 export default function AboutPage() {
   return (
     <Transition>
-      <div className="flex pb-40 mx-5">
+      <div className="flex pb-5 mx-5">
         <div className="flex flex-col justify-center items-start text-indigo-400">
           <div>
             <h1 className="text-4xl mb-3 max-lg:text-3xl">{`<NAME>`}</h1>

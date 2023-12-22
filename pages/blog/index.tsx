@@ -12,6 +12,7 @@ export default function Blog({
   }[];
 }) {
   return (
+    
     <Transition>
       <section className="flex flex-col items-center text-2xl text-indigo-300 pb-20">
         <h1 className="text-3xl mb-5">THIS WILL BE FILTERING</h1>
