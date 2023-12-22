@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/post";
 import Transition from "@/components/Transition";
+import Filters from "@/components/Filters";
 
 export default function Blog({
   allPostsData,
@@ -15,7 +16,7 @@ export default function Blog({
     
     <Transition>
       <section className="flex flex-col items-center text-2xl text-indigo-300 pb-20">
-        <h1 className="text-3xl mb-5">THIS WILL BE FILTERING</h1>
+        <Filters />
         <ul className="flex w-3/4 max-h-128 flex-col gap-5 border-2 border-indigo-300 border-solid p-5 rounded-xl overflow-scroll max-md:text-sm">
           {allPostsData.map(({ id, date, title }) => {
             return (
