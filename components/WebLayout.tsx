@@ -27,19 +27,22 @@ export default function Layout({ children }: layoutProps) {
     setIsOpen(!isOpen);
   }
 
+  const [isTop, setIsTop] = useState(true);
   const [isBottom, setIsBottom] = useState(false);
-
+  
   useEffect(() => {
-  const handleScroll = () => {
-    const isBottom = window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight;
-    setIsBottom(true);
-  };
-
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    const handleScroll = () => {
+      const isTop = window.scrollY === 0;
+      const isBottom = window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight;
+      setIsTop(isTop);
+      setIsBottom(isBottom);
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     setIsOpen(false);
@@ -166,8 +169,7 @@ export default function Layout({ children }: layoutProps) {
       </div>
       {/* This has to be based on viewheights */}
       <main className={`py-10 ${isBottom ? '' : 'pb-20'}`}>{children}</main>
-      {/*  */}
-      <footer className={`${isBottom ? 'relative'  : 'fixed'} bottom-0 right-0 left-0 backdrop-blur-lg z-50`}>
+      <footer className={`${isTop ? 'fixed' : 'relative'} bottom-0 right-0 left-0 backdrop-blur-lg z-50`}>
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang
