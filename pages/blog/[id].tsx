@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 import { getPostData, getSortedPostsData } from "@/lib/post";
 import Head from "next/head";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Post({
   postData,
@@ -42,7 +42,7 @@ export default function Post({
 
   const [h3Ids, setH3Ids] = useState<string[]>([]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     // Add id by its content on all h3 tags for anchor links 
     let h3s = document.querySelectorAll("h3");
     let newH3Ids: string[] = [];
@@ -71,7 +71,7 @@ export default function Post({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <article className="relative flex flex-col justify-center text-xl gap-5 pb-14 max-w-800 w-full my-0 mx-auto px-2">
+      <article className="relative flex flex-col justify-center text-xl gap-5 pb-14 max-w-800 w-full my-0 mx-auto px-2 max-md:text-sm">
       {h3Ids.length > 0 ?
           (
             <ul className="flex flex-col gap-3">
@@ -80,7 +80,7 @@ export default function Post({
                 return (
                   <li
                     key={idx}
-                    className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-xl hover:shadow-lg"
+                    className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-xl hover:shadow-lg max-md:text-sm"
                   >
                     <a className="block" href={`#${idtag}`}>{idtag}</a>
                   </li>
@@ -91,7 +91,7 @@ export default function Post({
            :
            null }
         <div className="flex flex-col w-full items-start">
-          <h1 className="text-3xl w-full">{postData.title}</h1>
+          <h1 className="text-3xl w-full max-md:text-lg">{postData.title}</h1>
           <p className="whitespace-nowrap">{postData.date}</p>
           <ul className="flex gap-2">
             {postData.tags.map((tag, idx) => {
