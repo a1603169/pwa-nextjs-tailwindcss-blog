@@ -153,7 +153,7 @@ export default function Layout({ children }: layoutProps) {
       {/* This has to be based on viewheights */}
       <main className="py-10 pb-32">{children}</main>
       {/*  */}
-      <footer className="fixed bottom-0 right-0 left-0 backdrop-blur-lg">
+      <footer className="fixed bottom-0 right-0 left-0 backdrop-blur-lg z-50">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang
