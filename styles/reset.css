@@ -132,9 +132,8 @@ table {
   border-spacing: 0;
 }
 
-/* Manually Fixed */
 footer {
-  position: fixed !important;
+  max-height: 110px;
 }
 
 code:not([class]) {

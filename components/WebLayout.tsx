@@ -29,8 +29,8 @@ export default function Layout({ children }: layoutProps) {
 
   return (
     <>
-      <div className="border-solid border-b-2 border-indigo-300 text-indigo-300 my-2">
-        <nav className="font-sans backdrop-blur-lg">
+      <div className="fixed top-0 left-0 right-0 border-solid border-b-2 border-indigo-300 text-indigo-300 backdrop-blur-lg z-50">
+        <nav className="font-sans">
           <ul className="flex p-5 text-2xl justify-between items-center font-sans ">
             <div>
                 <Link href="/" className={
@@ -147,9 +147,9 @@ export default function Layout({ children }: layoutProps) {
         </nav>
       </div>
       {/* This has to be based on viewheights */}
-      <main className="pt-5 pb-40">{children}</main>
+      <main className="py-10 mt-20">{children}</main>
       {/*  */}
-      <footer className="fixed bottom-0 right-0 left-0 max-lg:relative backdrop-blur-lg">
+      <footer className="relative backdrop-blur-lg">
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang
