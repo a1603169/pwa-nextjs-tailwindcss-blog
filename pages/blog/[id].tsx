@@ -50,7 +50,6 @@ export default function Post({
       const id = h3.textContent?.toLowerCase().replace(/\s/g, "-");
       h3.setAttribute("id", id!);
       newH3Ids.push(h3.id);
-      console.log(h3.id)
     });
     // strongs.forEach((strong) => {
     //   const id = strong.textContent?.toLowerCase().replace(/\s/g, "-");
