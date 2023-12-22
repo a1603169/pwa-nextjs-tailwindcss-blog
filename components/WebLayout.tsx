@@ -27,6 +27,20 @@ export default function Layout({ children }: layoutProps) {
     setIsOpen(!isOpen);
   }
 
+  const [isBottom, setIsBottom] = useState(false);
+
+  useEffect(() => {
+  const handleScroll = () => {
+    const isBottom = window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight;
+    setIsBottom(true);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   useEffect(() => {
     setIsOpen(false);
   }, [router]);
@@ -151,9 +165,9 @@ export default function Layout({ children }: layoutProps) {
         </nav>
       </div>
       {/* This has to be based on viewheights */}
-      <main className="py-10 pb-32">{children}</main>
+      <main className={`py-10 ${isBottom ? '' : 'pb-20'}`}>{children}</main>
       {/*  */}
-      <footer className="fixed bottom-0 right-0 left-0 backdrop-blur-lg z-50">
+      <footer className={`${isBottom ? 'relative'  : 'fixed'} bottom-0 right-0 left-0 backdrop-blur-lg z-50`}>
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2023 Seunghun David Bang
