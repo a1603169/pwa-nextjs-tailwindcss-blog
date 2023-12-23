@@ -27,8 +27,6 @@ tags: ['Java', 'BE']
 
 Java에서 추상 클래스와 오버라이딩의 예시는 다음과 같습니다:
 
-javaCopy code
-
 ```Java
 abstract class Animal {
     abstract void makeSound();
