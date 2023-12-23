@@ -5,7 +5,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <Transition_Slower>
-      <div className="text-indigo-400 mx-2 pt-10">
+      <div className="text-indigo-400 mx-2">
         <div className="flex justify-center items-center text-center flex-col">
           <h1 className="text-7xl max-md:text-2xl"> NOTHING IS IMPOSSIBLE </h1>
           <Transition_Slower>
