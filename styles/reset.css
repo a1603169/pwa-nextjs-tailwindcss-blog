@@ -152,9 +152,9 @@ code:not([class]) {
 
 h3:not([class]) {
   font-size: 1.3em;
-  margin: 1em 0;
-  padding-top: 90px;
-  margin-top: -85px;
+  margin: .5em 0;
+  padding-top: 120px;
+  margin-top: -90px;
 }
 
 h2:not([class]){
