@@ -1,5 +1,6 @@
 ---
 title: 'npm과 yarn의 차이'
+subtitle: 'npm과 Yarn은 JavaScript 패키지 관리자로, JavaScript 및 Node.js 프로젝트에서 의존성 패키지를 설치, 업데이트 및 관리하는 데 사용됩니다. 둘 다 비슷한 목표를 가지고 있지만 다음과 같은 차이점이 있습니다'
 date: '2023-12-22'
 tags: ['General']
 ---

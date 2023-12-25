@@ -1,5 +1,6 @@
 ---
 title: '앵귤러에서 제공하는 바인딩(Bind)'
+subtitle: 'Angular에서 제공하는 다양한 유형의 바인딩은 애플리케이션의 UI와 데이터를 효과적으로 연결하고 동기화하는 데 중요한 역할을 합니다.'
 date: '2023-12-22'
 tags: ['JavaScript', 'Angular','FE']
 ---

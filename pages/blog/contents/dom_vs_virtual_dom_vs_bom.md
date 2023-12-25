@@ -1,5 +1,6 @@
 ---
 title: 'DOM vs 가상DOM vs BOM'
+subtitle: 'DOM (Document Object Model), 가상 DOM (Virtual DOM), 그리고 BOM (Browser Object Model)은 웹 개발에서 중요한 개념입니다. 각각을 간단히 설명해보겠습니다:'
 date: '2023-12-22'
 tags: ['FE']
 ---

@@ -1,5 +1,6 @@
 ---
 title: 'React Query 이란'
+subtitle: 'React Query는 React 애플리케이션에서 서버 상태 관리를 도와주는 라이브러리입니다. 이는 주로 비동기 데이터 쿼리, 캐싱, 동기화 및 업데이트 작업을 간소화하는 데 사용됩니다.'
 date: '2023-12-22'
 tags: ['JavaScript', 'React', 'FE']
 ---

@@ -1,5 +1,6 @@
 ---
 title: '객체 지향 프로그래밍 (OOP)'
+subtitle: '객체 지향 프로그래밍(Object-Oriented Programming, OOP)은 실세계를 모델링하는 프로그래밍 패러다임으로, 객체들의 상호작용을 통해 소프트웨어를 구성합니다. 객체 지향의 핵심 특징은 추상화, 캡슐화, 상속, 다형성입니다.'
 date: '2023-12-22'
 tags: ['FE', 'BE', 'General', 'CS']
 ---

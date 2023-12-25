@@ -1,5 +1,6 @@
 ---
 title: '자료구조 (feat. JavaScript)'
+subtitle: 'JavaScript에서 자료 구조는 데이터를 효율적으로 접근하고 수정하기 위해 데이터를 조직하고 저장하는 데 사용됩니다. 다음은 JavaScript의 기본적인 자료 구조들입니다'
 date: '2023-12-22'
 tags: ['JavaScript', 'FE', 'BE']
 ---

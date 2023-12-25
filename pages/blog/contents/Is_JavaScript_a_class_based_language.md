@@ -1,5 +1,7 @@
 ---
 title: '자바스크립트는 클래스 기반 객체지향 언어일까'
+subtitle: 'JavaScript는 초기에는 클래스 기반 객체지향 언어가 아니었고, 프로토타입 기반 객체지향 언어로 시작했습니다. 
+그러나 ECMAScript 2015(ES6)부터 JavaScript에 클래스(class) 문법이 도입되었습니다.'
 date: '2023-12-22'
 tags: ['JavaScript', 'FE']
 ---

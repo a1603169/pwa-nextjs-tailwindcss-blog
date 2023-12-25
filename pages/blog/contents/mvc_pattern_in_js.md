@@ -1,5 +1,6 @@
 ---
 title: 'MVC패턴 (feat. JavaScript)'
+subtitle: 'MVC (Model-View-Controller) 패턴을 사용하여 간단한 투두 리스트를 구현한 JavaScript 코드'
 date: '2023-12-22'
 tags: ['FE', 'BE', 'CS', 'General']
 ---

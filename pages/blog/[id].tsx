@@ -10,6 +10,7 @@ export default function Post({
 }: {
   postData: {
     title: string;
+    subtitle: string;
     date: string;
     tags: string[];
     contentHtml: string;
@@ -17,6 +18,7 @@ export default function Post({
   allPostsData: {
     date: string;
     title: string;
+    subtitle: string;
     id: string;
   }[];
 }) {

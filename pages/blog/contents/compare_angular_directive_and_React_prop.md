@@ -1,5 +1,6 @@
 ---
 title: 'Angular의 디렉티브를 React개념으로 이해해보자'
+subtitle: 'Angular에서 디렉티브(Directives)는 DOM 요소의 모양, 동작 또는 레이아웃을 조작하는데 사용되는 특수한 토큰입니다. 이들은 HTML 태그에 속성으로 추가되어, 해당 태그의 동작을 Angular의 로직으로 확장하거나 변경합니다.'
 date: '2023-12-18'
 tags: ['JavaScript', 'Angular', 'React','FE']
 ---
