@@ -5,7 +5,9 @@ tags: [General, Git]
 ---
 
 
-# [git log -p 파일 하나의 변경 이력을 한번에 보기](https://edykim.com/ko/post/git-log-p-view-a-single-change-history-of-a-file/)
+<span class="blogLink">[git log -p 파일 하나의 변경 이력을 한번에 보기](https://edykim.com/ko/post/git-log-p-view-a-single-change-history-of-a-file/)</span>
+
+이것을 참조하였습니다. 최근에 프로젝트에서 코드 한 줄이 없어갖고, 일주일동안 정신없이 파일별 코드 내역을 뒤져 보았던 경험이 있네요.
 
 파일 하나의 변경 이력을 한번에 확인해야 할 때가 가끔 있다. 물론 GUI 도구들이 워낙 잘 되어 있어서 쉽게 파악이 가능한 부분이지만 콘솔에서 필요할 때 다음의 명령어를 활용할 수 있다.
 
