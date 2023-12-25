@@ -15,7 +15,7 @@ tags: [General, Git]
 
 ### 특정 파일의 모든 커밋된 기록 확인
 
-```text
+```bash
 $ git log <filename>
 ```
 
@@ -23,7 +23,7 @@ $ git log <filename>
 
 ### 라인별 변경 사항 확인법
 
-```text
+```bash
 $ git log -p <filename>
 ```
 
@@ -31,7 +31,7 @@ $ git log -p <filename>
 
 ### 출력 수 조절법
 
-```text
+```bash
 $ git log -p -5 <filename>
 ```
 
@@ -39,12 +39,12 @@ $ git log -p -5 <filename>
 
 ### 특정 키워드의 변경 법
 
-```text
+```bash
 $ git log -p <filename> | grep '2011070102\|commit \|Author:\|Date:'
 ```
 
 1.7.2 이후에서는 `--word-diff`라는 플래그가 추가되었는데 플래그 이름처럼 행마다의 diff가 아니라 **단어 기준의 diff를 출력**해준다. (문서를 리포지터리에서 관리한다면 정말 유용하다.) 물론 `git diff`에서도 사용 가능한 플래그다.
 
-```text
+```bash
 $ git log -p --word-diff <filename>
 ```
