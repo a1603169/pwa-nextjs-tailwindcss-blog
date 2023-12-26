@@ -16,7 +16,7 @@ export default function Blog({
 }) {
 
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 8;
+  const postsPerPage = 7;
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = allPostsData.slice(indexOfFirstPost, indexOfLastPost);
