@@ -17,7 +17,7 @@ export function getSortedPostsData() {
     const matterResult = matter(fileContents);
     return {
       id,
-      ...(matterResult.data as { date: string; title: string, subtitle: string }),
+      ...(matterResult.data as { date: string; title: string, subtitle: string, tags: string[] }),
     };
   });
 
@@ -46,4 +46,27 @@ export async function getPostData(id: string) {
     contentHtml,
     ...(matterResult.data as { date: string; title: string, subtitle: string }),
   };
+}
+
+export function getAllTags() {
+  const fileNames = fs.readdirSync(postsDirectory);
+  const allPostsData = fileNames.map((fileName) => {
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const matterResult = matter(fileContents);
+    return {
+      ...(matterResult.data as { tags: string[] }),
+    };
+  });
+  const tags = allPostsData.map((post) => post.tags).flat();
+  const tagCountMap: { [key: string]: number } = {};
+  
+  tags.forEach((tag) => {
+    if (tagCountMap[tag]) {
+      tagCountMap[tag]++;
+    } else {
+      tagCountMap[tag] = 1;
+    }
+  });
+  return tagCountMap;
 }
