@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 type FiltersProps = {
   tags: Object;
   selectedTags: string[];
