@@ -46,7 +46,7 @@ anchor.appendChild(script);
 
 이런식으로 작용했고 의존성배열을 `[]` 로 사용하여, 처음 화면 자체가 렌더링 될 때 한 번만 실행되면 되겠다고 예상 하였지만 그렇지 못하였다.
 
-<img class="blogImage" src="https://private-user-images.githubusercontent.com/77614387/293575610-883f5ef8-b35d-4b95-a3be-0cf597ba671d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQxMjU5NjgsIm5iZiI6MTcwNDEyNTY2OCwicGF0aCI6Ii83NzYxNDM4Ny8yOTM1NzU2MTAtODgzZjVlZjgtYjM1ZC00Yjk1LWEzYmUtMGNmNTk3YmE2NzFkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAxVDE2MTQyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg4MjYyMjJmZjMwNWI2OTFiZWM4ZjdiYTQ0Y2VkZTg3Njc4MzMxMTAyNTVmODg2NGNhZDJlNDFlMTliMzM1N2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.xF8jPHSG6NS7He-ZPKU8mqw5s9jpQTjpLC6lAvHFs0s">
+<img class="blogImage" src="../../../public/blog/error_of_comments.png">
 
 `로컬`에서 이런식으로 커맨트가 두 개씩 작성하는 란이 보이기 시작해서 어딘가에서 `두 번씩 렌더링`이 되고 있구나 하고 다른 useEffect들도 console을 찍어보니 `똑같이 두 번의 콘솔`을 찍고 있었다.
 
