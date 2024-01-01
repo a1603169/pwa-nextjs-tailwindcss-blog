@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Transition from "@/components/Transition";
 import { useRouter } from "next/router";
 import SocialLinks from "./SocialLinks";
 

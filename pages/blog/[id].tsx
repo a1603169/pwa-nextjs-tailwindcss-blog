@@ -45,6 +45,7 @@ export default function Post({
   const [h3Ids, setH3Ids] = useState<string[]>([]);
 
   useEffect(() => {
+    console.log('Aoi is great 1')
     // Add id by its content on all h3 tags for anchor links 
     let h3s = document.querySelectorAll("h3");
     let newH3Ids: string[] = [];
@@ -54,14 +55,31 @@ export default function Post({
       newH3Ids.push(h3.id);
     });
     setH3Ids(newH3Ids);
-  }, [postData.contentHtml]);
+  }, [postData]);
+
+    // Add Utterances comments
+    useEffect(() => {
+      console.log('Aoi is great 2')
+      const anchor = document.getElementById('comments');
+    
+      // Check if the element exists in the DOM
+      if (anchor) {
+        const script = document.createElement('script');
+        script.src = 'https://utteranc.es/client.js';
+        script.setAttribute('repo', 'a1603169/seunghun_bang-portfolio'); // replace with your repo
+        script.setAttribute('issue-term', 'pathname');
+        script.setAttribute('theme', 'github-light');
+        script.crossOrigin = 'anonymous';
+        script.async = true;
+        anchor.appendChild(script);
+      }
+    }, []);
+  
+
+
   return (
     <>
       <Head>
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css"
-          rel="stylesheet"
-        />
         <title>{postData.title}</title>
         <meta name="description" content={postData.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -123,14 +141,17 @@ export default function Post({
             <button></button>
           )}
         </div>
+        <div id="comments" className="w-full"></div>
       </article>
     </>
   );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getSortedPostsData().map((post) => ({
+  const paths = getSortedPostsData().map((post) => (    
+  {
     params: { id: post.id },
+
   }));
   return {
     paths,
