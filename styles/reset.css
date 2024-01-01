@@ -176,3 +176,12 @@ p:not([class]){
 .blogLink:hover {
   color: red;
 }
+
+.blogImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
