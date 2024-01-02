@@ -1,5 +1,6 @@
 ---
 title: '로컬에서 useEffect가 두 번씩 사용되는 에러(Strict mode 세팅)'
+subtitle: '왜! 블로그의 댓글 기능이 왜 두 번씩 보이는건가...?'
 date: '2024-01-01'
 tags: ['FE', 'JavaScript', 'React', 'NextJS']
 ---

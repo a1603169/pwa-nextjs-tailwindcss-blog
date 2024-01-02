@@ -1,5 +1,6 @@
 ---
 title: 'Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 1'
+subtitle: 'Cypress 테스트들을 나누어 보자 (feat. Git Actions)'
 date: '2023-12-31'
 tags: ['Cypress', 'Git']
 ---

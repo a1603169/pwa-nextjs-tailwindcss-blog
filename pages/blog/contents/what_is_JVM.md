@@ -1,5 +1,6 @@
 ---
 title: 'JVM이란'
+subtitle: 'Java Virtual Machine에 대한 기본적인 내용'
 date: '2024-01-02'
 tags: ['BE', 'Java']
 ---
