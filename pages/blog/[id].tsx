@@ -28,7 +28,8 @@ export default function Post({
     );
     if (currentIndex !== -1 && currentIndex < allPostsData.length - 1) {
       const nextPostId = allPostsData[currentIndex + 1].id;
-      return nextPostId;
+      const nextPostTitle = allPostsData[currentIndex + 1].title;
+      return [nextPostId, nextPostTitle];
     }
   };
   const handlePrevPost = () => {
@@ -37,7 +38,8 @@ export default function Post({
     );
     if (currentIndex > 0) {
       const prevPostId = allPostsData[currentIndex - 1].id;
-      return prevPostId;
+      const prevPostTitle = allPostsData[currentIndex - 1].title;
+      return [prevPostId, prevPostTitle];
     }
     return undefined;
   };
@@ -45,7 +47,7 @@ export default function Post({
   const [h3Ids, setH3Ids] = useState<string[]>([]);
 
   useEffect(() => {
-    // Add id by its content on all h3 tags for anchor links 
+    // Add id by its content on all h3 tags for anchor links
     let h3s = document.querySelectorAll("h3");
     let newH3Ids: string[] = [];
     h3s.forEach((h3) => {
@@ -56,24 +58,22 @@ export default function Post({
     setH3Ids(newH3Ids);
   }, [postData]);
 
-    // Add Utterances comments
-    useEffect(() => {
-      const anchor = document.getElementById('comments');
-    
-      // Check if the element exists in the DOM
-      if (anchor) {
-        const script = document.createElement('script');
-        script.src = 'https://utteranc.es/client.js';
-        script.setAttribute('repo', 'a1603169/seunghun_bang-portfolio'); // replace with your repo
-        script.setAttribute('issue-term', 'pathname');
-        script.setAttribute('theme', 'github-light');
-        script.crossOrigin = 'anonymous';
-        script.async = true;
-        anchor.appendChild(script);
-      }
-    }, []);
-  
+  // Add Utterances comments
+  useEffect(() => {
+    const anchor = document.getElementById("comments");
 
+    // Check if the element exists in the DOM
+    if (anchor) {
+      const script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.setAttribute("repo", "a1603169/seunghun_bang-portfolio"); // replace with your repo
+      script.setAttribute("issue-term", "pathname");
+      script.setAttribute("theme", "github-light");
+      script.crossOrigin = "anonymous";
+      script.async = true;
+      anchor.appendChild(script);
+    }
+  }, []);
 
   return (
     <>
@@ -84,24 +84,23 @@ export default function Post({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article className="relative flex flex-col justify-center text-xl gap-5 pb-14 max-w-800 w-full my-0 mx-auto px-2 max-md:text-sm">
-      {h3Ids.length > 0 ?
-          (
-            <ul className="flex flex-col gap-3">
-              <h2 className="text-slate-500">INDEX</h2>
-              {h3Ids.map((idtag, idx) => {
-                return (
-                  <li
-                    key={idx}
-                    className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-xl hover:shadow-lg max-md:text-sm"
-                  >
-                    <a className="block" href={`#${idtag}`}>{idtag}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          )
-           :
-           null }
+        {h3Ids.length > 0 ? (
+          <ul className="flex flex-col gap-3">
+            <h2 className="text-slate-500">INDEX</h2>
+            {h3Ids.map((idtag, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-xl hover:shadow-lg max-md:text-sm"
+                >
+                  <a className="block" href={`#${idtag}`}>
+                    {idtag}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        ) : null}
         <div className="flex flex-col w-full items-start">
           <h1 className="text-3xl w-full max-md:text-lg">{postData.title}</h1>
           <p className="whitespace-nowrap">{postData.date}</p>
@@ -125,16 +124,22 @@ export default function Post({
         />
         <div className="flex justify-between w-full">
           {handlePrevPost() !== undefined ? (
-            <button className="duration-300 bg-indigo-50 px-2 rounded-lg text-indigo-500 hover:text-indigo-50 hover:bg-indigo-500">
-              <Link href={handlePrevPost()!}> Prev </Link>
-            </button>
+            <div className="text-left">
+              <button className="w-20	duration-300  bg-indigo-50 px-2 rounded-lg text-indigo-500 hover:text-indigo-50 hover:bg-indigo-500">
+                <Link href={handlePrevPost()![0]}> Prev </Link>
+              </button>
+              <p>{handlePrevPost()![1].slice(0, 10)}...</p>
+            </div>
           ) : (
             <button></button>
           )}
           {handleNextPost() !== undefined ? (
-            <button className="duration-300 bg-indigo-50 px-2 rounded-lg text-indigo-500 hover:text-indigo-50 hover:bg-indigo-500">
-              <Link href={handleNextPost()!}> Next </Link>
-            </button>
+            <div className="text-right">
+              <button className="w-20	duration-300 bg-indigo-50 px-2 rounded-lg text-indigo-500 hover:text-indigo-50 hover:bg-indigo-500">
+                <Link href={handleNextPost()![0]}> Next </Link>
+              </button>
+              <p>{handleNextPost()![1].slice(0, 10)}...</p>
+            </div>
           ) : (
             <button></button>
           )}
@@ -146,10 +151,8 @@ export default function Post({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getSortedPostsData().map((post) => (    
-  {
+  const paths = getSortedPostsData().map((post) => ({
     params: { id: post.id },
-
   }));
   return {
     paths,
