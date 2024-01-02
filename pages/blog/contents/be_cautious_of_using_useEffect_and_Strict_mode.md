@@ -46,7 +46,7 @@ anchor.appendChild(script);
 
 이런식으로 작용했고 의존성배열을 `[]` 로 사용하여, 처음 화면 자체가 렌더링 될 때 한 번만 실행되면 되겠다고 예상 하였지만 그렇지 못하였다.
 
-<img class="blogImage" src="../../../public/blog/error_of_comments.png">
+<img class="blogImage" src="/blog/error_of_comments.png">
 
 `로컬`에서 이런식으로 커맨트가 두 개씩 작성하는 란이 보이기 시작해서 어딘가에서 `두 번씩 렌더링`이 되고 있구나 하고 다른 useEffect들도 console을 찍어보니 `똑같이 두 번의 콘솔`을 찍고 있었다.
 
