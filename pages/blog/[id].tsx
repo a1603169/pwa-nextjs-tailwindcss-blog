@@ -85,21 +85,38 @@ export default function Post({
       </Head>
       <article className="relative flex flex-col justify-center text-xl gap-5 pb-14 max-w-800 w-full my-0 mx-auto px-2 max-md:text-sm">
         {h3Ids.length > 0 ? (
-          <ul className="flex flex-col gap-3">
-            <h2 className="text-slate-500">INDEX</h2>
-            {h3Ids.map((idtag, idx) => {
-              return (
-                <li
-                  key={idx}
-                  className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-xl hover:shadow-lg max-md:text-sm"
-                >
-                  <a className="block" href={`#${idtag}`}>
-                    {idtag}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          <>
+            <ul className="flex flex-col gap-3 hidden max-lg:flex">
+              <h2 className="text-slate-500">INDEX</h2>
+              {h3Ids.map((idtag, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg text-xl hover:shadow-lg max-md:text-sm"
+                  >
+                    <a className="block" href={`#${idtag}`}>
+                      {idtag}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+            <ul className="flex flex-col gap-3 fixed top-12/100 right-1/100 max-xl:hidden">
+              <h2 className="text-slate-500">INDEX</h2>
+              {h3Ids.map((idtag, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    className="duration-300 truncate bg-slate-300 text-red-400 py-0.5 px-2 rounded-lg hover:shadow-lg text-sm"
+                  >
+                    <a className="block" href={`#${idtag}`}>
+                      {idtag}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </>
         ) : null}
         <div className="flex flex-col w-full items-start">
           <h1 className="text-3xl w-full max-md:text-lg">{postData.title}</h1>
