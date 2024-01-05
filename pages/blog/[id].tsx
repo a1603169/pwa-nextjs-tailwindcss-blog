@@ -86,7 +86,7 @@ export default function Post({
       <article className="relative flex flex-col justify-center text-xl gap-5 pb-14 max-w-800 w-full my-0 mx-auto px-2 max-md:text-sm">
         {h3Ids.length > 0 ? (
           <>
-            <ul className="flex flex-col gap-3 hidden max-lg:flex">
+            <ul className="flex flex-col gap-3 hidden max-xl:flex">
               <h2 className="text-slate-500">INDEX</h2>
               {h3Ids.map((idtag, idx) => {
                 return (
