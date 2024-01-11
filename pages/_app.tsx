@@ -1,8 +1,9 @@
 import "@/styles/reset.css";
+import { Analytics } from '@vercel/analytics/react';
 // import * as gtag from "../lib/gtag";
 // import { useRouter } from "next/router";
 // import { useEffect } from "react";
-// Deprecated
+// Deprecated 
 import type { AppProps } from "next/app";
 import WebLayout from "@/components/WebLayout";
 import Head from "next/head";
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <WebLayout>
         <Component {...pageProps} className="relative" />
+        <Analytics />
       </WebLayout>
     </>
   );
