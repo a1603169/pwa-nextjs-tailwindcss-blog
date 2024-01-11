@@ -170,9 +170,6 @@ p:not([class]){
 hr:not([class]){
   margin-top: 2em;
   margin-bottom: 2em;
-  border: 0;
-  border-top: 1px solid rgba(99, 102, 241,  0.5)  ;
-
 }
 
 .blogLink {
