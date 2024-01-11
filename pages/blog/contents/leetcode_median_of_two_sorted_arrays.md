@@ -7,8 +7,10 @@ tags: [Algorithm, JavaScript]
 
 <span class="blogLink">[리트코드 링크](https://leetcode.com/problems/median-of-two-sorted-arrays/)</span>
 
+
 ### 문제
 
+-----
 Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return **the median** of the two sorted arrays.
 
 The overall run time complexity should be `O(log (m+n))`.
@@ -108,17 +110,25 @@ var findMedianSortedArrays = function(nums1, nums2) {
     return isEven ? (current + previous) / 2 : current;
 };
 ```
+----------------------
+
 
 ### 내 접근법 vs 최적화 접근법 차이
 
+<img class="blogImage" src="/blog/first_submit_median.png">
+
 **내 접근법**
+
 기존의 시간 복잡도는 두 배열을 `연결(concat)` 하는데 `O(m+n)`이 된다. m,n -> `두 배열의 길이`
 거기에 연결된 배열을 `정렬(sort)` 하는데는 `log(m+n)` 이 걸리니
 총 걸리는 시간 복잡도는 `O(m+n)*log(m+n)` 이 될 것이다.
 
 공간 복잡도는 두 배열을 합치기 때문에, 그 크기의 합인 `O(m+n)` 이 된다.
 
+<img class="blogImage" src="/blog/second_submit_median.png">
+
 **최적화 접근법**
+
 이 구현 방법은 시간 복잡도가 `O(log(min(m, n)))`이고 공간 복잡도는 `O(1)`이다. 
 여기서 m과 n은 각각 nums1과 nums2의 길이가 된다. 
 이전 구현 방법과 비교할 때 병합 배열을 저장하기 위한 추가 공간이 필요하지 않기 때문에 메모리 사용 측면에서 더 효율적으로 보인다.

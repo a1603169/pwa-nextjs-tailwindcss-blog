@@ -11,7 +11,7 @@ tags: ['FE', 'JavaScript', 'React', 'NextJS']
 
 ### 문제 코드 
 
- useEffect에 
+useEffect에 
 
 ```javascript
 // Add Utterances comments
