@@ -54,7 +54,7 @@ export default function ProjectsPage() {
         <Card
           title="PORTFOLIO WEBSITE"
           description="NextJS + TailwindCSS + TypeScript"
-          href="https://github.com/a1603169/Seunghun_bang-portfolio"
+          href="https://github.com/a1603169/nextjs-tailwindcss-blog-portfolio"
           image={imagePathWeb}
         />
         <Card
