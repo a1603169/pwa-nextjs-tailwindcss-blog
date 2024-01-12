@@ -2,10 +2,13 @@
 title: '링크드 리스트란'
 subtitle: '기본 알고리즘 지식 / 데이터 구조'
 date: '2024-01-12'
-tags: [Algorithm, JavaScript]
+tags: [Algorithm, JavaScript, Data Structures]
 ---
 
-***`링크드 리스트(Linked List)`*** 는 `데이터 요소의 연속적인 컬렉션`으로, 각 요소가 `다음 요소의 참조(링크)를 포함하는 데이터 구조`입니다. 
+<span class="blogLink">[참고링크](https://github.com/a1603169/javascript-algorithms/blob/master/src/data-structures/linked-list/README.ko-KR.md)</span>
+
+
+**`링크드 리스트(Linked List)`** 는 데이터 요소의 `연속적인 컬렉션`으로, 각 요소가 `다음 요소의 참조(링크)를 포함하는 데이터 구조`입니다. 
 `배열`과 비교했을 때, 링크드 리스트는 `동적 크기 조정이 가능하고, 요소의 삽입과 삭제가 간단`합니다. `반면, 특정 인덱스의 요소에 접근하는 데에는 더 많은 시간`이 걸립니다.
 
 JavaScript에서 **`단일 연결 리스트(Singly Linked List)`** 를 구현하는 방법을 살펴보겠습니다.
