@@ -1,5 +1,5 @@
 ---
-title: '링크드 리스트란'
+title: '링크드 리스트란(Linked List)'
 subtitle: '기본 알고리즘 지식 / 데이터 구조'
 date: '2024-01-12'
 tags: [Algorithm, JavaScript, Data Structures]

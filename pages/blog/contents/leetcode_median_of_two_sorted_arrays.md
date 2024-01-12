@@ -1,6 +1,6 @@
 ---
 title: 'Median of Two Sorted Array (Leetcode)'
-subtitle: 'Algorithm 공부'
+subtitle: 'Algorithm 공부 Leetcode'
 date: '2024-01-11'
 tags: [Algorithm, JavaScript]
 ---
@@ -49,7 +49,7 @@ The overall run time complexity should be `O(log (m+n))`.
 그대로 구현만 하면될 것이다.
 
 
-### 정답 
+### 정답 (맞음)
 
 ```javascript
 var getOneSortedArray = function (n1,n2){
