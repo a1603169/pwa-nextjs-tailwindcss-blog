@@ -53,7 +53,7 @@ export default function Blog({
                       {date}
                     </p>
                   </div>
-                  <p className="text-xs mx-2 max-w-3/4 truncate opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500">{subtitle}</p>
+                  <p className="text-xs mx-2 max-w-3/4 truncate opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 max-xl:opacity-100">{subtitle}</p>
                 </Link>
               </li>
             );
