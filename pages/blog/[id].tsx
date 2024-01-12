@@ -66,7 +66,7 @@ export default function Post({
     if (anchor) {
       const script = document.createElement("script");
       script.src = "https://utteranc.es/client.js";
-      script.setAttribute("repo", "a1603169/seunghun_bang-portfolio"); // replace with your repo
+      script.setAttribute("repo", "a1603169/nextjs-tailwindcss-blog-portfolio"); // replace with your repo
       script.setAttribute("issue-term", "pathname");
       script.setAttribute("theme", "github-light");
       script.crossOrigin = "anonymous";
