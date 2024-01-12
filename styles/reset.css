@@ -149,6 +149,11 @@ code:not([class]) {
   padding: 2px 4px;
   border-radius: 4px;
 }
+h4:not([class]) {
+  font-size: 1.1em;
+  margin: .5em 0;
+  font-weight: bold;
+}
 
 h3:not([class]) {
   font-size: 1.3em;
