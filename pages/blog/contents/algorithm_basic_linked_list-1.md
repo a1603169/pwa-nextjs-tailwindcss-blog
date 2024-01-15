@@ -1,5 +1,5 @@
 ---
-title: '링크드 리스트란(Linked List)'
+title: '링크드 리스트란(Linked List) - 1'
 subtitle: '기본 알고리즘 지식 / 데이터 구조'
 date: '2024-01-12'
 tags: [Algorithm, JavaScript, Data Structures]
@@ -7,6 +7,7 @@ tags: [Algorithm, JavaScript, Data Structures]
 
 <span class="blogLink">[참고링크](https://github.com/a1603169/javascript-algorithms/blob/master/src/data-structures/linked-list/README.ko-KR.md)</span>
 
+<span class="blogLink">[링크드 리스트란(Linked List) - 2 / 다음 포스트](algorithm_basic_linked_list-2)</span>
 
 **`링크드 리스트(Linked List)`** 는 데이터 요소의 `연속적인 컬렉션`으로, 각 요소가 `다음 요소의 참조(링크)를 포함하는 데이터 구조`입니다. 
 `배열`과 비교했을 때, 링크드 리스트는 `동적 크기 조정이 가능하고, 요소의 삽입과 삭제가 간단`합니다. `반면, 특정 인덱스의 요소에 접근하는 데에는 더 많은 시간`이 걸립니다.
@@ -270,3 +271,5 @@ class CircularLinkedList {
 - **확장성(Scalability)**: 새로운 기능이나 메서드를 추가할 때, `관련 클래스에만 집중하여 확장`할 수 있습니다.
 
 객체지향 프로그래밍의 이러한 원칙들은 크고 복잡한 시스템에서 특히 유용하지만, 작은 프로젝트나 간단한 스크립트에서는 이러한 구조가 과도할 수 있습니다. 이 경우, 클래스를 사용하지 않고 함수와 객체를 사용하여 구현하는 절차적 방식을 선택할 수도 있습니다. 프로젝트의 규모, 복잡성, 팀의 선호도 등에 따라 적절한 접근 방식을 선택하는 것이 중요합니다.
+
+<span class="blogLink">[링크드 리스트란(Linked List) - 2 / 다음 포스트](algorithm_basic_linked_list-2)</span>
