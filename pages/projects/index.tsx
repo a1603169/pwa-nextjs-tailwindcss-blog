@@ -16,10 +16,25 @@ export default function ProjectsPage() {
   const imagePathNomad = "/assets/rens_nomad.png"
   const imagePathNFT = "/assets/rens_nft.png"
   const imagePathHoodie = "/assets/rens_hoodie.jpg"
-
+  const imagePathCarService = "/assets/car_service.jpg"
+  const imagePathBebicon = "/assets/bebicon.png"
   return (
     <Transition>
       <div className="grid gap-10 grid-cols-3 mx-auto max-lg:grid-cols-2 max-sm:grid-cols-1 pb-28">
+        <Card 
+          title="Shinmei Car Service / On Service"
+          description="AngularJS + Kotlin(Ktor) + PostgreSQL + CI/CD + Azure"
+          href="https://www.shinmei.co.jp/en/service/car-service/"
+          image={imagePathCarService}
+          disabled={false}
+        />
+        <Card
+          title="Hitachi Bebicon / On Service"
+          description="React Native + TypeScript + Kotlin"
+          href="https://www.hitachi-ies.co.jp/products/cmp/bebiapp/"
+          image={imagePathBebicon}
+          disabled={false}
+        />
         <Card
           title="FRINCOIN / WIP"
           description="Bitcoin Investment Simulation App with ReactJS"
@@ -58,35 +73,35 @@ export default function ProjectsPage() {
           image={imagePathWeb}
         />
         <Card
-          title="E-Commerce Store / Rens Original"
+          title="E-Commerce Store / Rens Original (Out of Service)"
           description="LiquidJS + Shopify + APIs Integrations"
           href="https://rensoriginal.eu"
           image={imagePathRens}
           disabled={true}
         />
         <Card
-          title="NFT LP / Rens Original"
+          title="NFT LP / Rens Original (Out of Service)"
           description="Shopify + Webflow + (HTML + CSS + JS)"
           href="https://rensoriginal.eu/pages/nft"
           image={imagePathNFT}
           disabled={true}
         />
         <Card
-          title="HOODIE LP / Rens Original"
+          title="HOODIE LP / Rens Original (Out of Service)"
           description="Shopify + Webflow + (HTML + CSS + JS)"
           href="https://rensoriginal.eu/pages/elemental-hoodie"
           image={imagePathHoodie}
           disabled={true}
         />
         <Card
-          title="NOMAD LP / Rens Original"
+          title="NOMAD LP / Rens Original (Out of Service)"
           description="Shopify + Webflow + (HTML + CSS + JS)"
           href="https://rensoriginal.eu/pages/nomad"
           image={imagePathNomad}
           disabled={true}
         />
         <Card
-          title="BEESH LP / Beesh"
+          title="BEESH LP / Beesh (Out of Service)"
           description="React + Bootstrap"
           href="https://beesh.fi"
           disabled={true}

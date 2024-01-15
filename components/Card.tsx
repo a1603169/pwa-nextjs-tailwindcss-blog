@@ -17,18 +17,18 @@ export default function Card({
   disabled,
 }: CardProps) {
   return disabled ? (
-    <Link href={"/disabled"} className="relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 border-2 border-indigo-400 border-solid max-h-24 hover:bg-red-50">
-      <div className="relative py-32 w-96 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 hover:bg-red-50 hover:scale-125">
+    <Link href={"/disabled"} className="group relative py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 border-2 border-indigo-400 border-solid max-h-24 hover:bg-red-50">
+      <div className="relative py-32 w-96 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 hover:bg-red-50 group-hover:scale-125">
         {image && (
           <Image
             src={image}
             alt="test"
             className="absolute inset-0 w-full h-full object-cover opacity-20 transition-all"
-            width={1000}
-            height={1000}
+            width={1500}
+            height={1500}
           />
         )}
-        <div className="px-5 relative">
+        <div className="relative">
           <h1 className="text-2xl text-indigo-400 text-center max-lg:text-xl">
             {title}
           </h1>
@@ -38,8 +38,8 @@ export default function Card({
       </div>
     </Link>
   ) : (
-    <Link target={"_blank"} href={href} className="py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 border-2 border-indigo-400 border-solid max-h-24 hover:bg-indigo-50">
-      <div className="relative py-32 w-96 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 hover:bg--50 hover:scale-125">
+    <Link target={"_blank"} href={href} className="group py-32 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 border-2 border-indigo-400 border-solid max-h-24 hover:bg-indigo-50">
+      <div className="relative py-32 w-96 flex justify-center flex-col items-center rounded-xl overflow-hidden hover:shadow-lg duration-300 hover:bg--50 group-hover:scale-125">
         {image && (
           <Image
             src={image}
