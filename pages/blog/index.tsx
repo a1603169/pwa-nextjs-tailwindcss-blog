@@ -21,7 +21,7 @@ export default function Blog({
   const postsPerPage = 7;
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const filteredPosts = allPostsData.filter((post) =>
-    selectedTags.every((tag) => post.tags.includes(tag))
+    selectedTags.every((tag) => post.tags && post.tags.includes(tag))
   );
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;

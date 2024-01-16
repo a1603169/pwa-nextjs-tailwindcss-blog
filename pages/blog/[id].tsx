@@ -2,6 +2,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 import { getPostData, getSortedPostsData } from "@/lib/post";
 import Head from "next/head";
+// import {Head} from "next/document"
 import { useEffect, useState } from "react";
 
 export default function Post({

@@ -22,8 +22,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <WebLayout>
-        <Component {...pageProps} className="relative" />
         <Analytics />
+        <Component {...pageProps} className="relative" />
       </WebLayout>
     </>
   );
