@@ -2,7 +2,7 @@
 title: '3 Sum 세 개의 합 0인 것 구하기 (Leetcode)'
 subtitle: 'Algorithm 공부 Leetcode'
 date: '2024-01-12'
-tags: [Algorithm, JavaScript]
+tags: [Algorithm, JavaScript, LeetCode]
 ---
 
 

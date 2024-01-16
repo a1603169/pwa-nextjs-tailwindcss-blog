@@ -2,7 +2,7 @@
 title: 'Median of Two Sorted Array (Leetcode)'
 subtitle: 'Algorithm 공부 Leetcode'
 date: '2024-01-11'
-tags: [Algorithm, JavaScript]
+tags: [Algorithm, JavaScript, LeetCode]
 ---
 
 <span class="blogLink">[리트코드 링크](https://leetcode.com/problems/median-of-two-sorted-arrays/)</span>

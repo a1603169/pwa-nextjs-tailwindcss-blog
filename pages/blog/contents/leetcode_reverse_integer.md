@@ -2,7 +2,7 @@
 title: 'Reverse Integer (Leetcode)'
 subtitle: 'Algorithm 공부 Leetcode'
 date: '2024-01-15'
-tags: [Algorithm, JavaScript]
+tags: [Algorithm, JavaScript, LeetCode]
 ---
 
 

@@ -2,7 +2,7 @@
 title: 'Number of Arithmetic Triplet, 숫자배열안에 있는 3개의 등차수열 맞추기(Leetcode)'
 subtitle: 'Algorithm 공부 Leetcode'
 date: '2024-01-12'
-tags: [Algorithm, JavaScript]
+tags: [Algorithm, JavaScript, LeetCode]
 ---
 
 <span class="blogLink">[리트코드링크](https://leetcode.com/problems/number-of-arithmetic-triplets/description/)</span>
