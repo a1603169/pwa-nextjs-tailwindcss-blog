@@ -2,7 +2,7 @@
 title: 'Queue 란'
 subtitle: '기본 알고리즘 지식 / 데이터 구조'
 date: '2024-01-16'
-tags: [Algorithm, JavaScript, Data Structure]
+tags: [Algorithm, JavaScript, Data Structures]
 ---
 
 <span class="blogLink">[참고링크](https://github.com/a1603169/javascript-algorithms/blob/master/src/data-structures/queue/README.ko-KR.md)</span>
