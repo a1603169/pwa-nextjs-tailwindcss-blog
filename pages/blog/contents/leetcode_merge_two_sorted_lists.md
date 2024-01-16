@@ -1,5 +1,5 @@
 ---
-title: 'Merge Two Sorted Lists'
+title: 'Merge Two Sorted Lists (Leetcode)'
 subtitle: 'Algorithm 공부 Leetcode'
 date: '2024-01-16'
 tags: [Algorithm, JavaScript, LeetCode]
