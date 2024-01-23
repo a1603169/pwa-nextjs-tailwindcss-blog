@@ -5,7 +5,7 @@ date: '2024-01-16'
 tags: [Algorithm, JavaScript, LeetCode]
 ---
 
-<span class=`blogLink`>[리트코드 링크](https://leetcode.com/problems/merge-two-sorted-lists/)</span>
+<span class='blogLink'>[리트코드 링크](https://leetcode.com/problems/merge-two-sorted-lists/)</span>
 
 ### 문제
 
@@ -151,7 +151,7 @@ ListNode 객체를 적절히 생성하고, temp를 올바르게 업데이트하�
 let temp = dummy; 
 ```
 
-코드는 dummy 노드를 사용하여 병합된 링크드 리스트를 구축하는데 있어서 중요한 역할을 합니다. 이 코드는 temp 변수를 사용하여 리스트를 순차적으로 구축하면서, 동시에 dummy 노드는 병합된 리스트의 **`시작 지점을 유지`**합니다. 이렇게 하는 이유는 다음과 같습니다:
+코드는 dummy 노드를 사용하여 병합된 링크드 리스트를 구축하는데 있어서 중요한 역할을 합니다. 이 코드는 temp 변수를 사용하여 리스트를 순차적으로 구축하면서, 동시에 dummy 노드는 병합된 리스트의 **`시작 지점을 유지`** 합니다. 이렇게 하는 이유는 다음과 같습니다:
 
 **병합 리스트의 시작 지점 유지**: dummy 노드는 병합된 리스트의 시작 지점을 나타내는 임시 노드로, 실제 데이터를 포함하지 않습니다. 병합 과정에서 이 노드는 변경되지 않으며, 항상 병합된 리스트의 시작 지점을 가리킵니다.
 
