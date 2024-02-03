@@ -6,6 +6,9 @@ tags: ['Cypress', 'Git']
 ---
 
 
+<span class='blogLink'>[Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 2](blog/split_cypress_tests_2)</span>
+
+
 ### 문제점
 최근에 Ci_fe Ci_be로 테스트 환경을 구축한 곳에서 be는 단위테스트로 구성되어 있기 떄문에 6~7분밖에 걸리진 않지만, fe는 24분이 걸렸었다. 
 대쉬보드를 사용하면 좋겠지만, 비용이 발생하기 때문에 흥미가 안생기는 해결방법이다.

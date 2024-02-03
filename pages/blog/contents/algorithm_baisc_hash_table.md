@@ -81,6 +81,66 @@ hashTable.remove("name");
 console.log(hashTable.get("name")); // 출력: null
 ```
 
-### 예제 코드 
+### 예제 코드 내장
+
+```javascript
+function createHashTable(size = 42) {
+    let buckets = new Array(size);
+
+    function hash(key) {
+        let hash = 0;
+        for (let i = 0; i < key.length; i++) {
+            hash = (hash + key.charCodeAt(i)) % size;
+        }
+        return hash;
+    }
+
+    function set(key, value) {
+        const index = hash(key);
+        if (!buckets[index]) {
+            buckets[index] = [];
+        }
+        buckets[index].push([key, value]);
+    }
+
+    function get(key) {
+        const index = hash(key);
+        const items = buckets[index];
+        if (items) {
+            for (let item of items) {
+                if (item[0] === key) {
+                    return item[1];
+                }
+            }
+        }
+        return undefined;
+    }
+
+    function remove(key) {
+        const index = hash(key);
+        const items = buckets[index];
+        if (items) {
+            for (let i = 0; i < items.length; i++) {
+                if (items[i][0] === key) {
+                    items.splice(i, 1);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    return { set, get, remove };
+}
+
+// 해시 테이블 사용 예시
+const myHashTable = createHashTable();
+myHashTable.set('name', 'John');
+myHashTable.set('age', 30);
+console.log(myHashTable.get('name')); // 'John'
+console.log(myHashTable.get('age')); // 30
+myHashTable.remove('name');
+console.log(myHashTable.get('name')); // undefined
+```
 
 hash 메서드는 `키`를 해시 함수를 통해 `인덱스로 변환`하며, `set, get, remove` 메서드는 해시 테이블의 기본적인 동작을 구현합니다.
