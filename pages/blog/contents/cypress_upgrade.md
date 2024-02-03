@@ -204,7 +204,7 @@ cy.get('.trtr').within(() => {
 
 --------
 
-### 문제점 3 (modal open wait())
+### 문제점 3 (modal open `wait()`)
 
 애초에 `wait()` 커맨드를 좋아하지 않았다. 
 
