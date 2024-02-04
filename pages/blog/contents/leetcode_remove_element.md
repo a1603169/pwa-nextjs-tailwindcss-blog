@@ -5,7 +5,7 @@ date: '2024-02-04'
 tags: [Algorithm, JavaScript, LeetCode]
 ---
 
-<span class=`blogLink`>[리트코드 링크](https://leetcode.com/problems/remove-element/description/)</span>
+<span class='blogLink'>[리트코드 링크](https://leetcode.com/problems/remove-element/description/)</span>
 
 ### 문제
 
