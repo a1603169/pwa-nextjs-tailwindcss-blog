@@ -168,7 +168,7 @@ export default function Layout({ children }: layoutProps) {
       <footer className={`${isTop ? 'fixed' : 'relative'} bottom-0 right-0 left-0 backdrop-blur-lg z-50`}>
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
-          © 2023 Seunghun David Bang
+          © 2024 Seunghun David Bang
         </p>
       </footer>
     </>
