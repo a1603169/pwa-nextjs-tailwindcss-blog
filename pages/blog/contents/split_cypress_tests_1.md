@@ -6,7 +6,7 @@ tags: ['Cypress', 'Git']
 ---
 
 
-<span class='blogLink'>[Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 2](blog/split_cypress_tests_2)</span>
+<span class='blogLink'>[Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 2](split_cypress_tests_2)</span>
 
 
 ### 문제점
