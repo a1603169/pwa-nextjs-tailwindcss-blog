@@ -34,7 +34,90 @@ tags: [Algorithm, JavaScript, Data Structures]
   - **후위 순회(Post-order Traversal)**: 왼쪽 -> 오른쪽 -> 루트 순으로 순회합니다.
   - **레벨 순회(Level-order Traversal, 너비 우선 탐색)**: 같은 레벨의 노드들을 왼쪽에서 오른쪽으로 순회합니다.
 
-### 5. JavaScript를 사용한 트리 구현
+### 5. JavaScript를 이용한 `완전 이진 트리`, `포화 이진 트리`, `편향 이진 트리`
+
+```javascript
+class TreeNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+class BinaryTree {
+  constructor() {
+    this.root = null;
+  }
+
+  // 완전 이진 트리에 노드 추가
+  insertCompleteBinaryTree(value) {
+    const newNode = new TreeNode(value);
+    if (!this.root) {
+      this.root = newNode;
+      return;
+    }
+
+    const queue = [this.root];
+    while (queue.length > 0) {
+      const node = queue.shift();
+
+      if (!node.left) {
+        node.left = newNode;
+        return;
+      } else {
+        queue.push(node.left);
+      }
+
+      if (!node.right) {
+        node.right = newNode;
+        return;
+      } else {
+        queue.push(node.right);
+      }
+    }
+  }
+
+  // 포화 이진 트리에 노드 추가
+  insertFullBinaryTree(value) {
+    // 포화 이진 트리는 레벨별로 완전히 채워져 있어야 하기 때문에
+    // 자동으로 노드를 추가하는 일반적인 방법은 존재하지 않습니다.
+    // 따라서, 사용자가 직접 노드를 추가해야 합니다.
+  }
+
+  // 편향 이진 트리에 노드 추가 (예시: 오른쪽 편향)
+  insertSkewedBinaryTree(value) {
+    const newNode = new TreeNode(value);
+    if (!this.root) {
+      this.root = newNode;
+      return;
+    }
+
+    let current = this.root;
+    while (current.right) {
+      current = current.right;
+    }
+
+    current.right = newNode;
+  }
+}
+
+// 예시 사용
+const completeTree = new BinaryTree();
+completeTree.insertCompleteBinaryTree(1);
+completeTree.insertCompleteBinaryTree(2);
+completeTree.insertCompleteBinaryTree(3);
+// 완전 이진 트리에 노드들을 추가합니다.
+
+const skewedTree = new BinaryTree();
+skewedTree.insertSkewedBinaryTree(1);
+skewedTree.insertSkewedBinaryTree(2);
+skewedTree.insertSkewedBinaryTree(3);
+// 오른쪽으로 편향된 이진 트리에 노드들을 추가합니다.
+
+```
+
+### 6. JavaScript를 사용한 트리 순회 구현
 
 
 
