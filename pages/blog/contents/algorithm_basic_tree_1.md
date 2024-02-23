@@ -1,5 +1,5 @@
 ---
-title: '트리(Tree)란'
+title: '트리(Tree)란 1'
 subtitle: '기본 알고리즘 지식 / 데이터 구조'
 date: '2024-02-19'
 tags: [Algorithm, JavaScript, Data Structures]
