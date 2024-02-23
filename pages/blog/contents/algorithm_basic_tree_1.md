@@ -5,6 +5,8 @@ date: '2024-02-19'
 tags: [Algorithm, JavaScript, Data Structures]
 ---
 
+<span class='blogLink'>[다음 포스트](algorithm_basic_tree_2)</span>
+
 자료구조 중 "트리(Tree)"와 관련된 개념들입니다. 
 
 자료구조의 트리는 계층적 관계를 표현하는 데 사용되며, 이진 트리, 이진 탐색 트리, 트리 순회 방법, 그리고 JavaScript를 사용한 트리 구현에 대해 알아보겠습니다.
