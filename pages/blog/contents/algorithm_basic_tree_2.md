@@ -5,7 +5,7 @@ date: '2024-02-23'
 tags: [Algorithm, JavaScript, Data Structures]
 ---
 
-<span class='blogLink'>[이전 포스트](blog/algorithm_basic_tree_2)</span>
+<span class='blogLink'>[이전 포스트](algorithm_basic_tree_1)</span>
 
 각각의 트리는 특정 유형의 문제를 해결하기 위해 고안된 자료구조입니다. 여기에는 각각의 트리의 개념과 특징에 대해 간략히 설명하고, 간단한 자바스크립트 구현을 제공합니다.
 
