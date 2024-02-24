@@ -1,5 +1,5 @@
 ---
-title: 'Companion Object란?'
+title: 'Companion Object 란'
 subtitle: 'Kotlin에서만 있는 특별한 객체'
 date: '2024-02-16'
 tags: [Kotlin, BE]
