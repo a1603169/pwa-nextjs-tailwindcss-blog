@@ -138,6 +138,17 @@ html {
   scroll-behavior: smooth;
 }
 
+
+body {
+  /* iOS 11.0 이상에서 전체 화면 레이아웃을 위해 필요 */
+  min-height: 100vh;
+  /* 노치와 홈 인디케이터 주변 영역을 안전하게 만들기 위해 필요 */
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 footer {
   max-height: 110px;
 }

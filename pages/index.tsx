@@ -1,6 +1,4 @@
-import Transition from "@/components/Transition";
 import Transition_Slower from "@/components/Transition_Slower";
-import Head from "next/head";
 
 export default function Home() {
   return (

@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 import { getPostData, getSortedPostsData } from "@/lib/post";
 import Head from "next/head";
-// import {Head} from "next/document"
+import PeronsalHead from "@/components/PersonalHead";
 import { useEffect, useState } from "react";
 
 export default function Post({
@@ -79,6 +79,7 @@ export default function Post({
   return (
     <>
       <Head>
+        <PeronsalHead />
         <title>{postData.title}</title>
         <meta name="description" content={postData.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
