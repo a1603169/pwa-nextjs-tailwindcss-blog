@@ -24,8 +24,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="apple-mobile-web-app-title" content="Seunghun's Dev Log" />
         <meta name="description" content="Communicate with Junior Dev who wants to grow themselves" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="msapplication-TileColor" content="#b0aceb" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#b0aceb" />
