@@ -27,7 +27,7 @@ export default function Filters({
           return (
             <div
               key={idx}
-              className={`flex grow items-center justify-center gap-2 border-2 border-solid p-2 rounded-lg ${
+              className={`flex grow items-center justify-center gap-2 border-2 border-solid border-indigo-300 p-2 rounded-lg ${
                 isSelected ? "bg-indigo-300 text-white" : ""
               }`}
               onClick={() => handleTagClick(key)}
