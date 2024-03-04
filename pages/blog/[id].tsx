@@ -82,7 +82,6 @@ export default function Post({
         <PeronsalHead />
         <title>{postData.title}</title>
         <meta name="description" content={postData.title} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css"
           rel="stylesheet"
