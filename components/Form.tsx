@@ -17,7 +17,7 @@ export default function Form() {
 
   const validationCheck = (e: React.ChangeEvent<HTMLInputElement>): void => {
     e.preventDefault();
-    const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
     if (emailRegex.test(emailRef.current?.value as string)) {
       setIsEmailValid(true);
     }
