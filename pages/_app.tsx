@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>NOT JUST A DEVELOPER</title>
+        <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
           content="Welcome to my world. I am a Software Engineer who always find something funny!"
