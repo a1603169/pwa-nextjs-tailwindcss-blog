@@ -47,7 +47,7 @@ export default function Layout({ children }: layoutProps) {
   return (
     <>
       <div className="sticky top-0 left-0 right-0 border-solid border-b-2 border-indigo-300 text-indigo-300 backdrop-blur-lg z-50">
-        <nav className="font-sans">
+        <nav className="font-sans pt-5 -mt-5">
           <ul className="flex p-5 text-2xl justify-between items-center font-sans ">
             <div>
                 <Link href="/" className={
