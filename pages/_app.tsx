@@ -26,9 +26,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
 
-        <meta name="msapplication-TileColor" content="#2B5797" />
+        <meta name="msapplication-TileColor" content="#b0aceb" />
         <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#b0aceb" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
