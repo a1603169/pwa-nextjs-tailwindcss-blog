@@ -21,6 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Welcome to my world. I am a Software Engineer who always find something funny!"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <PersonalHead />
       </Head>
       <WebLayout>

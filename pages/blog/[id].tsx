@@ -86,6 +86,7 @@ export default function Post({
           href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css"
           rel="stylesheet"
         />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </Head>
       <article className="relative flex flex-col justify-center text-xl gap-5 pb-14 max-w-800 w-full my-0 mx-auto px-2 max-md:text-sm">
         {h3Ids.length > 0 ? (
