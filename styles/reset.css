@@ -152,7 +152,8 @@ body {
   min-height: calc(100vh - var(--safe-area-inset-top));
 
   /* 노치와 홈 인디케이터 주변 영역을 안전하게 만들기 위해 필요 */
-  padding-top: env(safe-area-inset-top);
+  padding-top: calc(env(safe-area-inset-top) + 10px);
+  margin-top: -10px;
   padding-bottom: env(safe-area-inset-bottom);
 }
 
