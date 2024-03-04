@@ -1,13 +1,22 @@
 {
-    "theme_color": "#b0aceb",
-    "background_color": "#f69435",
-    "display": "browser",
-    "scope": "/seunghun-dev-log",
-    "start_url": "/",
-    "name": "Seunghun Dev Log",
-    "short_name": "SHDLog",
-    "description": "Seunghun's development website",
-    "icons": {
-        "name": "sh-dev-log.webp"
+  "theme_color": "#b0aceb",
+  "background_color": "#f69435",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Seunghun Dev Log",
+  "short_name": "SHDLog",
+  "description": "Seunghun's development website",
+  "icons": [
+    {
+      "src": "./sh-dev-log.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./sh-dev-log-large.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
+  ]
 }
