@@ -67,7 +67,7 @@ export default function Blog({
                       {date}
                     </p>
                   </div>
-                  <p className="text-sm mx-2 my-1 mb-2 max-w-1/2 whitespace-nowrap">
+                  <p className="text-sm mx-2 my-1 mb-2 whitespace-nowrap overflow-scroll">
                     {tags.map((tag, idx) => {
                       return (
                         <span key={idx} className="bg-indigo-300 text-indigo-50 px-2 py-1 rounded-lg mr-1">
