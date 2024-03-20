@@ -28,7 +28,7 @@ Promise는 비동기 프로그래밍을 더욱 쉽고 효율적으로 만들어�
 
 ### 예시코드
 
-```JavaScript
+```javascript
 // Promise 객체 생성
 let promise = new Promise((resolve, reject) => {
   let condition = true; // 이 조건은 실제 코드에서 비동기 연산의 결과에 따라 결정됩니다.

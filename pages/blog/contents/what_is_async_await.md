@@ -19,7 +19,7 @@ Async/Await는 비동기 코드를 동기적인 방식으로 작성할 수 있�
 
 ### 예시 코드
 
-```JavaScript
+```javascript
 async function fetchUser() {
   // Wait for response
   let response = await fetch('https://api.github.com/users/johndoe');
