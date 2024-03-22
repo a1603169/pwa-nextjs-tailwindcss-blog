@@ -29,7 +29,7 @@ export default function Filters({
               key={idx}
               className={`flex grow items-center justify-center gap-2 border-2 border-solid border-indigo-300 p-2 rounded-lg ${
                 isSelected ? "bg-indigo-300 text-white" : ""
-              } max-sm:text-sm` }
+              } max-sm:text-xs` }
               onClick={() => handleTagClick(key)}
             >
               {key}({value})
