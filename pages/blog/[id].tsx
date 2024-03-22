@@ -23,7 +23,8 @@ export default function Post({
     id: string;
   }[];
 }) {
-  const handleNextPost = () => {
+  // Changed Next and Prev cuz of the array index.
+  const handlePrevPost = () => {
     const currentIndex = allPostsData.findIndex(
       (post) => post.title === postData["title"]
     );
@@ -33,7 +34,7 @@ export default function Post({
       return [nextPostId, nextPostTitle];
     }
   };
-  const handlePrevPost = () => {
+  const handleNextPost = () => {
     const currentIndex = allPostsData.findIndex(
       (post) => post.title === postData["title"]
     );
