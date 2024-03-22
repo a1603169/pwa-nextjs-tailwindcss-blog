@@ -11,7 +11,9 @@ tags: [Cloud, CS]
 `사용자를 구분하여 권한을 나눠줌` / `글로벌`한 서비스
 
 - Root Account : 짱짱쎈 전체 권한 다 가진 디폴트 생성된 계정
+
 - Users : Organization 안에 있는 사람들 - 그룹화 가능
+
 - Groups : Users를 포함하는 그룹
 
 ```bash
@@ -78,6 +80,7 @@ IAM policies 문서에서 사용되는 주요 요소 (Statement, id, Version 이
 MFA = 비번 + 추가 보안기기 -> `넥슨 로그인` 생각하면 편함 (OTP 느낌)
 
 - Virtual MFA device: Google Authenticator / Authy -> 앱 개념
+  
 - Universal 2nd Factore (U2F) Security Key: `YubiKey` 등 -> USB 처럼 생김 혹은 은행에서 쓰는것 처럼 생긴 것도 있음.
 
 

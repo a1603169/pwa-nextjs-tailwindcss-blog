@@ -19,7 +19,9 @@ tags: [Cloud, CS]
 ### AWS AZ란
 
 - 정의: 가용가능 존 Availability Zones
+
 - Min: 3개 
+
 - Max: 6개
 
 각각의 AZ는 하나 혹은 그 이상의 `분리된 데이터 센터`를 `redundant power`, `networking` 그리고 `connectivity` 로 운영함 (redundant power: 중요한 작업을 수행하는 동안 `전원 공급이 중단 없이` 사용하는 방법)
@@ -34,14 +36,20 @@ tags: [Cloud, CS]
 #### Global Services
 
 - IAM (identity and Access Management)
+
 - Route 53 (DNS service)
+
 - Cloud Front (Content Delivery Network)
+
 - WAF (Web Application Firewall)
 
 ### Region-scoped AWS 서비스
 
 - Amazon EC2 
+
 - Elastic Beanstalk 
+
 - Lambda
+
 - Rekognition
 
