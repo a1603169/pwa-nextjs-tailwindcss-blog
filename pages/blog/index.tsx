@@ -75,7 +75,7 @@ export default function Blog({
                         return (
                             <span
                               key={idx}
-                              className="bg-indigo-300 text-indigo-50 px-2 py-1 rounded-lg mr-1"
+                              className="bg-indigo-300 text-indigo-50 px-2 py-1 rounded-lg mr-1 max-sm:text-xs"
                             >
                               {tag}
                             </span>
