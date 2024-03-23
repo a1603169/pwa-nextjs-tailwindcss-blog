@@ -12,15 +12,15 @@ This would be much faster to write down what I want.
 ### Pros 
 
 The smoothness of action and speed of the action is fast enough.
-I've tested MapleStory with my Windows PC and it is way better than other remote desktop options.
+I've tested MapleStory with my Windows PC and `it is way better than other remote desktop options`.
 
 I personally divide the screens into 5.
 
-1. Programming
-2. Zsh / Slack / email
-3. DB / Cypress
-4. Work related **Searching**
-5. Fixed browsers(attendance/calendar/translator/gpt)
+1. 1.Programming
+2. 2.Zsh / Slack / email
+3. 3.DB / Cypress
+4. 4.Work related Searching
+5. 5.Fixed browsers(attendance/calendar/translator/gpt)
 
 ### Cons 
 
