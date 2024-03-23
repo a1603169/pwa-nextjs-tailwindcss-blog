@@ -24,7 +24,7 @@ I personally divide the screens into 5.
 
 ### Cons 
 
-The language typing is a bit problematic.
+The language input is a bit problematic.
 If I switch this English into Korean, some keys are not working and even not changed.
 Therefore, those who have frequent language changes might not be happy about this option.
 
