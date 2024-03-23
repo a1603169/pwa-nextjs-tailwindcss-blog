@@ -19,7 +19,7 @@ I personally divide the screens into 5.
 1. Programming
 2. Zsh / Slack / email
 3. DB / Cypress
-4. Work related Searching
+4. Work related **Searching**
 5. Fixed browsers(attendance/calendar/translator/gpt)
 
 ### Cons 
