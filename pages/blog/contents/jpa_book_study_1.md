@@ -15,7 +15,7 @@ DB관리를 위해선 우리는 SQL을 사용한다.
 
 #### DAO Example
 
-```Java
+```java
 import java.util.List;
 
 public interface UserDao {
