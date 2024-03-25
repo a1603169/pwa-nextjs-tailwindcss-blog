@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function PersonalHead() {
   return (
     <>
-      <meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width" />
+      <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
         <meta name="apple-mobile-web-app-title" content="Seunghun's Dev Log" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
