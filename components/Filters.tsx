@@ -38,7 +38,7 @@ export default function Filters({
         })}
         {selectedTags.length > 0 && (
         <button
-          className="duration-300 flex items-center justify-center grow px-4 py-2 bg-red-300 text-white rounded-lg hover:bg-red-500"
+          className="duration-300 flex items-center justify-center grow px-4 py-2 bg-red-300 text-white rounded-lg hover:bg-red-500 max-sm:text-xs"
           onClick={() => setSelectedTags([])}
         >
           Clear
