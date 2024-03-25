@@ -159,7 +159,7 @@ export default function Layout({ children }: layoutProps) {
       </div>
       {/* This has to be based on viewheights */}
       <main className={`py-10`}>{children}</main>
-      <footer className={`${isTop ? 'fixed' : 'relative'} bottom-0 right-0 left-0 backdrop-blur-lg z-50`}>
+      <footer className={`${isTop ? 'fixed' : 'relative'} bottom-0 right-0 left-0 bg-white z-50`}>
         <SocialLinks />
         <p className="text-2xl text-indigo-400 text-center">
           © 2024 Seunghun David Bang
