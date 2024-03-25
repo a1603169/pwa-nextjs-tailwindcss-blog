@@ -93,13 +93,14 @@ export default function Blog({
         </ul>
         <div className="flex justify-center w-3/4 mt-10 gap-2">
           {pageNumbers.map((number) => (
-            <button
+            <a
               className="duration-300 hover:text-indigo-500"
               key={number}
+              href="#blogContents"
               onClick={() => setCurrentPage(number)}
             >
               {number}
-            </button>
+            </a>
           ))}
         </div>
       </section>

@@ -21,6 +21,9 @@ const hamburgerButtonActive: string =
 export default function Layout({ children }: layoutProps) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [lastScrollTop, setLastScrollTop] = useState<number>(0);
+  const [isScrollingUp, setIsScrollingUp] = useState<boolean>(false);
+
 
   function toggleMenu() {
     setIsOpen(!isOpen);
@@ -31,14 +34,17 @@ export default function Layout({ children }: layoutProps) {
   useEffect(() => {
     const handleScroll = () => {
       const isTop = window.scrollY === 0;
+      const isScrollingUp = window.scrollY < lastScrollTop;
       setIsTop(isTop);
+      setIsScrollingUp(isScrollingUp);
+      setLastScrollTop(window.scrollY)
     };
   
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [lastScrollTop]);
 
   useEffect(() => {
     setIsOpen(false);
@@ -46,6 +52,7 @@ export default function Layout({ children }: layoutProps) {
 
   return (
     <>
+      {isScrollingUp && (
       <div className="sticky top-0 left-0 right-0 border-solid border-b-2 border-indigo-300 text-indigo-300 backdrop-blur-lg z-50">
         <nav className="font-sans">
           <ul className="flex p-5 text-2xl justify-between items-center font-sans pt-5 -mt-5">
@@ -163,6 +170,7 @@ export default function Layout({ children }: layoutProps) {
           </div>
         </nav>
       </div>
+      )}
       {/* This has to be based on viewheights */}
       <main className={`py-10`}>{children}</main>
       <footer className={`${isTop ? 'fixed' : 'relative'} bottom-0 right-0 left-0 backdrop-blur-lg z-50`}>
