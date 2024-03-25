@@ -170,7 +170,7 @@ JavaScript에서 `.indexOf()` 메소드는 `매우 최적화`되어 있으며, �
 
 #### **내 접근법**
 
-<img class='blogImage' src='/blog/find_index_1.png'>
+<img class='blogImage' src='/blog/find_index.png'>
 
 ----
 
