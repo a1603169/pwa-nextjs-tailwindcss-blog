@@ -2,11 +2,9 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import SocialLinks from "./SocialLinks";
-
 interface layoutProps {
   children: React.ReactNode;
 }
-
 const logoStyle: string =
   "border-solid border-2 border-indigo-300 p-2 ease-in duration-300 hover:text-indigo-500 hover:border-indigo-500 hover:scale-90";
 const logoStyleActive: string =
@@ -21,56 +19,33 @@ const hamburgerButtonActive: string =
 export default function Layout({ children }: layoutProps) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [isScrollingUp, setIsScrollingUp] = useState<boolean>(true);
-  const [isTop, setIsTop] = useState<boolean>(true);
-  const [lastScrollY, setLastScrollY] = useState<number>(0);
-  
-  
-  // This is for mobile menu view 
   function toggleMenu() {
     setIsOpen(!isOpen);
-    console.log('Toggle for mobile')
   }
+  const [isTop, setIsTop] = useState(true);
   
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-    console.log(currentScrollY, lastScrollY, 'scroll')
-    if (currentScrollY > lastScrollY && isScrollingUp) {
-      // 스크롤이 내려가는 방향이고, 이전 상태가 스크롤 업이면 상태를 업데이트
-      setTimeout(() => setIsScrollingUp(false), 10);
-      // setIsScrollingUp(false);
-    } else if (currentScrollY < lastScrollY && !isScrollingUp) {
-      // 스크롤이 올라가는 방향이고, 이전 상태가 스크롤 다운이면 상태를 업데이트
-      setTimeout(() => setIsScrollingUp(true), 10);
-    }
-    
-    setIsTop(currentScrollY === 0); // Set isTop to true if the scroll position is at the top
-    setLastScrollY(currentScrollY); // Update the last scroll position
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const isTop = window.scrollY === 0;
+      setIsTop(isTop);
+    };
+  
     window.addEventListener('scroll', handleScroll);
-    if(lastScrollY === 0) {
-      setIsScrollingUp(false);
-    }
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
-
+  }, []);
   useEffect(() => {
     setIsOpen(false);
   }, [router]);
-
   return (
     <>
-      {!isScrollingUp && (
       <div className="sticky top-0 left-0 right-0 border-solid border-b-2 border-indigo-300 text-indigo-300 backdrop-blur-lg z-50">
         <nav className="font-sans">
           <ul className="flex p-5 text-2xl justify-between items-center font-sans pt-5 -mt-5">
             <div>
                 <Link href="/" className={
-                  "rounded-xl " +
+                  "rounded-xl " +  
                   (router.pathname === "/" ? logoStyleActive : logoStyle)
                 }>DAVID.BANG</Link>
             </div>
@@ -182,7 +157,6 @@ export default function Layout({ children }: layoutProps) {
           </div>
         </nav>
       </div>
-      )}
       {/* This has to be based on viewheights */}
       <main className={`py-10`}>{children}</main>
       <footer className={`${isTop ? 'fixed' : 'relative'} bottom-0 right-0 left-0 backdrop-blur-lg z-50`}>
@@ -191,6 +165,6 @@ export default function Layout({ children }: layoutProps) {
           © 2024 Seunghun David Bang
         </p>
       </footer>
-</>
+    </>
   );
 }
