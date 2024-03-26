@@ -49,12 +49,12 @@ export default function Blog({
           selectedTags={selectedTags}
           setSelectedTags={setSelectedTags}
         />
+        {/* To direct the right position of the app */}
+        <div id="blogContents" className="absolute"></div>
         <ul
-          id="blogContents"
           className="flex w-3/4 flex-col gap-5 border-2 border-indigo-300 border-solid p-5 rounded-xl max-md:text-sm"
         >
           {currentPosts.map(({ id, date, title, subtitle, tags }) => {
-            console.log(tags);
             return (
               <li className="group relative shadow-indigo-500/50" key={id}>
                 <Link
