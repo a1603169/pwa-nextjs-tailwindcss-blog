@@ -14,9 +14,9 @@ First, you need to do is to visit this website.
 
 Second, what you need is just 3 clicks!
 
-1. 1.Click Share btn on your chrome/safari browser (Example is in Chrome)
-2. 2.Click the `Add to Home` btn 
-3. 3.Click `Add`
+1. Click Share btn on your chrome/safari browser (Example is in Chrome)
+2. Click the `Add to Home` btn 
+3. Click `Add`
 
 <img src="public/pwa.jpeg" />
 
