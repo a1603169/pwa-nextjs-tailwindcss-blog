@@ -64,11 +64,11 @@ export default function Post({
   useEffect(() => {
     const anchor = document.getElementById("comments");
 
-    // Check if the element exists in the DOM
     if (anchor) {
       const script = document.createElement("script");
       script.src = "https://utteranc.es/client.js";
-      script.setAttribute("repo", "a1603169/nextjs-tailwindcss-blog-portfolio"); // replace with your repo
+      // When you update your repo name, you have to update the repo attribute
+      script.setAttribute("repo", "a1603169/pwa-nextjs-tailwindcss-blog"); // replace with your repo
       script.setAttribute("issue-term", "pathname");
       script.setAttribute("theme", "github-light");
       script.crossOrigin = "anonymous";
