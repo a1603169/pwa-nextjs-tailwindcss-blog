@@ -48,6 +48,8 @@ export default function Blog({
           tags={tags}
           selectedTags={selectedTags}
           setSelectedTags={setSelectedTags}
+          // When Filter component is clicked, the page should go 1.
+          setCurrentPage={setCurrentPage}
         />
         {/* To direct the right position of the app */}
         <div id="blogContents" className="absolute"></div>

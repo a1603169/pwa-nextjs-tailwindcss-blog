@@ -2,12 +2,14 @@ type FiltersProps = {
   tags: Object;
   selectedTags: string[];
   setSelectedTags: (tags: string[]) => void;
+  setCurrentPage: (page: number) => void;
 };
 
 export default function Filters({
   tags,
   selectedTags,
   setSelectedTags,
+  setCurrentPage
 }: FiltersProps) {
   const handleTagClick = (tag: string) => {
     if (selectedTags.includes(tag)) {
@@ -17,6 +19,9 @@ export default function Filters({
     } else {
       setSelectedTags([...selectedTags, tag]);
     }
+
+    // Navigate to first page when a tag is clicked
+    setCurrentPage(1);
   };
 
   return (
