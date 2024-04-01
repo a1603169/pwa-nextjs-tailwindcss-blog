@@ -1,6 +1,6 @@
 ---
-title: 'AWS 시험준비 - 2'
-subtitle: 'Solution Architechture Associate'
+title: 'AWS Solution Architechture Associate 시험준비 - 2'
+subtitle: 'IAM (feat. MFA)'
 date: '2024-03-22'
 tags: [Cloud, CS]
 ---

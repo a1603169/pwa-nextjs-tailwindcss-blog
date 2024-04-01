@@ -1,6 +1,6 @@
 ---
-title: 'AWS 시험준비 - 3'
-subtitle: 'Solution Architechture Associate'
+title: 'AWS Solution Architechture Associate 시험준비 - 3'
+subtitle: 'IAM(2) and AWS Management tools '
 date: '2024-03-22'
 tags: [Cloud, CS]
 ---

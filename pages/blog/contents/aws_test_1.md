@@ -1,6 +1,6 @@
 ---
-title: 'AWS 시험준비 - 1'
-subtitle: 'Solution Architechture Associate'
+title: 'AWS Solution Architechture Associate 시험준비 - 1'
+subtitle: 'AWS Region / AZ basic '
 date: '2024-03-22'
 tags: [Cloud, CS]
 ---
