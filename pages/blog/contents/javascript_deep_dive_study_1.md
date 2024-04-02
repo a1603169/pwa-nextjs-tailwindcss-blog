@@ -50,7 +50,7 @@ tags: [JavaScript, FE]
 
 - 클라이언트 사이드에서 실행되는 자바스크립트 환경입니다.
   
-- DOM(Document Object Model)을 조작하여 웹 페이지의 내용을 동적으로 변경할 수 있습니다. (DOM API 있음)
+- DOM(Document Object Model)을 조작하여 웹 페이지의 내용(HTML)을 동적으로 변경할 수 있습니다. (DOM API 있음)
   
 - 사용자와의 상호작용을 처리하거나, 웹 페이지에 애니메이션을 추가하는 등의 작업이 가능합니다.
   
