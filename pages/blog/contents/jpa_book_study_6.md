@@ -28,7 +28,7 @@ JPA에서 데이터베이스 방언을 교체하려면, persistence.xml 파일�
 
 #### application.properties (Spring Boot Config): 
 
-```conf
+```properties
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
 ```
 
@@ -256,7 +256,7 @@ JPA에서 **`트랜잭션`** 은 **데이터베이스 작업의 단위** 를 의
 
 `persist()` 메소드에 저장할 엔티티를 넘겨주면 됩니다. JPA는 회원 엔티티의 매핑 정보(Annotation)를 분석해서 하기와 같은 SQL을 DB에 전달합니다.
 
-```SQL
+```sql
 INSERT INTO MEMBER (ID, NAME, AGE) VALUES ('1', 'John Doe', 25)
 ```
 
@@ -265,7 +265,8 @@ INSERT INTO MEMBER (ID, NAME, AGE) VALUES ('1', 'John Doe', 25)
 **em.update()** 와 같은 코드가 아닌 단순히 `setAge()`와 같은 메서드로 JPA는 어떤 엔티티가 변경되었는지 추적이 가능합니다. 
 
 생성되는 SQL은 하기와 같습니다.
-```SQL
+
+```sql
 UPDATE MEMBER
     SET AGE = 35, NAME='Jane Doe'
 WHERE ID='1'
@@ -278,7 +279,7 @@ WHERE ID='1'
 
 조회할 `엔티티 타입`과 `@id`로 테이블의 기본 키와 매핑하여 엔티티 하나를 조회할 수 있습니다.
 
-```SQL
+```sql
 SELECT * FROM MEMBER WHERE ID='1'
 ```
 
