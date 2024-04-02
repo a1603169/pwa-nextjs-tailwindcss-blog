@@ -27,7 +27,7 @@ Node.js, Ruby, Python, Elixir 등 다양한 언어와 도구의 버전을 한 �
 
 #### **`corepack:`**
 
-corepack은 Node.js 프로젝트에서 **`패키지 매니저 버전`**을 표준화하는 도구입니다.
+corepack은 Node.js 프로젝트에서 **`패키지 매니저 버전`** 을 표준화하는 도구입니다.
 
 Yarn이나 pnpm과 같은 패키지 매니저의 특정 버전을 프로젝트에 연결할 수 있게 해줍니다.
 
