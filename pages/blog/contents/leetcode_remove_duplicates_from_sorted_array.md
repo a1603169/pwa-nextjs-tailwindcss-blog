@@ -1,5 +1,5 @@
 ---
-title: '정돈된 배열에서 중복 값 제거(Leetcode)'
+title: 'Sorted 배열에서 중복 값 제거(Leetcode)'
 subtitle: 'Algorithm 공부 Leetcode (remove-duplicates-from-sorted-array)'
 date: '2024-04-07'
 tags: [Algorithm, JavaScript, LeetCode]
