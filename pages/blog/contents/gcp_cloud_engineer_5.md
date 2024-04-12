@@ -67,6 +67,9 @@ tags: [Cloud, GCP]
 - ㅇ **Role Assignment**: A service account with the `Compute Engine’s Instance Admin role can manage other VMs`, including **creating, modifying, and deleting** them as required by an application.
 
 - ㅇ **Management of Service Accounts**: Service accounts can `be managed with specific permissions`. 
+
+<img class='blogImage' src='/blog/service_account.png'>
+
 - ㅇ For example:
   - ㅁ Alice could **manage Google accounts** that can `act as service accounts`.
   - ㅁ Bob could **be granted permissions** to view a `list of service accounts`.
