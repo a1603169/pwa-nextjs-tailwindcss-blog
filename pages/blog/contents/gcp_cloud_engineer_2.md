@@ -33,27 +33,30 @@ tags: [Cloud, GCP]
   
   - ㅇ Helps companies focus more on **business goals**.
   
-  - ㅇ **Reduces** the need for spending **time and money** on `technical infrastructure`.
+  - ㅇ **`Reduces`** the need for spending **time and money** on `technical infrastructure`.
   
-  - ㅇ **Enhances** the ability to deliver `products and services` **quickly and reliably**.
+  - ㅇ **`Enhances`** the ability to deliver `products and services` **quickly and reliably**.
 
 - **Serverless Computing**:
 
-  - ㅇ **Allows** developers to `focus on code rather than server configuration`.
+  - ㅇ **`Allows`** developers to `focus on code rather than server configuration`.
   
-  - ㅇ **Eliminates** the need for `infrastructure management`.
+  - ㅇ **`Eliminates`** the need for `infrastructure management`.
   
-  - ㅇ **Includes** `Google Cloud Functions` (**event-driven**, **pay-as-you-go** service) and `Cloud Run` (managed environment for **deploying containerized microservices**).
+  - ㅇ **`Includes`** `Google Cloud Functions` (**event-driven**, **pay-as-you-go** service) and `Cloud Run` (managed environment for **deploying containerized microservices**).
 
 - **Software as a Service (SaaS)**:
   
-  - ㅇ Provides entire application stacks as cloud-based applications.
+  - ㅇ `Provides entire application stacks` as **cloud-based** applications.
   
-  - ㅇ Applications are not installed locally but run in the cloud.
+  - ㅇ Applications are `not installed locally but run in the cloud`.
   
-  - ㅇ Accessed and used over the internet by end users.
+  - ㅇ Accessed and `used over the internet` by end users.
   
-  - ㅇ Examples include Google Workspace applications like Gmail, Docs, and Drive.
+  - ㅇ Examples include **Google Workspace applications** like **`Gmail, Docs, and Drive`**.
+
+
+-------------
 
 ### 서비스 모델 (한국어)
 
