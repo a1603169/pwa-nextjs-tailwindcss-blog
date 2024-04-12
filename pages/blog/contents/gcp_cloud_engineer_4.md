@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 4'
-subtitle: 'Introducting Google Cloud - Pricing and Billing'
+subtitle: 'Introducting Google Cloud - Pricing and Billing / Google Cloud Resource Hierarchy'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---
@@ -40,3 +40,46 @@ tags: [Cloud, GCP]
 - ㅇ **지출 모니터링**: 구글 클라우드 콘솔의 시각적 도구를 통해 프로젝트 또는 서비스별 지출을 모니터링할 수 있습니다.
 
 - ㅇ **할당량**: 리소스 과소비를 방지하도록 설계된 할당량은 `특정 시간 후에 재설정되는 비율 할당량(1)`과 `리소스 수를 제한하는 할당 할당량(2)`이 있습니다.
+
+
+-------------
+
+### Google Cloud Resource Hierarchy
+
+<img class='blogImage' src='/blog/gcrh.png'>
+
+출처 : https://www.techtarget.com/searchcloudcomputing/tip/Break-down-the-Google-Cloud-resource-hierarchy
+
+- ㅇ **Resource Hierarchy**: Google Cloud's structure includes **four levels**: `resources, projects, folders, and an organization node`, from bottom to top.
+
+- ㅇ **Resources**: These are the **`base elements`** like `virtual machines`, `Cloud Storage buckets`, and `BigQuery tables`.
+
+- ㅇ **Projects**: `Serve as containers for resources` and `enable the use of Google Cloud services`; each project is distinct within the organization.
+
+- ㅇ **Folders**: `Organize projects` and can `contain multiple projects` or other folders; `policies applied at the folder level` inherit to all contained projects.
+
+- ㅇ **Organization Node**: The `top-level element` that `encompasses(포함합니다) all projects and folders`; `policies and administrative roles` are managed at this level.
+
+- ㅇ **Policy Management**: Policies can be `set at various levels` and are `inherited downwards`, `providing flexibility` and `control over access and operations`.
+
+- ㅇ **Special Roles**: Include `organization policy administrators` and `project creators`, which help `manage access` and `control spending`.
+
+- ㅇ **Google Workspace and Cloud Identity**: `Determines how organization nodes are created`, either `automatically through a Google Workspace domain` or `manually via Cloud Identity`.
+
+### 구글 클라우드 리소스 구조
+
+- ㅇ **리소스 계층 구조**: 구글 클라우드의 구조는 자원, 프로젝트, 폴더 및 조직 노드의 네 단계로 구성됩니다.
+
+- ㅇ **자원**: 가상 머신, 클라우드 스토리지 버킷, 빅쿼리 테이블과 같은 기본 요소입니다.
+
+- ㅇ **프로젝트**: 자원을 포함하는 컨테이너 역할을 하며, 구글 클라우드 서비스 사용을 가능하게 합니다; 각 프로젝트는 조직 내에서 독립적입니다.
+
+- ㅇ **폴더**: 프로젝트를 조직하고 여러 프로젝트 또는 다른 폴더를 포함할 수 있습니다; 폴더 수준에서 적용된 정책은 모든 포함된 프로젝트에 상속됩니다.
+
+- ㅇ **조직 노드**: 모든 프로젝트와 폴더를 포괄하는 최상위 요소; 정책 및 관리 역할은 이 수준에서 관리됩니다.
+
+- ㅇ **정책 관리**: 다양한 수준에서 정책을 설정할 수 있으며, 하향식으로 상속되어 접근 및 운영에 대한 유연성과 제어를 제공합니다.
+
+- ㅇ **특별 역할**: 조직 정책 관리자 및 프로젝트 생성자를 포함하여 접근 관리 및 지출 제어를 돕습니다.
+
+- ㅇ **구글 워크스페이스 및 클라우드 아이덴티티**: 조직 노드 생성 방법을 결정하며, 구글 워크스페이스 도메인을 통해 자동으로 또는 클라우드 아이덴티티를 통해 수동으로 생성됩니다.
