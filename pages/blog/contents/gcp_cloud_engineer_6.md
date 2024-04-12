@@ -146,3 +146,19 @@ Debian은 안정성과 보안에 중점을 둔, 오픈 소스의 Linux 배포판
 가상 머신은 물리적 하드웨어 리소스를 에뮬레이션하여 독립적인 가상의 컴퓨터 시스템을 생성하는 소프트웨어 기술입니다. 이를 통해 하나의 물리적 머신에서 여러 개의 다른 운영 체제를 동시에 실행할 수 있습니다.
 
 따라서, Debian-based virtual machine은 Debian 운영 체제를 실행하는 가상 머신을 의미합니다. 이는 클라우드 환경에서 자주 사용되며, 사용자는 필요에 따라 이러한 가상 머신을 생성하고 관리할 수 있습니다.
+
+### 틀린 문제
+
+>Choose the correct completion: Services and APIs are enabled on a per-__________ basis.
+
+**Answer :** In Google Cloud Platform (GCP), services and APIs are enabled on a **`per-project basis`**. 
+
+
+
+This means that each service or API must be specifically enabled for each project where you want to use it.
+
+This setup helps in managing permissions and billing for different services across various projects within an organization.
+
+> Which of these values is globally unique, permanent, and unchangeable, but can be modified by the customer during creation?
+
+**Answer :** project ID 

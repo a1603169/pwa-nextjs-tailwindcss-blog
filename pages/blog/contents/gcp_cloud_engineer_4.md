@@ -55,7 +55,7 @@ tags: [Cloud, GCP]
 - ㅇ **Resources**: These are the **`base elements`** like `virtual machines`, `Cloud Storage buckets`, and `BigQuery tables`.
 
 - ㅇ **Projects**: `Serve as containers for resources` and `enable the use of Google Cloud services`; each project is distinct within the organization.
-  - ㅁ **Project ID**: A globally `unique identifier assigned by Google`, `immutable` once created.
+  - ㅁ **Project ID**: A globally `unique identifier assigned by Google`, `immutable` once created. **`(Can be modified during creation!)`**
   - ㅁ **Project Name**: `User-created, not unique` and can be changed at any time.
   - ㅁ **Project Number**: A `unique number assigned by Google`, mainly used internally `to track resources` also `immutable`.
   
