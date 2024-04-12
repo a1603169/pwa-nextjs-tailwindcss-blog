@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 3'
-subtitle: 'Introducting Google Cloud - Environmental Impact / Security'
+subtitle: 'Introducting Google Cloud - Environmental Impact / Security / Open Source Ecosystems'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---
@@ -143,6 +143,41 @@ tags: [Cloud, GCP]
   
   - ㅇ 인프라 또는 애플리케이션의 버그를 발견하고 알리는 것을 장려하는 취약점 보상 프로그램.
 
+
+--------- 
+
+### Open Source Ecosystems
+
+- ㅇ **Vendor Lock-in Concerns**: Some organizations `hesitate to adopt cloud solutions` due to `fears of becoming dependent on a single vendor`.
+
+- ㅇ **Google's Flexibility**: Google `ensures customers can run their applications elsewhere` if they choose to leave Google Cloud.
+
+- ㅇ **Open Source Initiatives**: Google publishes `key technologies under open source licenses` to **foster ecosystems** that provide alternatives to Google's services.
+
+- ㅇ **Example of TensorFlow**: TensorFlow is an `open source machine learning library` developed by Google, central to a robust open source ecosystem.
+
+- ㅇ **Interoperability Solutions**:
+  
+  - ㅁ `Kubernetes and Google Kubernetes Engine` support the **mixing and matching of microservices** `across different cloud environments`.
+  
+  - ㅁ **Google Cloud’s operations suite(운영제품군)** allows for `monitoring of workloads across multiple cloud providers`.
+
+### 오픈 소스 생태계
+
+- ㅇ **벤더 종속성 우려**: 일부 조직은 단일 벤더에 의존하게 될까 봐 클라우드 솔루션 도입을 주저합니다.
+
+- ㅇ **구글의 유연성**: 고객이 구글 클라우드를 떠나기로 결정한 경우, 고객이 자신의 애플리케이션을 다른 곳에서 실행할 수 있도록 지원합니다.
+
+- ㅇ **오픈 소스 이니셔티브**: 구글은 주요 기술을 오픈 소스 라이센스로 공개하여 구글의 서비스 외에 대안을 제공하는 생태계를 조성합니다.
+
+- ㅇ **텐서플로우 예시**: 구글 내부에서 개발된 오픈 소스 기계 학습 라이브러리인 텐서플로우는 강력한 오픈 소스 생태계의 핵심입니다.
+
+- ㅇ **상호 운용성 솔루션**:
+  
+  - ㅁ 쿠버네티스와 구글 쿠버네티스 엔진은 다양한 클라우드 환경에서 마이크로서비스를 혼합 및 매치하는 것을 지원합니다.
+  
+  - ㅁ 구글 클라우드의 운영 스위트는 여러 클라우드 제공업체에서 워크로드를 모니터링할 수 있게 합니다.
+
 ### 모르는 단어
 
 #### Secure Boot Stack
@@ -216,3 +251,5 @@ U2F(Universal 2nd Factor)는 사용자가 온라인 서비스에 로그인할 �
 U2F는 사용자 이름과 비밀번호와 같은 첫 번째 요소 외에도 물리적 보안 키를 사용하여 사용자를 인증합니다. 사용자는 이 키를 컴퓨터의 USB 포트에 연결하거나, NFC 또는 블루투스를 통해 연결하여 자신을 인증합니다.
 
 U2F는 피싱 공격과 같은 보안 위협에 대한 보호를 제공하며, 사용자가 로그인 과정에서 추가적인 보안 단계를 수행하도록 요구함으로써 계정의 보안을 강화합니다.
+
+
