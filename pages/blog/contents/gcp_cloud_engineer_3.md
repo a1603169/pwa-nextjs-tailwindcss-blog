@@ -53,7 +53,7 @@ tags: [Cloud, GCP]
   
   - ㅇ `Secure boot stack` with **cryptographic signatures** over the `BIOS, bootloader, kernel, and OS image`.
   
-  - ㅇ `Premises security` with **multiple physical layers** and **limited access** to Google employees.
+  - ㅇ `Premises security(전제보안)` with **multiple physical layers** and **limited access** to Google employees.
 
 - **Service Deployment**:
   
@@ -69,7 +69,7 @@ tags: [Cloud, GCP]
 
 - **Storage Services**:
   
-  - ㅇ `Encryption` at rest using `centrally managed keys`.
+  - ㅇ `Encryption at rest(저장 시 암호화)` using `centrally managed keys`.
   
   - ㅇ `Hardware encryption` support in **hard drives and SSDs**.
 
@@ -89,7 +89,7 @@ tags: [Cloud, GCP]
   
   - ㅇ **Mandatory use** of `U2F-compatible Security Keys` by employees.
   
-  - ㅇ `Stringent(엄중한) software development practices` including `two-party code review(한 명 이상의 동료 개발자가 작성한 코드를 검토 / 피드백 제공)` and `secure libraries(보안 라이브러리)`.
+  - ㅇ **Stringent(엄중한) software development practices** including `two-party code review(한 명 이상의 동료 개발자가 작성한 코드를 검토 / 피드백 제공)` and `secure libraries(보안 라이브러리)`.
   
   - ㅇ `Vulnerability(취약점) Rewards Program` to encourage bug reporting.
 
@@ -144,6 +144,14 @@ tags: [Cloud, GCP]
   - ㅇ 인프라 또는 애플리케이션의 버그를 발견하고 알리는 것을 장려하는 취약점 보상 프로그램.
 
 ### 모르는 단어
+
+#### Secure Boot Stack
+
+Secure Boot Stack은 컴퓨터가 부팅될 때 실행되는 소프트웨어의 시퀀스를 안전하게 유지하기 위한 기술입니다. 이는 BIOS, 부트로더, 커널, 운영 체제 이미지 등의 컴포넌트를 포함합니다.
+
+Secure Boot Stack의 주요 목표는 부팅 과정에서 악성 코드가 실행되는 것을 방지하는 것입니다. 이를 위해 각 컴포넌트는 다음 컴포넌트의 무결성을 검증하고, 검증에 실패하면 부팅을 중단합니다. 이 검증 과정은 일반적으로 암호학적 서명을 사용하여 수행됩니다.
+
+따라서, Secure Boot Stack은 컴퓨터가 안전한 상태에서 시작되도록 보장하고, 루트킷이나 부트킷과 같은 고급 악성 코드로부터 시스템을 보호하는 데 중요한 역할을 합니다.
 
 #### RPC Data
 
