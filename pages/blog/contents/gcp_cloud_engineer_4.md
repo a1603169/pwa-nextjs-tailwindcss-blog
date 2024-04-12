@@ -55,7 +55,9 @@ tags: [Cloud, GCP]
 - ㅇ **Resources**: These are the **`base elements`** like `virtual machines`, `Cloud Storage buckets`, and `BigQuery tables`.
 
 - ㅇ **Projects**: `Serve as containers for resources` and `enable the use of Google Cloud services`; each project is distinct within the organization.
-
+  - ㅁ **Project ID**: A globally `unique identifier assigned by Google`, `immutable` once created.
+  - ㅁ **Project Name**: `User-created, not unique` and can be changed at any time.
+  - ㅁ **Project Number**: A `unique number assigned by Google`, mainly used internally `to track resources`.
 - ㅇ **Folders**: `Organize projects` and can `contain multiple projects` or other folders; `policies applied at the folder level` inherit to all contained projects.
 
 - ㅇ **Organization Node**: The `top-level element` that `encompasses(포함합니다) all projects and folders`; `policies and administrative roles` are managed at this level.
