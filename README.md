@@ -1,7 +1,3 @@
-Certainly! Here's a more polished and attractive version of the README in Markdown format for your Progressive Web Application project using NextJS and TypeScript:
-
----
-
 # Progressive Web Application with NextJS & TypeScript
 
 Take your studies anywhere and anytime with our mobile-friendly Progressive Web Application (PWA). Designed for seamless learning on the go, our application ensures that you have all your educational resources right at your fingertips, regardless of where you are.
@@ -33,7 +29,3 @@ Here’s what each step looks like in Chrome:
 - **Device Hardware Access:** Utilize the full potential of your device.
 
 PWAs represent the convergence of web standards and the mobile experience, providing the best of both worlds. Embrace the future of applications without sacrificing the perks of mobile usability.
-
----
-
-Feel free to adjust the content as needed to better fit your project or personal style preferences!
