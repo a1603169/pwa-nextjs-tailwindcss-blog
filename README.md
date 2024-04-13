@@ -1,4 +1,4 @@
-# Progressive Web Application with NextJS & TypeScript
+# Progressive Web Application with NextJS & TypeScript & Tailwind CSS
 
 Take your studies anywhere and anytime with our mobile-friendly Progressive Web Application (PWA). Designed for seamless learning on the go, our application ensures that you have all your educational resources right at your fingertips, regardless of where you are.
 
