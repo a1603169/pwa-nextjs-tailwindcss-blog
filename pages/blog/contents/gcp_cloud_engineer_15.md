@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 15'
-subtitle: 'Introducting Google Cloud - Comparing Storage Options'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Comparing Storage Options'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---

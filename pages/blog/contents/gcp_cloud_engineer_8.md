@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 8'
-subtitle: 'Introducting Google Cloud - Scaling Virtual Machines / Importance VPC compatibilities(호환성)'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Scaling Virtual Machines / Importance VPC compatibilities(호환성)'
 date: '2024-04-13'
 tags: [Cloud, GCP]
 ---

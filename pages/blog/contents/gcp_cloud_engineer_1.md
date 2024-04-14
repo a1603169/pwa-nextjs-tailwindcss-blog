@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 1'
-subtitle: 'Introducting Google Cloud'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---

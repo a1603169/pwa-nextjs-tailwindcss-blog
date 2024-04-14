@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 6'
-subtitle: 'Introducting Google Cloud - Cloud Identity / Interacting with Google Cloud'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Cloud Identity / Interacting with Google Cloud'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---

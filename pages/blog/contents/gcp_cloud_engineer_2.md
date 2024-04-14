@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 2'
-subtitle: 'Introducting Google Cloud - IaaS, PaaS / Google Cloud Network'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - IaaS, PaaS / Google Cloud Network'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---

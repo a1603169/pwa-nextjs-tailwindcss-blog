@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 4'
-subtitle: 'Introducting Google Cloud - Pricing and Billing / Google Cloud Resource Hierarchy'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Pricing and Billing / Google Cloud Resource Hierarchy'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---

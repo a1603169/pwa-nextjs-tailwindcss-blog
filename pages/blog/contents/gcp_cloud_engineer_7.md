@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 7'
-subtitle: 'Introducting Google Cloud - Virtual Private Cloud(VPC) networking / Compute Engine'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Virtual Private Cloud(VPC) networking / Compute Engine'
 date: '2024-04-13'
 tags: [Cloud, GCP]
 ---

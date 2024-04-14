@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 5'
-subtitle: 'Introducting Google Cloud - Identity and Access Management(IAM) / Service Accounts'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Identity and Access Management(IAM) / Service Accounts'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---

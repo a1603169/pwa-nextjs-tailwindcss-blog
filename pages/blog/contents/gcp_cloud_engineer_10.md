@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 10'
-subtitle: 'Introducting Google Cloud - Connecting networks to Google VPC'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Connecting networks to Google VPC'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---

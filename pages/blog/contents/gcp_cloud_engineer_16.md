@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 16'
-subtitle: 'Introducting Google Cloud - Introduction to containers'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Introduction to containers'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---

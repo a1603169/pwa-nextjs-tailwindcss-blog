@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 12'
-subtitle: 'Introducting Google Cloud - Cloud Storage / Detail: Storage Classes and Data Transfer'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Cloud Storage / Detail: Storage Classes and Data Transfer'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---

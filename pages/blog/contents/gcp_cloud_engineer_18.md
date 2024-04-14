@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 18'
-subtitle: 'Introducting Google Cloud - Cloud Run / Development in the cloud'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Cloud Run / Development in the cloud'
 date: '2024-04-14'
 tags: [Cloud, GCP, Kubernetes]
 ---

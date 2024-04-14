@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 3'
-subtitle: 'Introducting Google Cloud - Environmental Impact / Security / Open Source Ecosystems'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Environmental Impact / Security / Open Source Ecosystems'
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---

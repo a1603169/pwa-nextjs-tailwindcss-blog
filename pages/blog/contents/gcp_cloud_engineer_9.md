@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 9'
-subtitle: 'Introducting Google Cloud - Cloud Load Balancing / Cloud DNS and Cloud CDN'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Cloud Load Balancing / Cloud DNS and Cloud CDN'
 date: '2024-04-13'
 tags: [Cloud, GCP]
 ---

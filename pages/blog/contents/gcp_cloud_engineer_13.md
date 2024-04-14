@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 13'
-subtitle: 'Introducting Google Cloud - Cloud SQL / Cloud Spanner'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Cloud SQL / Cloud Spanner'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---

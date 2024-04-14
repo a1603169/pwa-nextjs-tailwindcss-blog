@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 17'
-subtitle: 'Introducting Google Cloud - Kubernetes / Google Kubernetes Engine'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Kubernetes / Google Kubernetes Engine'
 date: '2024-04-14'
 tags: [Cloud, GCP, Kubernetes]
 ---

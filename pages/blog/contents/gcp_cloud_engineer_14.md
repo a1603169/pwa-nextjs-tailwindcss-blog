@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 14'
-subtitle: 'Introducting Google Cloud - Firestore / Cloud Bigtable'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Firestore / Cloud Bigtable'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---

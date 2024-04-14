@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 19'
-subtitle: 'Introducting Google Cloud - Prompt Engineering'
+subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Prompt Engineering'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---
