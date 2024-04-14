@@ -1,5 +1,5 @@
 ---
-title: 'GCP Cloud Engineer - 16'
+title: 'GCP Cloud Engineer - 17'
 subtitle: 'Introducting Google Cloud - Kubernetes / Google Kubernetes Engine'
 date: '2024-04-14'
 tags: [Cloud, GCP, Kubernetes]
@@ -7,19 +7,19 @@ tags: [Cloud, GCP, Kubernetes]
 
 ### Kubernetes
 
-- ㅇ **Kubernetes Overview**: Kubernetes is an open-source platform for managing containerized workloads and services, which simplifies the orchestration of many containers across multiple hosts.
+- ㅇ **Kubernetes Overview**: Kubernetes is an `open-source platform` for managing `containerized workloads and services`, which simplifies the `orchestration(오케스트라) of many containers` across `multiple hosts`.
 
-- ㅇ **Cluster Management**: Utilizes a cluster of nodes, where a node represents a computing instance, different from a Google Cloud virtual machine.
+- ㅇ **Cluster Management**: Utilizes a `cluster of nodes`, where a `node` represents a `computing instance`, different from a `Google Cloud virtual machine`.
 
-- ㅇ **Pods and Deployments**: Pods are the smallest deployable units in Kubernetes, typically containing one container, but can hold multiple if they share dependencies. Deployments manage groups of these pods to ensure availability and scaling.
+- ㅇ **Pods and Deployments**: `Pods` are the `smallest deployable units in Kubernetes`, typically containing `one container`, but `can hold multiple if they share dependencies`. Deployments `manage groups of these pods` to ensure `availability and scaling`.
 
-- ㅇ **Services and Networking**: Kubernetes provides services that assign a stable IP address to groups of pods, facilitating consistent access and load balancing through network load balancers in GKE.
+- ㅇ **Services and Networking**: Kubernetes provides services that `assign a stable IP address to groups of pods`, facilitating `consistent access` and `load balancing `through `network load balancers` in GKE.
 
-- ㅇ **Scaling and Autoscaling**: Scaling is managed with commands like `kubectl scale`, with options for autoscaling based on parameters like CPU utilization.
+- ㅇ **Scaling and Autoscaling**: `Scaling` is managed with `commands` like `kubectl scale`, with `options for autoscaling` based on `parameters like CPU utilization`.
 
-- ㅇ **Declarative Management**: Promotes using configuration files to define desired states, rather than imperative commands, for managing deployments and updates.
+- ㅇ **Declarative Management**: `Promotes` using `configuration files` to define `desired states`, rather than `imperative commands`, for `managing deployments and updates`.
 
-- ㅇ **Update and Rollout Strategies**: Updates are managed through `kubectl rollout` or by applying changes in deployment configuration files, with strategies to minimize risk during updates.
+- ㅇ **Update and Rollout Strategies**: `Updates` are managed through `kubectl rollout` or by `applying changes in deployment configuration files`, with `strategies to minimize risk` `during updates`.
 
 ### 쿠버네티스
 
@@ -41,23 +41,19 @@ tags: [Cloud, GCP, Kubernetes]
 
 ### Google Kubernetes Engine (GKE)
 
-Here are detailed bullet points summarizing Google Kubernetes Engine (GKE) and its functionalities in both English and Korean:
+- ㅇ **Google Kubernetes Engine (GKE)**: A `managed Kubernetes service` hosted by Google in the cloud, `simplifying container management`.
 
-**English:**
+- ㅇ **Cluster Configuration**: `GKE uses multiple Compute Engine instances` grouped to `form` a `Kubernetes cluster`.
 
-- ㅇ **Google Kubernetes Engine (GKE)**: A managed Kubernetes service hosted by Google in the cloud, simplifying container management.
+- ㅇ **Cluster Creation**: `Clusters` can `be created` using the `Google Cloud Console` or the `gcloud` command from the Cloud Software Development Kit.
 
-- ㅇ **Cluster Configuration**: GKE uses multiple Compute Engine instances grouped to form a Kubernetes cluster.
+- ㅇ **Customization and Flexibility**: `Supports customization` with `various machine types`, `numbers of nodes`, and `network settings`.
 
-- ㅇ **Cluster Creation**: Clusters can be created using the Google Cloud Console or the `gcloud` command from the Cloud Software Development Kit.
+- ㅇ **Kubernetes Integration**: `Provides tools and commands` to `interact` with your `cluster`, `deploy and manage applications`, set `policies`, and `monitor workload health`.
 
-- ㅇ **Customization and Flexibility**: Supports customization with various machine types, numbers of nodes, and network settings.
+- ㅇ **Advanced Management Features**: Includes `load balancing`, `node pools for resource flexibility`, `automatic node scaling`, `automatic software upgrades`, `node auto-repair` for `health` and `availability`, and integrated `logging and monitoring` for `operational visibility`.
 
-- ㅇ **Kubernetes Integration**: Provides tools and commands to interact with your cluster, deploy and manage applications, set policies, and monitor workload health.
-
-- ㅇ **Advanced Management Features**: Includes load balancing, node pools for resource flexibility, automatic node scaling, automatic software upgrades, node auto-repair for health and availability, and integrated logging and monitoring for operational visibility.
-
-- ㅇ **Starting a Cluster**: To initiate a Kubernetes cluster in GKE, use the command: `gcloud container clusters create k1`.
+- ㅇ **Starting a Cluster**: To `initiate` a `Kubernetes cluster in GKE`, use the command: `gcloud container clusters create k1`.
 
 ### 구글 쿠버네티스 엔진 (GKE)
 

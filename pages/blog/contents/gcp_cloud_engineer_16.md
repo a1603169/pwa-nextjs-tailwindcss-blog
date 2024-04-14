@@ -8,19 +8,19 @@ tags: [Cloud, GCP]
 
 ### Introduction to containers
 
-- ㅇ **Containers vs. Virtual Machines (VMs)**: Containers provide an isolated environment for code and its dependencies, utilizing limited access to file system and hardware resources, unlike VMs which virtualize hardware for each instance.
+- ㅇ **Containers vs. Virtual Machines (VMs)**: Containers `provide an isolated environment` for `code and its dependencies`, utilizing `limited access` to `file system and hardware resources`, `unlike VMs` which virtualize hardware for each instance.
 
-- ㅇ **Flexibility and Speed**: Containers are lightweight, requiring only a few system calls to create and start as quickly as a process. This offers flexibility similar to Infrastructure as a Service (IaaS) but with the scalability of Platform as a Service (PaaS).
+- ㅇ **Flexibility and Speed**: Containers are `lightweight`, requiring only `a few system calls to create` and `start as quickly` as a process. This `offers flexibility similar to` Infrastructure as a Service `(IaaS)` but `with the scalability` of Platform as a Service `(PaaS)`.
 
-- ㅇ **System Requirements**: Each host needs an OS kernel that supports containers and a container runtime to deploy containers.
+- ㅇ **System Requirements**: `Each host needs an OS kernel` that supports `containers` and a `container runtime` `to deploy` containers.
 
-- ㅇ **OS Virtualization**: In containers, the OS is virtualized, making the application highly portable across different environments without needing changes or rebuilds.
+- ㅇ **OS Virtualization**: In containers, the `OS is virtualized`, making the `application highly portable` across `different environments` `without needing changes or rebuilds`.
 
-- ㅇ **Scalability**: Containers can scale up quickly, allowing for rapid deployment of multiple instances on a single host based on application demand.
+- ㅇ **Scalability**: Containers can `scale up quickly`, allowing for `rapid deployment of multiple instances on a single host` based on application demand.
 
-- ㅇ **Microservices Architecture**: Containers are ideal for building applications as microservices, which are modular, easily deployable, and scalable across multiple hosts.
+- ㅇ **Microservices Architecture**: Containers are `ideal for building` applications as `microservices`, which are `modular, easily deployable, and scalable` across `multiple hosts`.
 
-- ㅇ **Dynamic Resource Management**: Hosts can dynamically scale up or down and manage container lifecycles based on application demand or host availability.
+- ㅇ **Dynamic Resource Management**: Hosts can `dynamically scale up or down and manage container lifecycles` based on application demand or host availability.
 
 ### Container 소개
 
@@ -37,3 +37,15 @@ tags: [Cloud, GCP]
 - ㅇ **마이크로서비스 아키텍처**: 컨테이너는 마이크로서비스로 애플리케이션을 구축하기에 이상적이며, 이는 모듈식이며 배포가 쉽고 여러 호스트에 걸쳐 독립적으로 확장 가능합니다.
 
 - ㅇ **동적 자원 관리**: 호스트는 애플리케이션 수요 또는 호스트 가용성에 따라 동적으로 확장하거나 축소하고 컨테이너 수명 주기를 관리할 수 있습니다.
+
+--------------
+
+### 모르는 단어
+
+#### OS kernel
+
+운영 체제의 핵심 부분인 OS 커널은 시스템의 모든 다른 부분과 하드웨어 간의 통신을 관리합니다.
+
+커널은 하드웨어와 소프트웨어 간의 인터페이스 역할을 하며, 시스템 리소스를 관리하고, 프로세스와 메모리 관리를 담당하며, 하드웨어 장치를 제어합니다.
+
+커널은 일반적으로 프로세스 스케줄링, 메모리 관리, 파일 시스템 관리, 네트워크 관리, 디바이스 드라이버 관리 등의 기능을 수행합니다. 이러한 기능을 통해 커널은 사용자와 응용 프로그램이 하드웨어 리소스를 안전하고 효율적으로 사용할 수 있도록 합니다.
