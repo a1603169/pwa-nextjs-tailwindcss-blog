@@ -44,6 +44,9 @@ tags: [Cloud, GCP]
    - ㅁ **Korean**: Google API 및 서비스에 대한 접근은 서브넷 설정에 따라 조건부로 제공됩니다; 일부 VM은 접근할 수 있지만 다른 VM은 서브넷 구성에 따라 접근할 수 없을 수 있습니다.
 
 
+### 틀린 문제
+
+<img class='blogImage' src='/blog/network_wrong_q.png'>
 
 ### 추가 자료
 
