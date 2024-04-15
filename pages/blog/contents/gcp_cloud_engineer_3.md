@@ -4,179 +4,170 @@ subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Environmental Impact
 date: '2024-04-12'
 tags: [Cloud, GCP]
 ---
+### Environmental Impact (환경 영향)
 
-### Environmental Impact
+1. **High Energy Use (높은 에너지 사용량)**
 
-- ㅇ **High Energy Use**: Data centers globally `consume approximately 2% of the world's electricity`, highlighting the energy-intensive nature of the virtual world, including Google Cloud’s network.
+   - ㅇ **English**: Data centers globally `consume approximately 2% of the world's electricity`, highlighting the energy-intensive nature of the virtual world, including Google Cloud’s network.
+   
+   - ㅇ **Korean**: 전 세계 데이터 센터는 세계 전력의 약 2%를 소비하며, 이는 가상 세계(구글 클라우드 네트워크 포함)가 에너지 집약적임을 보여줍니다.
 
-- ㅇ **Efficiency Measures**: Google aims to operate its data centers as `efficiently as possible` to align with `environmental goals`.
+2. **Efficiency Measures (효율성 강화 조치)**
 
-- ㅇ **ISO 14001 Certification**: Google's data centers were the first to achieve **`ISO 14001 certification`**, setting a standard for enhancing environmental performance by `improving resource efficiency and reducing waste`.
+   - ㅇ **English**: Google aims to operate its data centers as `efficiently as possible` to align with `environmental goals`.
+   
+   - ㅇ **Korean**: 구글은 환경 목표에 부합하도록 데이터 센터의 운영 효율성을 최대한 높이려고 노력하고 있습니다.
 
-- ㅇ **Innovative Cooling System**: The Google data center in Hamina, Finland, uses a unique seawater cooling system from the Bay of Finland, `significantly reducing energy use`.
+3. **ISO 14001 Certification (ISO 14001 인증)**
 
-- ㅇ **Environmental Milestones**: 
+   - ㅇ **English**: Google's data centers were the first to achieve **`ISO 14001 certification`**, setting a standard for enhancing environmental performance by `improving resource efficiency and reducing waste`.
+   
+   - ㅇ **Korean**: 구글 데이터 센터는 자원 효율성을 개선하고 폐기물을 줄이는 방향으로 환경 성능을 향상시키기 위한 틀을 제공하는 ISO 14001 인증을 최초로 획득했습니다.
+
+4. **Innovative Cooling System (혁신적인 냉각 시스템)**
+
+   - ㅇ **English**: The Google data center in Hamina, Finland, uses a unique seawater cooling system from the Bay of Finland, `significantly reducing energy use`.
+   
+   - ㅇ **Korean**: 핀란드 하미나에 위치한 구글 데이터 센터는 핀란드만의 바닷물을 사용하는 독특한 냉각 시스템을 도입하여 에너지 사용을 크게 줄였습니다.
+
+5. **Environmental Milestones (환경 관련 이정표)**
+
+   - ㅁ **English**: In its founding decade, Google was the first major company to become `carbon neutral`.
   
-  - ㅁ In its founding decade, Google was the first major company to become `carbon neutral`.
+   - ㅁ **English**: In its second decade, Google achieved `100% renewable energy`.
   
-  - ㅁ In its second decade, Google achieved `100% renewable energy`.
+   - ㅁ **English**: By 2030, Google `aims` to be the first major company to operate `completely carbon-free`.
+
+   - ㅁ **Korean**: 설립 첫 십년간 구글은 주요 기업 중 최초로 탄소 중립을 달성했습니다.
   
-  - ㅁ By 2030, Google `aims` to be the first major company to operate `completely carbon-free`.
-
-### 환경 영향
-
-- ㅇ **높은 에너지 사용량**: 전 세계 데이터 센터는 세계 전력의 약 2%를 소비하며, 이는 가상 세계(구글 클라우드 네트워크 포함)가 에너지 집약적임을 보여줍니다.
-
-- ㅇ **효율성 강화 조치**: 구글은 환경 목표에 부합하도록 데이터 센터의 운영 효율성을 최대한 높이려고 노력하고 있습니다.
-
-- ㅇ **ISO 14001 인증**: 구글 데이터 센터는 자원 효율성을 개선하고 폐기물을 줄이는 방향으로 환경 성능을 향상시키기 위한 틀을 제공하는 ISO 14001 인증을 최초로 획득했습니다.
-
-- ㅇ **혁신적인 냉각 시스템**: 핀란드 하미나에 위치한 구글 데이터 센터는 핀란드만의 바닷물을 사용하는 독특한 냉각 시스템을 도입하여 에너지 사용을 크게 줄였습니다.
-
-- ㅇ **환경 관련 이정표**:
+   - ㅁ **Korean**: 두 번째 십년에는 100% 재생 에너지 달성이라는 이정표를 세웠습니다.
   
-  - ㅁ 설립 첫 십년간 구글은 주요 기업 중 최초로 탄소 중립을 달성했습니다.
+   - ㅁ **Korean**: 2030년까지 구글은 완전히 탄소 배출이 없는 주요 기업이 되는 것을 목표로 하고 있습니다.
   
-  - ㅁ 두 번째 십년에는 100% 재생 에너지 달성이라는 이정표를 세웠습니다.
-  
-  - ㅁ 2030년까지 구글은 완전히 탄소 배출이 없는 주요 기업이 되는 것을 목표로 하고 있습니다.
-
 --------
+### Security (보안)
 
-### Security 
+1. **Hardware Infrastructure (하드웨어 인프라)**:
+  
+  - ㅇ **English**: `Custom-designed` **server boards** and **networking equipment**.
+  
+  - ㅇ **English**: `Deployment` of a **hardware security chip** on **servers and peripherals**.
+  
+  - ㅇ **English**: `Secure boot stack` with **cryptographic signatures** over the `BIOS, bootloader, kernel, and OS image`.
+  
+  - ㅇ **English**: `Premises security` with **multiple physical layers** and **limited access** to Google employees.
+  
+  - ㅇ **Korean**: 맞춤형 설계된 서버 보드 및 네트워킹 장비.
+  
+  - ㅇ **Korean**: 서버 및 주변 장치에 하드웨어 보안 칩 배포.
+  
+  - ㅇ **Korean**: BIOS, 부트로더, 커널, 운영 체제 이미지에 대한 암호화 서명을 포함한 안전한 부팅 스택.
+  
+  - ㅇ **Korean**: 여러 물리적 보안 계층과 제한된 구글 직원의 접근을 통한 시설 보안.
 
-- **Hardware Infrastructure**:
+2. **Service Deployment (서비스 배포)**:
   
-  - ㅇ `Custom-designed` **server boards** and **networking equipment**.
+  - ㅇ **English**: `Encryption of inter-service communication` via **cryptographic privacy** and **integrity for RPC(Remote Procedure Call) data**.
   
-  - ㅇ `Deployment` of a **hardware security chip** on **servers and peripherals**.
+  - ㅇ **English**: `Deployment of hardware cryptographic accelerators` to **extend encryption** across all **RPC traffic** in data centers.
   
-  - ㅇ `Secure boot stack` with **cryptographic signatures** over the `BIOS, bootloader, kernel, and OS image`.
+  - ㅇ **Korean**: RPC 데이터에 대한 암호화된 개인 정보 보호 및 무결성을 통한 서비스 간 통신 암호화.
   
-  - ㅇ `Premises security(전제보안)` with **multiple physical layers** and **limited access** to Google employees.
+  - ㅇ **Korean**: 데이터 센터 내 모든 RPC 트래픽에 대한 암호화를 확장하기 위한 하드웨어 암호화 가속기 배포.
 
-- **Service Deployment**:
+3. **User Identity (사용자 신원)**:
   
-  - ㅇ `Encryption of inter-service communication` via **cryptographic privacy** and **integrity for RPC(Remote Procedure Call) data**.
+  - ㅇ **English**: Google’s central identity service uses `advanced authentication methods`, including risk-based challenges.
   
-  - ㅇ `Deployment of hardware cryptographic accelerators` to **extend encryption** across all **RPC traffic** in data centers.
+  - ㅇ **English**: Supports `secondary authentication factors`, such as **U2F devices**.
+  
+  - ㅇ **Korean**: 위험 기반 도전을 포함한 고급 인증 방법을 사용하는 구글 중앙 신원 서비스.
+  
+  - ㅇ **Korean**: U2F 장치와 같은 보조 인증 수단 지원.
 
-- **User Identity**:
+4. **Storage Services (저장 서비스)**:
   
-  - ㅇ Google’s central identity service uses `advanced authentication methods`, including risk-based challenges.
+  - ㅇ **English**: `Encryption at rest` using `centrally managed keys`.
   
-  - ㅇ Supports `secondary authentication factors`, such as **U2F devices**.
+  - ㅇ **English**: `Hardware encryption` support in **hard drives and SSDs**.
+  
+  - ㅇ **Korean**: 중앙에서 관리하는 키를 사용한 저장 시 암호화.
+  
+  - ㅇ **Korean**: 하드 드라이브 및 SSD에서 하드웨어 암호화 지원.
 
-- **Storage Services**:
+5. **Internet Communication (인터넷 통신)**:
   
-  - ㅇ `Encryption at rest(저장 시 암호화)` using `centrally managed keys`.
+  - ㅇ **English**: Google Front End `manages TLS connections` with **public-private key pairs** and **X.509 certificates**.
   
-  - ㅇ `Hardware encryption` support in **hard drives and SSDs**.
+  - ㅇ **English**: Best practices like `perfect forward secrecy and protections` against **Denial of Service attacks**.
+  
+  - ㅇ **Korean**: Google Front End가 공개 키-개인 키 쌍 및 X.509 인증서를 사용하여 TLS 연결 관리.
+  
+  - ㅇ **Korean**: 완벽한 전진 비밀유지 및 서비스 거부 공격에 대한 보호와 같은 최선의 관행.
 
-- **Internet Communication**:
+6. **Operational Security (운영 보안)**:
   
-  - ㅇ Google Front End `manages TLS connections` with **public-private key pairs** and **X.509 certificates**.
+  - ㅇ **English**: `Intrusion detection` with rules and machine intelligence.
   
-  - ㅇ Best practices like `perfect forward secrecy and protections` against **Denial of Service attacks**.
-
-- **Operational Security**:
+  - ㅇ **English**: `Red Team exercises` to improve **detection** and **response mechanisms**.
   
-  - ㅇ `Intrusion detection(침입 탐지)` with rules and machine intelligence.
+  - ㅇ **English**: `Reduction of insider risk` by **limiting and monitoring administrative access**.
   
-  - ㅇ `Red Team exercises` to improve **detection** and **response mechanisms**.
+  - ㅇ **English**: **Mandatory use** of `U2F-compatible Security Keys` by employees.
   
-  - ㅇ `Reduction of insider risk` by **limiting and monitoring administrative access**.
+  - ㅇ **English**: **Stringent software development practices** including `two-party code review` and `secure libraries`.
   
-  - ㅇ **Mandatory use** of `U2F-compatible Security Keys` by employees.
+  - ㅇ **English**: `Vulnerability Rewards Program` to encourage bug reporting.
   
-  - ㅇ **Stringent(엄중한) software development practices** including `two-party code review(한 명 이상의 동료 개발자가 작성한 코드를 검토 / 피드백 제공)` and `secure libraries(보안 라이브러리)`.
+  - ㅇ **Korean**: 규칙 및 기계 지능을 사용한 침입 탐지.
   
-  - ㅇ `Vulnerability(취약점) Rewards Program` to encourage bug reporting.
-
-### 보안
-
-- **하드웨어 인프라**:
+  - ㅇ **Korean**: 탐지 및 대응 메커니즘 향상을 위한 레드 팀 운동.
   
-  - ㅇ 맞춤형 설계된 서버 보드 및 네트워킹 장비.
+  - ㅇ **Korean**: 관리적 접근을 제한하고 모니터링함으로써 내부 위험 감소.
   
-  - ㅇ 서버 및 주변 장치에 하드웨어 보안 칩 배포.
+  - ㅇ **Korean**: 구글 직원의 필수 U2F 호환 보안 키 사용.
   
-  - ㅇ BIOS, 부트로더, 커널, 운영 체제 이미지에 대한 암호화 서명을 포함한 안전한 부팅 스택.
+  - ㅇ **Korean**: 중앙 소스 제어 및 두 명의 검토자가 필요한 엄격한 소프트웨어 개발 관행.
   
-  - ㅇ 여러 물리적 보안 계층과 제한된 구글 직원의 접근을 통한 시설 보안.
-
-- **서비스 배포**:
-  
-  - ㅇ RPC 데이터에 대한 암호화된 개인 정보 보호 및 무결성을 통한 서비스 간 통신 암호화.
-  
-  - ㅇ 데이터 센터 내 모든 RPC 트래픽에 대한 암호화를 확장하기 위한 하드웨어 암호화 가속기 배포.
-
-- **사용자 신원**:
-  
-  - ㅇ 위험 기반 도전을 포함한 고급 인증 방법을 사용하는 구글 중앙 신원 서비스.
-  
-  - ㅇ U2F 장치와 같은 보조 인증 수단 지원.
-
-- **저장 서비스**:
-  
-  - ㅇ 중앙에서 관리하는 키를 사용한 저장 시 암호화.
-  
-  - ㅇ 하드 드라이브 및 SSD에서 하드웨어 암호화 지원.
-
-- **인터넷 통신**:
-  
-  - ㅇ Google Front End가 공개 키-개인 키 쌍 및 X.509 인증서를 사용하여 TLS 연결 관리.
-  
-  - ㅇ 완벽한 전진 비밀유지 및 서비스 거부 공격에 대한 보호와 같은 최선의 관행.
-
-- **운영 보안**:
-  
-  - ㅇ 규칙 및 기계 지능을 사용한 침입 탐지.
-  
-  - ㅇ 탐지 및 대응 메커니즘 향상을 위한 레드 팀 운동.
-  
-  - ㅇ 관리적 접근을 제한하고 모니터링함으로써 내부 위험 감소.
-  
-  - ㅇ 구글 직원의 필수 U2F 호환 보안 키 사용.
-  
-  - ㅇ 중앙 소스 제어 및 두 명의 검토자가 필요한 엄격한 소프트웨어 개발 관행.
-  
-  - ㅇ 인프라 또는 애플리케이션의 버그를 발견하고 알리는 것을 장려하는 취약점 보상 프로그램.
-
+  - ㅇ **Korean**: 인프라 또는 애플리케이션의 버그를 발견하고 알리는 것을 장려하는 취약점 보상 프로그램.
 
 --------- 
+### Open Source Ecosystems (오픈 소스 생태계)
 
-### Open Source Ecosystems
-
-- ㅇ **Vendor Lock-in Concerns**: Some organizations `hesitate to adopt cloud solutions` due to `fears of becoming dependent on a single vendor`.
-
-- ㅇ **Google's Flexibility**: Google `ensures customers can run their applications elsewhere` if they choose to leave Google Cloud.
-
-- ㅇ **Open Source Initiatives**: Google publishes `key technologies under open source licenses` to **foster ecosystems** that provide alternatives to Google's services.
-
-- ㅇ **Example of TensorFlow**: TensorFlow is an `open source machine learning library` developed by Google, central to a robust open source ecosystem.
-
-- ㅇ **Interoperability Solutions**:
+1. **Vendor Lock-in Concerns (벤더 종속성 우려)**:
   
-  - ㅁ `Kubernetes and Google Kubernetes Engine` support the **mixing and matching of microservices** `across different cloud environments`.
+  - ㅇ **English**: Some organizations `hesitate to adopt cloud solutions` due to `fears of becoming dependent on a single vendor`.
   
-  - ㅁ **Google Cloud’s operations suite(운영제품군)** allows for `monitoring of workloads across multiple cloud providers`.
+  - ㅇ **Korean**: 일부 조직은 단일 벤더에 의존하게 될까 봐 클라우드 솔루션 도입을 주저합니다.
 
-### 오픈 소스 생태계
-
-- ㅇ **벤더 종속성 우려**: 일부 조직은 단일 벤더에 의존하게 될까 봐 클라우드 솔루션 도입을 주저합니다.
-
-- ㅇ **구글의 유연성**: 고객이 구글 클라우드를 떠나기로 결정한 경우, 고객이 자신의 애플리케이션을 다른 곳에서 실행할 수 있도록 지원합니다.
-
-- ㅇ **오픈 소스 이니셔티브**: 구글은 주요 기술을 오픈 소스 라이센스로 공개하여 구글의 서비스 외에 대안을 제공하는 생태계를 조성합니다.
-
-- ㅇ **텐서플로우 예시**: 구글 내부에서 개발된 오픈 소스 기계 학습 라이브러리인 텐서플로우는 강력한 오픈 소스 생태계의 핵심입니다.
-
-- ㅇ **상호 운용성 솔루션**:
+2. **Google's Flexibility (구글의 유연성)**:
   
-  - ㅁ 쿠버네티스와 구글 쿠버네티스 엔진은 다양한 클라우드 환경에서 마이크로서비스를 혼합 및 매치하는 것을 지원합니다.
+  - ㅇ **English**: Google `ensures customers can run their applications elsewhere` if they choose to leave Google Cloud.
   
-  - ㅁ 구글 클라우드의 운영 스위트는 여러 클라우드 제공업체에서 워크로드를 모니터링할 수 있게 합니다.
+  - ㅇ **Korean**: 고객이 구글 클라우드를 떠나기로 결정한 경우, 고객이 자신의 애플리케이션을 다른 곳에서 실행할 수 있도록 지원합니다.
+
+3. **Open Source Initiatives (오픈 소스 이니셔티브)**:
+  
+  - ㅇ **English**: Google publishes `key technologies under open source licenses` to **foster ecosystems** that provide alternatives to Google's services.
+  
+  - ㅇ **Korean**: 구글은 주요 기술을 오픈 소스 라이센스로 공개하여 구글의 서비스 외에 대안을 제공하는 생태계를 조성합니다.
+
+4. **Example of TensorFlow (텐서플로우 예시)**:
+  
+  - ㅇ **English**: TensorFlow is an `open source machine learning library` developed by Google, central to a robust open source ecosystem.
+  
+  - ㅇ **Korean**: 구글 내부에서 개발된 오픈 소스 기계 학습 라이브러리인 텐서플로우는 강력한 오픈 소스 생태계의 핵심입니다.
+
+5. **Interoperability Solutions (상호 운용성 솔루션)**:
+  
+  - ㅁ **English**: `Kubernetes and Google Kubernetes Engine` support the **mixing and matching of microservices** `across different cloud environments`.
+  
+  - ㅁ **English**: **Google Cloud’s operations suite** allows for `monitoring of workloads across multiple cloud providers`.
+  
+  - ㅁ **Korean**: 쿠버네티스와 구글 쿠버네티스 엔진은 다양한 클라우드 환경에서 마이크로서비스를 혼합 및 매치하는 것을 지원합니다.
+  
+  - ㅁ **Korean**: 구글 클라우드의 운영 스위트는 여러 클라우드 제공업체에서 워크로드를 모니터링할 수 있게 합니다.
+------------------------
 
 ### 모르는 단어
 

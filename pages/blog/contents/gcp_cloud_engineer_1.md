@@ -5,51 +5,43 @@ date: '2024-04-12'
 tags: [Cloud, GCP]
 ---
 
-### 클라우드 컴퓨팅이란
+### 클라우드 컴퓨팅의 5가지 특성
 
-클라우드 컴퓨팅은 인터넷을 통해 서버, 스토리지, 데이터베이스, 네트워킹, 소프트웨어, 분석 등의 컴퓨팅 서비스를 제공하는 것을 말합니다. 이 서비스를 제공하는 회사를 클라우드 제공자라고 하며, Google Cloud Platform(GCP), Amazon Web Services(AWS), Microsoft Azure 등이 있습니다.
+1. **On-Demand and Self-Service Computing Resources (수요 기반 및 자가 서비스 컴퓨팅 자원)**
+   
+   - ㅁ **English**: Customers get computing resources that are `on-demand` and `self-service`. This means users can access computing power as needed without human interaction from the service provider's side.
+   
+   - ㅁ **Korean**: 고객은 `수요에 따른` 및 `자가 서비스`로 컴퓨팅 자원을 제공받습니다. 이는 사용자가 서비스 제공자 측의 인간적 상호작용 없이 필요에 따라 컴퓨팅 파워에 접근할 수 있음을 의미합니다.
 
-클라우드 컴퓨팅을 사용하면, 기업은 대규모 컴퓨팅 인프라를 구축하고 유지 관리할 필요 없이 필요한 IT 리소스를 즉시 이용하고 비용을 지불할 수 있습니다. 이로 인해 초기 비용을 크게 줄이고, 운영 효율성을 높이며, 규모의 경제를 실현하고, 속도와 민첩성을 높일 수 있습니다.
+2. **Broad Network Access (인터넷을 통한 자원 접근성)**
+   
+   - ㅁ **English**: Customers get access to those resources over the internet, from anywhere. Cloud services are `available over the internet`, enabling users to access them from `any location with an internet connection`.
+   
+   - ㅁ **Korean**: 고객은 어디에서나 인터넷을 통해 그 자원에 접근할 수 있습니다. 클라우드 서비스는 `인터넷을 통해 제공`되어, `인터넷 연결이 가능한 어떠한 위치`에서도 사용자가 접근할 수 있습니다.
 
-#### 컴퓨팅의 정의 
+3. **Resource Pooling (자원 풀 관리 및 할당)**
+   
+   - ㅁ **English**: The provider of those resources allocates them to users out of that pool. The cloud provider `manages a large pool of computing resources` and dynamically `assigns them to users based on demand`.
+   
+   - ㅁ **Korean**: 그 자원의 제공자는 그 풀에서 사용자에게 자원을 할당합니다. 클라우드 제공자는 `큰 규모의 컴퓨팅 자원 풀을 관리`하고 `수요에 따라 동적으로 사용자에게 할당합니다`.
 
-"컴퓨팅(computing)"이라는 단어는 넓은 의미를 가지고 있어서, 사용하는 맥락에 따라 그 정의가 다소 변할 수 있습니다. 일반적으로, 컴퓨팅은 다음과 같은 여러 가지 의미로 사용됩니다:
+4. **Rapid Elasticity (자원의 탄력성)**
+   
+   - ㅁ **English**: Resources are elastic—which means they're flexible, so customers can scale resources up or down as needed, providing flexibility and ensuring efficient usage.
+   
+   - ㅁ **Korean**: 자원은 탄력적입니다. 즉, 유연하므로 고객은 필요에 따라 자원을 확장하거나 축소할 수 있어 유연성을 제공하고 효율적인 사용을 보장합니다.
 
-1. ㅇ **정보 처리**: 가장 넓은 의미로, 컴퓨터나 컴퓨터 시스템을 사용하여 정보를 처리하는 행위를 가리킵니다. 이는 데이터의 입력, 처리, 출력을 포함할 수 있으며, 계산, 데이터 관리, 네트워킹 등 다양한 기술적 작업을 말합니다.
+5. **Measured Service (사용량 기반 결제)**
+   
+   - ㅁ **English**: Customers pay only for what they use, or reserve as they go; they stop using resources, they stop paying. The pricing model for cloud services is typically `pay-as-you-go`, meaning customers are billed based on their `actual usage`, much like utilities. When they no longer need the resources, they no longer incur costs.
+   
+   - ㅁ **Korean**: 고객은 사용한 것에 대해서만 지불하거나 사용하면서 예약합니다; 자원 사용을 중단하면 지불도 중단합니다. 클라우드 서비스의 가격 모델은 일반적으로 `사용량 기반 결제`로, 고객은 `실제 사용량`에 따라 청구되며 이는 유틸리티와 매우 유사합니다. 더 이상 자원이 필요하지 않을 때 비용이 발생하지 않습니다.
+  
+------------------
 
-2. ㅇ **계산**: 컴퓨팅의 기원적 의미는 '계산'이며, 이는 수학적 계산이나 알고리즘을 실행하여 결과를 도출하는 과정을 말합니다.
+### 모르는 단어 
 
-3. ㅇ **컴퓨터 과학**: 좀 더 학문적인 맥락에서 컴퓨팅은 컴퓨터 과학의 분야를 일컫는데 사용되기도 합니다. 여기에는 소프트웨어 개발, 시스템 아키텍처, 인공지능 등의 연구 영역이 포함됩니다.
-
-4. ㅇ **서비스 형태의 컴퓨팅**: 클라우드 컴퓨팅과 같이, 컴퓨팅 자원을 원격 서비스로 제공받는 형태를 지칭할 때도 사용됩니다. 이 경우, 컴퓨팅은 단순한 계산을 넘어서 네트워크를 통해 접근 가능한 자원과 서비스의 이용을 포함합니다.
-
-5. ㅇ **일상적 사용**: 일상 대화에서는 종종 '컴퓨터를 사용하는 것'을 가리켜 간단히 '컴퓨팅'이라고 말하기도 합니다. 예를 들어, "오늘은 컴퓨팅 작업이 많았어요"와 같이 사용할 수 있습니다.
-
-이처럼 '컴퓨팅'이라는 단어는 매우 광범위한 개념을 포괄하며, 정확한 의미는 맥락에 따라 결정됩니다.
-
-### 클라우드 컴퓨팅 5가지 특성
-
-**1. Customers get computing resources that are on-demand and self-service.**
-
-This means users can `access computing power` as needed `without human interaction` from the service provider's side.
-
-**2. Customers get access to those resources over the internet, from anywhere.**
-
-Cloud services are `available over the internet`, enabling users to access them from `any location with an internet connection`.
-
-**3. The provider of those resources allocates them to users out of that pool.**
-
-The cloud provider `manages a large pool of computing resources` and dynamically `assigns them to users based on demand`.
-
-**4. Resources are elastic—which means they're flexible, so customers can be...**
-
-Elasticity allows customers to `scale resources up or down as needed`, providing flexibility and ensuring efficient usage.
-
-**5. Customers pay only for what they use, or reserve as they go; they stop using resources, they stop paying.**
-
-The pricing model for cloud services is typically `pay-as-you-go`, meaning customers are billed based on their `actual usage`, much like utilities. When they no longer need the resources, they no longer incur costs.
-
-### Three waves
+#### Three waves
 
 "Colocation", "Virtual Datacenter", 및 "Container-based Architecture"는 데이터 센터 관리와 클라우드 컴퓨팅의 다양한 접근 방식을 나타냅니다. 각각의 특징과 차이점을 비교하면 다음과 같습니다:
 

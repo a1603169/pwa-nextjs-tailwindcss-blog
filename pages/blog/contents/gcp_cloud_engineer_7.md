@@ -4,31 +4,32 @@ subtitle: 'Google Cloud Fundamentals: Core Infrastructure - Virtual Private Clou
 date: '2024-04-13'
 tags: [Cloud, GCP]
 ---
+Certainly! Here's the formatted content with each main number containing both English and Korean bullet points, maintaining all the specific formatting requests:
 
-### Virtual Private Cloud Networking
+### 1. Virtual Private Cloud (VPC) (가상 사설 클라우드(VPC))
 
+- ㅇ **English**: A `private`, `secure` `cloud computing model` `hosted within a public cloud`, allowing the **running of code**, **data storage**, **website hosting**, and **more**, with the `isolation(격리성) of a private cloud` and the `scalability(확장성) of a public cloud.`
+- ㅇ **Korean**: 공용 클라우드 내에서 호스팅되는 개인적이고 안전한 클라우드 컴퓨팅 모델로, 코드 실행, 데이터 저장, 웹사이트 호스팅 등을 할 수 있으며, 사설 클라우드의 격리성과 공용 클라우드의 확장성을 결합하고 있습니다.
 
-- ㅇ **Virtual Private Cloud (VPC)**: A `private`, `secure` `cloud computing model` `hosted within a public cloud`, allowing the **running of code**, **data storage**, **website hosting**, and **more**, with the `isolation(격리성) of a private cloud` and the `scalability(확장성) of a public cloud.`
+### 2. Network Configuration (네트워크 구성)
 
-- ㅇ **Network Configuration**: VPC networks `connect Google Cloud resources internally` and `to the internet`, using **firewalls**, segmenting(분할) **networks**, and creating **static routes**.
+- ㅇ **English**: VPC networks `connect Google Cloud resources internally` and `to the internet`, using **firewalls**, segmenting(분할) **networks**, and creating **static routes**.
+- ㅇ **Korean**: VPC 네트워크는 Google Cloud 리소스를 서로 및 인터넷에 연결하며, 방화벽을 사용하고 네트워크를 세분화하며 특정 목적지로 트래픽을 전달하는 정적 라우트를 생성합니다.
 
-- ㅇ **Global Network**: Google VPC networks are `global`, enabling `subnets` in **any Google Cloud region worldwide**.
+### 3. Global Network (글로벌 네트워크)
 
-- ㅇ **Subnets**: Subnets are `segmented parts of the larger network` and can span `multiple zones` within a region. They can be `resized without affecting existing VMs`.
+- ㅇ **English**: Google VPC networks are `global`, enabling `subnets` in **any Google Cloud region worldwide**.
+- ㅇ **Korean**: Google VPC 네트워크는 전 세계 어떤 Google Cloud 지역에서도 서브넷을 가질 수 있는 글로벌 네트워크입니다.
 
-- ㅇ **Example of VPC Usage**: In a VPC named `vpc1` with subnets in the Asia-East1 and US-East1 regions, VMs on the same subnet can `reside(존재하다) in different zones`, `facilitating(가능하게하다) resilient(탄력있는) and simplified network architectures`.
+### 4. Subnets (서브넷)
 
-### 가상 사설 클라우드 네트워킹
+- ㅇ **English**: Subnets are `segmented parts of the larger network` and can span `multiple zones` within a region. They can be `resized without affecting existing VMs`.
+- ㅇ **Korean**: 서브넷은 더 큰 네트워크의 세분화된 부분으로, 하나의 지역 내 여러 존을 포괄할 수 있습니다. 기존 VM에 영향을 주지 않고 크기를 조정할 수 있습니다.
 
-- ㅇ **가상 사설 클라우드(VPC)**: 공용 클라우드 내에서 호스팅되는 개인적이고 안전한 클라우드 컴퓨팅 모델로, 코드 실행, 데이터 저장, 웹사이트 호스팅 등을 할 수 있으며, 사설 클라우드의 격리성과 공용 클라우드의 확장성을 결합하고 있습니다.
+### 5. Example of VPC Usage (VPC 사용 예)
 
-- ㅇ **네트워크 구성**: VPC 네트워크는 Google Cloud 리소스를 서로 및 인터넷에 연결하며, 방화벽을 사용하고 네트워크를 세분화하며 특정 목적지로 트래픽을 전달하는 정적 라우트를 생성합니다.
-
-- ㅇ **글로벌 네트워크**: Google VPC 네트워크는 전 세계 어떤 Google Cloud 지역에서도 서브넷을 가질 수 있는 글로벌 네트워크입니다.
-
-- ㅇ **서브넷**: 서브넷은 더 큰 네트워크의 세분화된 부분으로, 하나의 지역 내 여러 존을 포괄할 수 있습니다. 기존 VM에 영향을 주지 않고 크기를 조정할 수 있습니다.
-
-- ㅇ **VPC 사용 예**: `vpc1`이라는 VPC가 아시아 동부1 및 미국 동부1 지역에 서브넷을 정의하고 있고, 동일 서브넷에 있는 VM들은 다른 존에 위치할 수 있으며, 이를 통해 간소화된 네트워크 구조를 가진 솔루션을 구축할 수 있습니다.
+- ㅇ **English**: In a VPC named `vpc1` with subnets in the Asia-East1 and US-East1 regions, VMs on the same subnet can `reside(존재하다) in different zones`, `facilitating(가능하게하다) resilient(탄력있는) and simplified network architectures`.
+- ㅇ **Korean**: `vpc1`이라는 VPC가 아시아 동부1 및 미국 동부1 지역에 서브넷을 정의하고 있고, 동일 서브넷에 있는 VM들은 다른 존에 위치할 수 있으며, 이를 통해 간소화된 네트워크 구조를 가진 솔루션을 구축할 수 있습니다.
 
 -----------------------
 
