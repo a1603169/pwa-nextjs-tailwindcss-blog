@@ -1,6 +1,6 @@
 ---
 title: 'GCP Cloud Engineer - 20'
-subtitle: 'Essential Google Cloud Infrastructure: Foundation : Using Google Cloud'
+subtitle: 'Essential Google Cloud Infrastructure: Foundation : Using Google Cloud / Overview of VPC practices'
 date: '2024-04-14'
 tags: [Cloud, GCP]
 ---
