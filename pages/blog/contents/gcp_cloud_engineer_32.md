@@ -9,7 +9,10 @@ tags: [Cloud, GCP]
 
 1. **Persistent Disk**
    
+   <img class='blogImage' src='/blog/disk_summary.png'>
    
+   <img class='blogImage' src='/blog/persist_disk_diff.png'>
+
    - ㅁ **English**: `Every VM` comes with a `single root persistent disk` which contains the `operating system` and can `survive if the VM terminates`. You can `prevent` the `boot disk from being deleted` with the VM `by changing a setting`.
    
    
@@ -77,7 +80,8 @@ tags: [Cloud, GCP]
 
 2. **Instance Moving**
    
-   
+   <img class='blogImage' src='/blog/move_new_zone.png'>
+
    - ㅁ **English**: VM instances `can be moved to new zones` for various reasons, like `geographical optimization` or `deprecation of old zones`. The process involves `shutting down the VM, moving it, and restarting it` in the new location.
    
    
@@ -94,10 +98,10 @@ tags: [Cloud, GCP]
 4. **Disk Resizing**
    
    
-   - ㅁ **English**: `Persistent disks` `can be resized` to `increase storage capacity` and `improve I/O performance`, even while the `disk is attached to a running VM`.
+   - ㅁ **English**: `Persistent disks` `can be resized` to `increase storage capacity` and `improve I/O performance`, even while the `disk is attached to a running VM`. `This cannot be shirinked once you grow`
    
    
-   - ㅁ **Korean**: 영구 디스크의 크기를 조정하여 저장 용량을 늘리고 I/O 성능을 향상시킬 수 있으며, 디스크가 실행 중인 VM에 연결된 상태에서도 가능합니다.
+   - ㅁ **Korean**: 영구 디스크의 크기를 조정하여 저장 용량을 늘리고 I/O 성능을 향상시킬 수 있으며, 디스크가 실행 중인 VM에 연결된 상태에서도 가능합니다. 한 번 사이즈를 늘리면 줄일 수 없습니다.
 
 5. **Using and Managing Encryption**
    
@@ -109,14 +113,16 @@ tags: [Cloud, GCP]
 
 6. **Persistent Disk Snapshots**
    
-   
-   - ㅁ **English**: Only available for `persistent disks`, `snapshots` provide a `method` for `periodic backup` and are different from `images used for creating instances(XXX)`. They are `useful for restoring data` to a `new disk` in a `different zone`.
+   <img class='blogImage' src='/blog/snapshot_additional.png'>
+
+   - ㅁ **English**: Only available for `persistent disks`, `snapshots` provide a `method` for `periodic backup` and are different from `images used for creating instances(XXX)`. They are `useful for restoring data` to a `new disk` in a `different zone`. Not available for local
    
    
    - ㅁ **Korean**: 영구 디스크에만 사용 가능한 스냅샷은 주기적인 백업 방법을 제공하며 인스턴스 생성에 사용되는 이미지와 다릅니다. 다른 존의 새 디스크로 데이터를 복원하는 데 유용합니다.
 
 
 ---------------
+
 
 ### 모르는 단어
 
