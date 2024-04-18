@@ -7,6 +7,8 @@ tags: [Cloud, GCP]
 
 ### Monitoring Option Overview (Stackdriver)
 
+<img class='blogImage' src='/blog/multi_integrated_products.png'>
+
 **Google Cloud 운영 제품군 개략적 설명(Stackdriver):**
 
 - ㅁ Google Cloud 운영 제품군은 클라우드 리소스 및 애플리케이션 서비스를 `모니터링, 로깅, 진단`하는 데 사용됨
