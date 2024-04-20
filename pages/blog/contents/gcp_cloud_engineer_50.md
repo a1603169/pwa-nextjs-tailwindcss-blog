@@ -14,7 +14,7 @@ tags: [Cloud, GCP]
   
   - ㅁ `대량의 데이터` 전송 가능, 공용 인터넷보다 `경제적`
   
-  - ㅁ 99.9% 또는 99.99%의 가동시간 `SLA` 가능
+  - ㅁ 99.9% 또는 99.99%의 가동시간 `SLA` 가능 `(10 Gbps or 100 Gbps)`
 
 - **`Partner Interconnect`**:
   
@@ -22,7 +22,7 @@ tags: [Cloud, GCP]
   
   - ㅁ 데이터 센터가 `코로케이션 시설에 연결할 수 없거나 데이터 수요가 적은 경우` 유용
   
-  - ㅁ 99.9% 또는 99.99%의 가동시간 `SLA` 구성 가능
+  - ㅁ 99.9% 또는 99.99%의 가동시간 `SLA` 구성 가능 `(50 Mbps - 50 Gbps)`
 
 - **`Cross-Cloud Interconnect`**:
   
@@ -41,7 +41,7 @@ tags: [Cloud, GCP]
   
   - ㅁ Google Cloud Platform 제품군 및 모든 Google 서비스에 연결 가능
   
-  - ㅁ `SLA(X) 없음`, 대역폭 용량: 링크당 10Gbps
+  - ㅁ `SLA(X) 없음`, 대역폭 용량: 링크당 10Gbps (구글 엣지 포인트가 필요)
 
 - **`이동통신사 피어링`**:
   
@@ -80,3 +80,36 @@ tags: [Cloud, GCP]
   - ㅁ 대역폭 요구사항에 따라 인터커넥트 또는 VPN 선택
   
   - ㅁ 민감한 트래픽 처리가 필요하거나 복수 클라우드 접근 필요 시 암호화 옵션 고려
+
+
+### 모르는 단어 
+
+#### Interconnect 서비스랑 피어링 서비스의 차이 Detail
+
+Google Cloud Platform(GCP)에서 제공하는 Interconnect 서비스와 Peering 서비스는 모두 사용자의 네트워크와 Google Cloud의 네트워크를 연결하는 방법을 제공하지만, 사용 사례와 기능에 따라 차이가 있습니다.
+
+**Interconnect 서비스:**
+
+Interconnect 서비스는 Dedicated Interconnect와 Partner Interconnect 두 가지 옵션을 제공합니다. 
+
+이 서비스는 사용자의 데이터 센터와 Google Cloud 사이에 물리적 연결을 제공하여, 높은 처리량과 낮은 지연 시간을 제공합니다. 
+
+이는 대량의 데이터를 전송하거나, 실시간 애플리케이션을 실행하는 등의 사용 사례에 적합합니다. 
+
+Interconnect 서비스는 SLA(Service Level Agreement)를 제공하며, 비용이 부과됩니다.
+
+**Peering 서비스:** 
+
+Peering 서비스는 Direct Peering과 Carrier Peering 두 가지 옵션을 제공합니다. 
+
+이 서비스는 사용자의 네트워크와 Google의 네트워크를 직접적으로 연결하지만, 이는 Google의 공개 서비스(예: YouTube, Google Search 등)에 대한 액세스를 위한 것입니다. 
+
+Peering 서비스는 Google Cloud의 리소스에 대한 액세스를 제공하지 않으며, SLA를 제공하지 않습니다. 
+
+이 서비스는 일반적으로 무료입니다.
+
+따라서, 사용자의 요구 사항에 따라 적절한 서비스를 선택할 수 있습니다. 
+
+Google Cloud의 리소스에 대한 높은 처리량의 연결이 필요한 경우 Interconnect를, 
+
+Google의 공개 서비스에 대한 액세스가 주된 목적인 경우 Peering을 선택할 수 있습니다.

@@ -1,8 +1,6 @@
 ---
-
 title: 'GCP Cloud Engineer - ㅁ 66'
-
-subtitle: 'Essential Cloud Infrastructure: Sacling and Automation - ㅁ Kubernetes Object Management'
+subtitle: 'Essential Cloud Infrastructure: Sacling and Automation - Kubernetes Object Management'
 date: '2024-04-19'
 tags: [Cloud, GCP, Kubernetes]
 ---
