@@ -53,9 +53,7 @@ export default function Blog({
         />
         {/* To direct the right position of the app */}
         <div id="blogContents" className="absolute"></div>
-        <ul
-          className="flex w-3/4 flex-col gap-5 border-2 border-indigo-300 border-solid p-5 rounded-xl max-md:text-sm"
-        >
+        <ul className="flex w-3/4 flex-col gap-5 border-2 border-indigo-300 border-solid p-5 rounded-xl max-md:text-sm">
           {currentPosts.map(({ id, date, title, subtitle, tags }) => {
             return (
               <li className="group relative shadow-indigo-500/50" key={id}>
@@ -75,12 +73,12 @@ export default function Blog({
                     <p className="text-sm mx-2 my-1 mb-2 whitespace-nowrap hover:max-sm:animate-marquee">
                       {tags.map((tag, idx) => {
                         return (
-                            <span
-                              key={idx}
-                              className="bg-indigo-300 text-indigo-50 px-2 py-1 rounded-lg mr-1 max-sm:text-xs"
-                            >
-                              {tag}
-                            </span>
+                          <span
+                            key={idx}
+                            className="bg-indigo-300 text-indigo-50 px-2 py-1 rounded-lg mr-1 max-sm:text-xs"
+                          >
+                            {tag}
+                          </span>
                         );
                       })}
                     </p>
@@ -94,16 +92,18 @@ export default function Blog({
           })}
         </ul>
         <div className="flex justify-center w-3/4 mt-10 gap-2">
-          {pageNumbers.map((number) => (
-            <a
-              className="duration-300 hover:text-indigo-500"
-              key={number}
-              href="#blogContents"
-              onClick={() => setCurrentPage(number)}
-            >
-              {number}
-            </a>
-          ))}
+          {pageNumbers
+            .slice(Math.max(0, currentPage - 5), currentPage + 5)
+            .map((number) => (
+              <a
+                className="duration-300 hover:text-indigo-500"
+                key={number}
+                href="#blogContents"
+                onClick={() => setCurrentPage(number)}
+              >
+                {number}
+              </a>
+            ))}
         </div>
       </section>
     </Transition>
