@@ -92,11 +92,14 @@ export default function Blog({
           })}
         </ul>
         <div className="flex justify-center w-3/4 mt-10 gap-2">
+          {currentPage > 6 && <span>...</span>}
           {pageNumbers
             .slice(Math.max(0, currentPage - 5), currentPage + 5)
             .map((number) => (
               <a
-                className="duration-300 hover:text-indigo-500"
+                className={`duration-300 hover:text-indigo-500 ${
+                  number === currentPage ? "underline" : ""
+                }`}
                 key={number}
                 href="#blogContents"
                 onClick={() => setCurrentPage(number)}
@@ -104,6 +107,7 @@ export default function Blog({
                 {number}
               </a>
             ))}
+          {currentPage < pageNumbers.length - 5 && <span>...</span>}
         </div>
       </section>
     </Transition>
