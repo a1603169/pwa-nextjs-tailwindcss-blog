@@ -5,6 +5,8 @@ date: '2024-04-19'
 tags: [Cloud, GCP, Kubernetes]
 ---
 
+<img class='blogImage' src='/blog/gke_control_plane.png'>
+
 ### **GKE 운영 모드**
 
 - **`Autopilot`**

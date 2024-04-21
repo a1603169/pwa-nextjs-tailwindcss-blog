@@ -11,7 +11,7 @@ tags: [Cloud, GCP, Kubernetes]
   
   - ㅁ **`Migrate for Compute Engine`**: `온 프레미스`나 다른 `클라우드 제공자`에서 `Google Cloud`로 데이터를 스트리밍하거나 이전할 파이프라인을 생성
   
-  - ㅁ **`GKE` 처리 클러스터 설치**: 여러 `쿠버네티스` 자원으로 구성되며 `Migrate for Anthos` 설치
+  - ㅁ **`GKE` 처리(Processing) 클러스터 설치**: 여러 `쿠버네티스` 자원으로 구성되며 `Migrate for Anthos` 설치
   
   - ㅁ **자산 생성**: `도커파일` 및 `쿠버네티스` 구성을 포함한 배포 아티팩트 생성, `Cloud Storage`에 저장
   
