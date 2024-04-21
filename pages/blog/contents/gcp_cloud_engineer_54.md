@@ -5,7 +5,7 @@ date: '2024-04-18'
 tags: [Cloud, GCP]
 ---
 
-### **Cloud CDN의 개요**
+### **Cloud CDN(Content Delivery Network)의 개요**
 
 - **`기본 기능`**:
   
@@ -37,7 +37,7 @@ tags: [Cloud, GCP]
   
   - ㅁ 각 `HTTP(S) 요청`에 대한 `캐시 적중 또는 부적중 상태`를 `자동으로 기록`합니다.
 
-### **캐시 모드**
+### **Cloud CDN 캐시 모드**
 
 - **`캐시 모드 옵션`**:
   
@@ -48,7 +48,7 @@ tags: [Cloud, GCP]
   - ㅁ **`CACHE_ALL_STATIC`**: `no-store`, `private`, 또는 `no-cache 지시문`이 없는 정적 콘텐츠를 자동으로 캐시합니다.
   
   
-  - ㅁ **`FORCE_CACHE_ALL`**: `모든 응답을 무조건 캐시`하며, `원본의 캐시 지시문을 무시`합니다.
+  - ㅁ **`FORCE_CACHE_ALL`**: `모든 응답을 무조건 캐시`하며, `원본의 캐시 지시문을 무시/재정의`합니다.
 
 ### **캐시 전략과 콘텐츠 관리**
 

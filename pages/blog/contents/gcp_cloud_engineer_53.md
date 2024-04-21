@@ -5,6 +5,8 @@ date: '2024-04-18'
 tags: [Cloud, GCP]
 ---
 
+<img class='blogImage' src='/blog/http_https_lb.png'>
+
 ### **HTTP(S) 부하 분산**
 
 - **`레이어 7 부하 분산`**:
@@ -51,6 +53,16 @@ tags: [Cloud, GCP]
   
   - `연결 초기화 시간 감소`, `스트림 대기열 막힘 제거`, `IP 주소 변경 시 연결 유지`를 지원합니다.
 
+- **`SSL 인증서`**:
+
+  - `HTTP(S) 로드 밸런싱`을 위해 필요하다
+  
+  - `타켓 프록시` 당 `15개`까지 첨부가능 (Target SSL Proxy, Target L.B proxy)
+  
+  - `SSL 인증서 리소스`를 만든다
+  
+  - 
+
 ### **백엔드 버킷 및 네트워크 엔드포인트 그룹 (NEG)**
 
 - **`백엔드 버킷`**:
@@ -60,11 +72,13 @@ tags: [Cloud, GCP]
   - `URL 맵`을 통해 `특정 경로의 트래픽`을 `Cloud Storage 버킷으로 라우팅`합니다.
 
 
-- **`NEG의 종류 및 기능`**:
+- **`NEG(Network Endpoint Groups)의 종류 및 기능`**:
   
-  - `영역 NEG`: `Compute Engine VM` 또는 `VM 실행 서비스`와 같은 `엔드포인트를 포함`합니다.
+  - `영역(Zonal) NEG`: `Compute Engine VM` 또는 `VM 실행 서비스`와 같은 `엔드포인트를 포함`합니다. (IP 주소 / IP : Port)
   
-  - `인터넷 NEG`: Google Cloud `외부에서 호스팅되는 단일 엔드포인트를 포함`합니다.
+  - `인터넷 NEG`: Google Cloud `외부에서 호스팅되는 단일 엔드포인트를 포함`합니다. (Hostname / FQDN / IP : Port, : Port)
+
+  - `하이브리드 커넥트`:  Google Cloud `외부에서 실행되는 Traffic Director 서비스`를 가리킨다.
   
   - `서버리스 NEG`: Cloud Run, App Engine, Cloud Functions 서비스와 같은 `서버리스 서비스를 포함`합니다.
 
@@ -74,7 +88,7 @@ tags: [Cloud, GCP]
 
 #### 세션 어피니티
 
-세션 어피니티, 또는 스티키 세션(Sticky Session)은 로드 밸런싱에서 사용되는 개념으로, 특정 클라이언트의 모든 요청이 동일한 서버로 라우팅되도록 하는 기능을 의미합니다.
+`세션 어피니티`, 또는 `스티키 세션(Sticky Session)`은 `로드 밸런싱에서 사용되는 개념`으로, `특정 클라이언트의 모든 요청이 동일한 서버로 라우팅되도록 하는 기능`을 의미합니다.
 
 이 기능은 사용자의 세션 상태를 유지하는 데 필요한 정보가 서버에 저장되는 경우에 유용합니다. 
 
@@ -86,3 +100,28 @@ tags: [Cloud, GCP]
 
 따라서 세션 어피니티를 사용할 때는 이러한 점을 고려해야 합니다.
 
+#### NAT(Network Address Translation)
+
+NAT(Network Address Translation)는 `IP 주소를 다른 IP 주소로 변환하는 프로세스`를 의미합니다.
+
+`NAT는 주로` 사설 네트워크에서 사용되는 `사설 IP 주소를 공용 네트워크에서 사용되는 공용 IP 주소로 변환하는 데 사용`됩니다. 
+
+이를 통해 여러 장치가 하나의 공용 IP 주소를 공유하여 인터넷에 액세스할 수 있습니다.
+
+NAT는 IP 주소 부족 문제를 완화하고, 보안을 향상시키며, IP 주소를 재구성하는 데 필요한 관리 작업을 줄이는 데 도움이 됩니다.
+
+NAT는 다음과 같은 주요 유형이 있습니다:
+
+**SNAT(Source NAT):** 
+
+출발지 IP 주소를 변경합니다. 이는 주로 여러 개의 사설 IP 주소를 하나의 공용 IP 주소로 변환하는 데 사용됩니다.
+
+**DNAT(Destination NAT):** 
+
+목적지 IP 주소를 변경합니다. 이는 주로 인바운드 트래픽을 내부 서버로 라우팅하는 데 사용됩니다.
+
+**PAT(Port Address Translation):** 
+
+IP 주소와 포트 번호를 변경합니다. 이는 여러 개의 사설 IP 주소를 하나의 공용 IP 주소로 변환하면서, 각 연결에 대해 고유한 포트 번호를 할당하는 데 사용됩니다. 
+
+PAT는 종종 "NAT 오버로딩"이라고도 불립니다.

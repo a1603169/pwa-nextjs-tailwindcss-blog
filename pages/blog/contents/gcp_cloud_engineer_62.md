@@ -2,7 +2,7 @@
 title: 'GCP Cloud Engineer - 62'
 subtitle: 'Essential Cloud Infrastructure: Sacling and Automation - Introduction to Kubernetes / Introduction to Google Kubernetes Engine'
 date: '2024-04-18'
-tags: [Cloud, GCP]
+tags: [Cloud, GCP, Kubernetes]
 ---
 
 ### **쿠버네티스 소개**
@@ -130,3 +130,17 @@ tags: [Cloud, GCP]
 운영 스위트는 IT 인프라의 성능을 최적화하고, 시스템 장애를 빠르게 파악하고 해결하며, IT 리소스를 효과적으로 관리하는 데 도움이 됩니다. 
 
 이는 시스템의 안정성과 가용성을 높이고, IT 운영 팀의 생산성을 향상시킵니다.
+
+#### Artifact Registry 
+
+Artifact Registry는 Google Cloud에서 제공하는 `패키지 관리 서비스`입니다.
+
+이 서비스는 `Docker 컨테이너 이미지와 Maven과 npm과 같은 언어별 패키지를 저장하고 관리`하는 데 사용됩니다. 
+
+Artifact Registry는 프라이빗 패키지 호스팅, 버전 관리, 패키지 불변성, 패키지 메타데이터 저장 등의 기능을 제공합니다.
+
+또한, Artifact Registry는 Google Cloud의 보안 및 규정 준수 기능을 활용하여 패키지의 보안을 강화합니다. 
+
+이는 VPC 서비스 컨트롤, 이중 인증, 암호화 등의 기능을 포함합니다.
+
+따라서, Artifact Registry는 소프트웨어 개발 및 배포 파이프라인의 일부로서 패키지 관리를 단순화하고 표준화하는 데 도움이 됩니다.

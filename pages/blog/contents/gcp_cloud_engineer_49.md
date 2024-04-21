@@ -113,11 +113,11 @@ VPN(Virtual Private Network)에서 "피어"는 VPN 연결의 다른 끝에 있�
 
 네트워크 프로토콜에는 여러 종류가 있으며, 각각은 특정 목적에 맞게 설계되었습니다. 
 
-예를 들어, HTTP(Hypertext Transfer Protocol)는 웹 브라우저와 웹 서버 간의 통신을 위한 프로토콜이며, 
+예를 들어, `HTTP`(Hypertext Transfer Protocol)는 `웹 브라우저와 웹 서버 간의 통신`을 위한 프로토콜이며, 
 
-FTP(File Transfer Protocol)는 파일 전송을 위한 프로토콜입니다. 
+`FTP`(File Transfer Protocol)는 `파일 전송`을 위한 프로토콜입니다. 
 
-TCP(Transmission Control Protocol)와 IP(Internet Protocol)는 인터넷 통신의 기반이 되는 프로토콜입니다.
+`TCP`(Transmission Control Protocol)와 `IP`(Internet Protocol)는 `인터넷 통신의 기반이 되는 프로토콜`입니다.
 
 #### BGP 
 

@@ -5,6 +5,8 @@ date: '2024-04-19'
 tags: [Cloud, GCP]
 ---
 
+<img class='blogImage' src='/blog/how_to_decide.png'>
+
 ### **Compute Engine**
 
 
@@ -53,7 +55,7 @@ tags: [Cloud, GCP]
 ### **Cloud Run**
 
 
-- ㅁ `상태 비저장 컨테이너`를 실행하는 관리형 컴퓨팅 플랫폼
+- ㅁ `상태 비저장 컨테이너`를 실행하는 관리형 컴퓨팅 플랫폼(`서버리스`/`Stateless 컨테이너` 가능)
 
 - ㅁ 인프라 관리를 추상화하여 애플리케이션 개발에 집중할 수 있습니다.
 

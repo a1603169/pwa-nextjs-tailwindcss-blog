@@ -21,6 +21,8 @@ tags: [Cloud, GCP]
 
 ### **Cloud Dataflow**
 
+<img class='blogImage' src='/blog/flow_of_dataflow.png'>
+
 - **`개요`**:
   
   - ㅁ `스트림 및 배치 데이터`를 처리하는 `완전 관리형 서비스`입니다.
@@ -31,9 +33,11 @@ tags: [Cloud, GCP]
   
   - ㅁ `자동 확장 기능`으로 초당 수백만 개의 쿼리를 처리할 수 있습니다.
   
-  - ㅁ `다양한 데이터 소스와 싱크`를 지원하며, `Stackdriver와 연동`하여 파이프라인의 상태를 `모니터링`합니다.
+  - ㅁ `다양한 데이터 소스와 싱크`를 지원하며, `Stackdriver와 연동`하여 파이프라인의 상태를 `모니터링`합니다. (우선순위 알림 설정 가능)
 
 ### **Cloud Dataprep**
+
+<img class='blogImage' src='/blog/dataprep_architect.png'>
 
 - **`개요`**:
   
@@ -49,9 +53,11 @@ tags: [Cloud, GCP]
 
 ### **Cloud Dataproc**
 
+<img class='blogImage' src='/blog/dataproc_vs_dataflow.png'>
+
 - **`개요`**:
   
-  - ㅁ `Apache Spark와 Apache Hadoop 클러스터`를 간단하고 빠르게 실행할 수 있는 `클라우드 서비스`입니다.
+  - ㅁ `Apache Spark와 Apache Hadoop 클러스터`를 간단하고 빠르게 실행할 수 있는 `클라우드 서비스`입니다.(Fully-managed)
   
   - ㅁ `초당 과금 방식`을 채택하며, `선점형 인스턴스(Spotted Instance)`를 사용하여 비용을 절감할 수 있습니다.
 
