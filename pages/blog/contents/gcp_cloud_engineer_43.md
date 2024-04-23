@@ -5,7 +5,7 @@ date: '2024-04-17'
 tags: [Cloud, GCP]
 ---
 
-### Resource Manger - Overview
+### Resource Manager - Overview
 
 - **Google Cloud Platform 구조**:
   
