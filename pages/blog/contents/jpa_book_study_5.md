@@ -17,7 +17,7 @@ tags: [Java, Spring, JPA]
 
 - 1. 1.JPA
   
-- 2. 2.하이버네이트(Hibernate-Entitymanger)
+- 2. 2.하이버네이트(Hibernate-Entitymanager)
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
