@@ -1,7 +1,7 @@
 ---
 title: 'Certified Kubernetes Administration - 8'
 subtitle: 'Kubelet'
-date: '2024-06-20'
+date: '2024-06-19'
 tags: [Kubernetes, Cloud]
 ---
 
