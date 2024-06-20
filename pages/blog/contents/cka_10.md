@@ -1,7 +1,7 @@
 ---
 title: 'Certified Kubernetes Administration - 10'
 subtitle: 'k8s pods'
-date: '2024-06-19'
+date: '2024-06-20'
 tags: [Kubernetes, Cloud]
 ---
 
