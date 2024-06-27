@@ -1,7 +1,7 @@
 --- 
 title: 'Certified Kubernetes Administration - 83 (단어정리)'
 subtitle: 'k8s / words'
-date: '2024-06-23'
+date: '2024-06-27'
 tags: [Kubernetes, Cloud]
 ---
 
@@ -53,7 +53,7 @@ Kubernetes 용어들을 비유법을 사용하여 정리한 전체 내용을 아
 
 - **목적**: 특정 수의 pod가 항상 실행되도록 보장합니다.
 
-- **특징**: pod 수를 늘리거나 줄일 수 있으며, 항상 지정된 수의 pod를 유지합니다.
+- **특징**: pod it 수를 늘리거나 줄일 수 있으며, 항상 지정된 수의 pod를 유지합니다.
 
 #### 7. **DaemonSet**
 
@@ -247,3 +247,4 @@ Kubernetes 용어들을 비유법을 사용하여 정리한 전체 내용을 아
 23. **Toleration**: **출입 제한 구역 통행 허가증** - taint가 적용된 노드에 pod 배치를 허용.
 
 이 비유들을 통해 Kubernetes의 다양한 개념과 용어들을 보다 쉽게 이해할 수 있습니다.
+
