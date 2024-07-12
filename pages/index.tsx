@@ -18,10 +18,25 @@ export default function Home() {
                 <Transition_Slower>
                   <h1 className="text-2xl max-md:text-md mt-10">{"⁎ᵕᴗᵕ⁎"} </h1>
                   <Transition_Slower>
-                  <h1 className="text-2xl max-md:text-md mt-10">{"^_^7"} </h1>
-                  <Transition_Slower>
-                  <h1 className="text-2xl max-md:text-md mt-10">{":)"}</h1>
-                  </Transition_Slower>
+                    <h1 className="text-2xl max-md:text-md mt-10">{"^_^7"} </h1>
+                    <Transition_Slower>
+                      <h1 className="text-2xl max-md:text-md mt-10">{":)"}</h1>
+                      <Transition_Slower>
+                        <h1 className="text-2xl max-md:text-md mt-10">
+                          {"."}
+                        </h1>
+                        <Transition_Slower>
+                        <h1 className="text-2xl max-md:text-md mt-10">
+                          {"."}
+                        </h1>
+                        <Transition_Slower>
+                        <h1 className="text-2xl max-md:text-md mt-10">
+                          {"."}
+                        </h1>
+                      </Transition_Slower>
+                      </Transition_Slower>
+                      </Transition_Slower>
+                    </Transition_Slower>
                   </Transition_Slower>
                 </Transition_Slower>
               </Transition_Slower>
