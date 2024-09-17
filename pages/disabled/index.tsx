@@ -9,7 +9,7 @@ export default function Disabled() {
   return (
     <div className="flex justify-center items-center py-10">
       <h1 className="text-2xl text-indigo-400 text-center">
-        This page/project is currently disabled. Please check back later. Page will be redirected to the Home page.
+        This page/project is currently disabled. Please check back later. Page will be redirected to the Home page.asdhasdhgasdh
       </h1>
     </div>
   )
