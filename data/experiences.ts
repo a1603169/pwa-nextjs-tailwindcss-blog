@@ -1,7 +1,12 @@
 export const EXPERIENCES = [
   {
+    title: "Amazon Web Services(AWS)",
+    date: "2024.10.01 - CURRENT",
+    description: "Support Engineer (Marketplace)",
+  },
+  {
     title: "新明工業株式会社",
-    date: "2023.09.01 - CURRENT",
+    date: "2023.09.01 - 2024.08.31",
     description: "Software Engineer",
   },
   {
