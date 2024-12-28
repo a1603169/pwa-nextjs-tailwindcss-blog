@@ -7,9 +7,9 @@ tags: [Cypress, Git]
 
 ### 관련 링크
 
-<span class='blogLink'>[Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 1](blog/split_cypress_tests_1)</span>
+<span class='blogLink'>[Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 1](split_cypress_tests_1)</span>
 
-<span class='blogLink'>[Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 2](blog/split_cypress_tests_2)</span>
+<span class='blogLink'>[Cypress테스트와 Git Actions - 비동기적 실행 (For free) - 2](split_cypress_tests_2)</span>
 
 최근에 회사에서 개발하고 있는 서비스의 CI 코드를 업그레이드를 해야하여, 너무 정신이 없이 바빴었다. 
 
