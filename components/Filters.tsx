@@ -37,7 +37,7 @@ export default function Filters({
               } max-sm:text-xs` }
               onClick={() => handleTagClick(key)}
             >
-              {key}({value})
+              {key.toUpperCase()}({value})
             </div>
           );
         })}
