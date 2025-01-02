@@ -1,7 +1,7 @@
 ---
 title: 'What is Vim (빔간지)'
 subtitle: 'vim'
-date: '2025-01-03'
+date: '2025-01-01'
 tags: ['vim']
 ---
 
@@ -22,4 +22,6 @@ VSCode 에 적용해서 하는건지 아니면 터미널을 따로 oh-my-zsh 처
 <span class='blogLink'>[연습링크](https://www.shortcutfoo.com/app/dojos/vim/beginner-text-navigation/practice)</span>
 
 요즘엔 이거로 놀고 있다.
+
+빔고수가 될테야.
 
