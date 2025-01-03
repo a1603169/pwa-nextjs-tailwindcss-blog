@@ -15,9 +15,9 @@ VSCode 에 적용해서 하는건지 아니면 터미널을 따로 oh-my-zsh 처
 
 이런식으로 나와있다.
 
-`Q`. 그럼 cat 명령어와는 다른건가? 
+> `Q`. 그럼 cat 명령어와는 다른건가? 
 
-`A` : 파일내용을 읽기위한 것이니 `vim` 과 다르다!
+> `A` : 파일내용을 읽기위한 것이니 `vim` 과 다르다!
 
 <span class='blogLink'>[연습링크](https://www.shortcutfoo.com/app/dojos/vim/beginner-text-navigation/practice)</span>
 
