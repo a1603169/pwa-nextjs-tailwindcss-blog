@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode - merge-strings-alternately'
+title: 'LeetCode - find-The-Difference'
 subtitle: 'Leetcode day 2 for basic'
 date: '2025-03-11'
 tags: [LeetCode, JavaScript]
