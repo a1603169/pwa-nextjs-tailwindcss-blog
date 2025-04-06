@@ -1,6 +1,6 @@
 ---
 title: 'Neetcode - Two Integer Sum'
-subtitle: 'Leetcode day 4 for basic'
+subtitle: 'Neetcode day 4 for basic'
 date: '2025-04-03'
 tags: [LeetCode, Neetcode, JavaScript]
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Neetcode - Valid Anagram'
-subtitle: 'Leetcode day ３ for basic'
+subtitle: 'Neetcode day ３ for basic'
 date: '2025-03-22'
 tags: [LeetCode, Neetcode, JavaScript]
 ---
