@@ -1,5 +1,5 @@
 ---
-title: 'Neetcode - Is Palindrome'
+title: 'Neetcode - Valid Parentheses'
 subtitle: 'Neetcode day 6 for basic'
 date: '2025-04-29'
 tags: [LeetCode, Neetcode, JavaScript]
