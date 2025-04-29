@@ -7,6 +7,8 @@ tags: [LeetCode, Neetcode, JavaScript]
 
 <span class='blogLink'>[니트코드 링크](https://neetcode.io/problems/validate-parentheses)</span>
 
+----
+
 ### 문제
 
 ----
