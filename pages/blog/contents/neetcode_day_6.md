@@ -101,6 +101,8 @@ function isValid(s) {
 
 ### 최적화 접근 정리
 
+----
+
 #### **Stack 기반 풀이**
 
 - 열린 괄호는 **stack에 push**
