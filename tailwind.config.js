@@ -57,5 +57,5 @@ module.exports = {
       }
     },
   },
-  plugins: [flipping_card],
+  plugins: [flipping_card, require('@tailwindcss/typography')],
 };

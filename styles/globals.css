@@ -116,3 +116,30 @@ a {
     color-scheme: dark;
   }
 } */
+
+
+/* globals.css 또는 스타일 파일 */
+.prose table {
+  border-collapse: collapse;
+  border: 1px solid #d1d5db; /* gray-300 */
+}
+
+.prose th, 
+.prose td {
+  border: 1px solid #d1d5db; /* gray-300 */
+  padding: 8px 12px;
+}
+
+.prose thead th {
+  background-color: #f3f4f6; /* gray-100 */
+  font-weight: 600;
+  border-bottom: 2px solid #9ca3af; /* gray-400 */
+}
+
+.prose tbody tr:nth-child(even) {
+  background-color: #f9fafb; /* gray-50, 줄무늬 효과 */
+}
+
+.prose tbody tr:hover {
+  background-color: #f3f4f6; /* gray-100, 호버 효과 */
+}

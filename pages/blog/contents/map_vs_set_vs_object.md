@@ -97,18 +97,18 @@ set.clear();
 
 ### 4. 비교 요약표
 
-| 항목        | Object                     | Map                          | Set                           |
-|-------------|----------------------------|------------------------------|-------------------------------|
-| 구조        | key → value                | key → value                  | 값만 저장                    |
-| 키 타입     | 문자열, Symbol             | **모든 타입 가능**            | 값 자체가 key                |
-| 순서 보장   | ❌ 불확실                   | ✅ 삽입 순서 유지              | ✅ 삽입 순서 유지             |
-| 중복 허용   | 키 중복 ❌                  | 키 중복 ❌                    | **값 중복 ❌**                |
-| 크기 확인   | `Object.keys().length`     | `.size`                      | `.size`                       |
-| 존재 확인   | `'key' in obj`             | `.has(key)`                  | `.has(value)`                |
-| 추가        | `obj[key] = val`           | `.set(key, val)`             | `.add(val)`                   |
-| 삭제        | `delete obj[key]`          | `.delete(key)`               | `.delete(val)`                |
-| 전체 삭제   | `{}` 재할당 필요           | `.clear()`                   | `.clear()`                    |
-| 반복 방법   | `for...in`, `Object.keys()`| `for...of`, `.forEach()`     | `for...of`, `.forEach()`     |
+| 항목        | Object                      | Map                          | Set                         |
+|-------------|-----------------------------|------------------------------|-----------------------------|
+| 구조        | key → value                 | key → value                  | 값만 저장                   |
+| 키 타입     | 문자열, Symbol              | **모든 타입 가능**           | 값 자체가 key               |
+| 순서 보장   | ❌ 불확실                   | ✅ 삽입 순서 유지            | ✅ 삽입 순서 유지            |
+| 중복 허용   | 키 중복 ❌                  | 키 중복 ❌                   | **값 중복 ❌**               |
+| 크기 확인   | `Object.keys().length`      | `.size`                      | `.size`                     |
+| 존재 확인   | `'key' in obj`              | `.has(key)`                  | `.has(value)`               |
+| 추가        | `obj[key] = val`            | `.set(key, val)`             | `.add(val)`                 |
+| 삭제        | `delete obj[key]`           | `.delete(key)`               | `.delete(val)`              |
+| 전체 삭제   | `{}` 재할당 필요            | `.clear()`                   | `.clear()`                  |
+| 반복 방법   | `for...in`, `Object.keys()` | `for...of`, `.forEach()`     | `for...of`, `.forEach()`    |
 
 ---
 
@@ -118,4 +118,3 @@ set.clear();
 - `Set`: 유일한 값 목록 필요할 때, 빠른 검색이 필요할 때
 
 알고리즘 문제를 풀거나 데이터 구조를 설계할 때 위 기준을 잘 기억해두면 효율적입니다.
-```
