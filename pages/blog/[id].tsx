@@ -92,8 +92,8 @@ export default function Post({
         "table th:first-child, table td:first-child"
       );
       firstCells.forEach((cell) => {
-        cell.style.minWidth = "100px";
-        cell.style.whiteSpace = "nowrap";
+        (cell as HTMLTableCellElement).style.minWidth = "100px";
+        (cell as HTMLTableCellElement).style.whiteSpace = "nowrap";
       });
 
       // 헤더 컬럼 밝은 배경
@@ -180,7 +180,7 @@ export default function Post({
                 key={idx}
                 className="whitespace-nowrap bg-slate-400 text-slate-50 py-0.5 px-2 rounded-lg text-sm"
               >
-                {tag}
+                {tag.toUpperCase()}
               </li>
             ))}
           </ul>
