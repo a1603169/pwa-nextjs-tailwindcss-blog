@@ -3,9 +3,8 @@ import Link from "next/link";
 import { getPostData, getSortedPostsData } from "@/lib/post";
 import Head from "next/head";
 import PeronsalHead from "@/components/PersonalHead";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-// 본문 렌더 및 INDEX
 export default function Post({
   postData,
   allPostsData,
@@ -48,6 +47,7 @@ export default function Post({
   };
 
   const [h3Ids, setH3Ids] = useState<string[]>([]);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // h3에 id 자동 부여 (INDEX에 앵커 사용)
@@ -59,6 +59,57 @@ export default function Post({
       newH3Ids.push(h3.id);
     });
     setH3Ids(newH3Ids);
+
+    // 테이블을 overflow-x-auto div로 감싸기
+    if (contentRef.current) {
+      const tables = contentRef.current.querySelectorAll("table");
+      tables.forEach((table) => {
+        // 가로 스크롤 div로 감싸기 + gentle 3D 효과 추가!
+        if (!table.parentElement?.classList.contains("overflow-x-auto")) {
+          const wrapper = document.createElement("div");
+          // shadow-md: 입체적 그림자, rounded-xl: 라운드, border + border-gray-200: 테두리, bg-white: 밝은 배경
+          wrapper.className =
+            "overflow-x-auto my-4 shadow-md rounded-xl border border-gray-200 bg-white";
+          table.parentNode!.insertBefore(wrapper, table);
+          wrapper.appendChild(table);
+        }
+        // 테이블에는 배경색 위주로만 부여 (추가 입체감 필요하면 아래 주석 해제)
+        table.classList.add("bg-gray-50");
+        // table.classList.add("shadow-sm", "rounded-lg", "border", "border-gray-200");
+      });
+
+      // 셀 텍스트 전체 왼쪽 정렬, 첫 열 공간
+      const ths = contentRef.current.querySelectorAll("table th");
+      const tds = contentRef.current.querySelectorAll("table td");
+      ths.forEach((th) => {
+        th.classList.add("text-left", "align-middle", "px-4", "py-2");
+      });
+      tds.forEach((td) => {
+        td.classList.add("text-left", "align-middle", "px-4", "py-2");
+      });
+
+      const firstCells = contentRef.current.querySelectorAll(
+        "table th:first-child, table td:first-child"
+      );
+      firstCells.forEach((cell) => {
+        cell.style.minWidth = "100px";
+        cell.style.whiteSpace = "nowrap";
+      });
+
+      // 헤더 컬럼 밝은 배경
+      const theadThs = contentRef.current.querySelectorAll("table thead th");
+      theadThs.forEach((th) => {
+        th.classList.add("bg-gray-100", "font-semibold");
+      });
+
+      // 짝수 행 줄무늬
+      const evenRows = contentRef.current.querySelectorAll(
+        "table tbody tr:nth-child(even)"
+      );
+      evenRows.forEach((tr) => {
+        tr.classList.add("bg-gray-100");
+      });
+    }
   }, [postData]);
 
   // Utterances 댓글 관련
@@ -67,7 +118,7 @@ export default function Post({
     if (anchor) {
       const script = document.createElement("script");
       script.src = "https://utteranc.es/client.js";
-      script.setAttribute("repo", "a1603169/pwa-nextjs-tailwindcss-blog"); // 깃허브 repo 입력
+      script.setAttribute("repo", "a1603169/pwa-nextjs-tailwindcss-blog");
       script.setAttribute("issue-term", "pathname");
       script.setAttribute("theme", "github-light");
       script.crossOrigin = "anonymous";
@@ -135,11 +186,10 @@ export default function Post({
           </ul>
         </div>
         <hr className="text-indigo-500 w-full"></hr>
-        {/* 본문: 마크다운 → HTML → 스타일 적용 */}
-        <div
-          className="prose prose-lg prose-indigo w-full"
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-        />
+        {/* 본문: 테이블별 가로 스크롤! */}
+        <div ref={contentRef} className="prose prose-lg prose-indigo w-full">
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </div>
         {/* 블로그 이전/다음 글 */}
         <div className="flex justify-between w-full">
           {handlePrevPost() !== undefined ? (
